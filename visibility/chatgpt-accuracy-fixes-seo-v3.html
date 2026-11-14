@@ -1,0 +1,756 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>ChatGPT answer-accuracy fixes — SEO Lead v3 (DRAFT)</title><style>body{font:15px/1.55 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:1100px;margin:24px auto;padding:0 20px;color:#1d1d1f;background:#fff}
+h1{font-size:26px;border-bottom:2px solid #b0342c;padding-bottom:8px}h2{font-size:20px;margin-top:36px;border-bottom:1px solid #ddd;padding-bottom:4px}h3{font-size:16px;margin-top:24px}
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:13.5px}th,td{border:1px solid #d0d0d0;padding:6px 8px;vertical-align:top;text-align:left}th{background:#f4f4f4}
+pre{background:#f6f8fa;border:1px solid #ddd;border-radius:6px;padding:12px;overflow-x:auto;font-size:12.5px;line-height:1.45}code{font-family:SFMono-Regular,Consolas,Menlo,monospace;background:#f3f3f3;padding:1px 4px;border-radius:3px;font-size:90%}pre code{background:none;padding:0}
+a{color:#0b5cad;word-break:break-all}.banner{background:#fff4e5;border:1px solid #f0b46a;padding:10px 14px;border-radius:6px;margin-bottom:18px}
+@media (prefers-color-scheme:dark){body{background:#151515;color:#e6e6e6}th{background:#222}th,td{border-color:#444}pre,code{background:#1f1f1f;border-color:#333}a{color:#7ab4ff}.banner{background:#3a2a12;border-color:#8a6420}}</style></head><body><div class="banner">Internal review draft for Dean and Agency CEO. Files only. Nothing live changed, submitted, or sent. Ads HOLD. v3 records PM's approved c021 short forms (with scope) and cites [c117] for the optional mobile line. rebind.app redirect: approved for planning only (§11). Every other fix: held draft, not approved. v1 and v2 left untouched.</div><h1>ChatGPT answer-accuracy fixes — SEO Lead v3</h1>
+
+<p><strong>v3 changelog — Thu Nov 12 2026, 12:18 AM ET (America/New_York):</strong> Product Manager ruled on the c021 short forms. (1) "Linux is not supported." is approved as the main form, equivalent to c021. (2) "Intel Macs and Linux are not supported." is approved; cite both [c016] and [c021] everywhere this form appears. (3) A llms.txt-only "Not supported" bullet is approved; the exact wording lives only in the §4.7 llms.txt blocks (the period variant in v2 was corrected to the approved comma form). Do not hint at a future Linux or Intel Mac version beside those statements. The optional mobile line remains Dean's exact approved wording, "Android and iOS apps are in development," and appears only beside a "Today, Rebind runs on…" sentence. That line is now claim [c117] on PM's staging list (c117 text: "Rebind's Android and iOS apps are in development."). The drafts use Dean's exact approved wording, which matches c117 in substance. The phone FAQ answer still pairs the mobile line with the Today sentence. Publishing still needs Dean's OK. All fixes remain held drafts except the redirect plan (planning only). v1 and v2 files are left untouched.</p>
+<p><strong>v2 changelog — Thu Nov 12 2026, 12:10 AM ET (America/New_York):</strong> Dean (relayed by Agency CEO) approved a new platform claim. The approved wording is exactly "Android and iOS apps are in development." Do not add dates, features, pricing, or any availability claim for mobile. Supported today is unchanged: Windows 10/11 64-bit and macOS 13+ on Apple Silicon; keep "Intel Macs and Linux are not supported." Every platform block in this file (the usinput.com replacement sentence, compare-page rows and FAQ, docs platforms page, llms.txt platforms section, and the SoftwareApplication JSON-LD description) is now phrased as what is supported today, then offers that mobile sentence as an <strong>optional line</strong> (include it as written, or omit it; do not reword it). In schema, <code>operatingSystem</code> lists only Windows 10/11 and macOS 13+; Android and iOS are not listed until they ship. A "Does Rebind work on my phone?" FAQ answers: not today; Android and iOS apps are in development. This mobile line was a newly approved claim pending a claims-list ID (resolved in v3 as [c117] on PM's staging list). The c021 shorter wording was still awaiting PM approval (resolved in v3; see the v3 changelog and §8). All other v1 content was unchanged, including the rebind.app redirect plan in §11, the listings list, and hold statuses. v1 files were left untouched.</p>
+<p><strong>Update Nov 11 2026, 9:46 AM ET:</strong> Dean confirmed in his own words (relayed by Agency CEO, 9:45 AM ET): "Yes, we own rebind.app; plan a redirect to www.rebind.gg." That approves <strong>planning</strong> the rebind.app redirect only (see §11), not doing it. Every other fix in this file is a <strong>held draft, not approved</strong>.</p>
+<p><strong>Status:</strong> DRAFT, files only. Nothing on rebind.gg, docs.rebind.gg, usinput.com, llms.txt, or any directory has been changed, submitted, or contacted. Ads HOLD. Every live change below needs Dean's yes in his own words.
+<strong>Prepared:</strong> v3 Thu Nov 12 2026, 12:20 AM ET (America/New_York), by SEO Lead (Grok Bot) for Agency CEO, from the v2 draft of Thu Nov 12 2026, 12:15 AM ET. v1 and v2 are left untouched.
+<strong>Inputs:</strong> AI Search Visibility spot check Nov 11 2026 9:18 AM ET (<code>/workspace/visibility/captures/2026-11-11-assistants/chatgpt-1..5.txt</code>, <code>spot-check-log.md</code>); live read-only fetches Nov 11 2026 9:30–9:40 AM ET (raw copies in <code>/workspace/visibility/fixes/raw-1111/</code>).
+<strong>Claims list used:</strong> <code>C:\marketing-task-manager\mission-control\data\p3\approved-claims.json</code> on BingBong1 (md5 <code>bdabf047…</code>, status <code>product-truth-reviewed-20261111</code>, 110 claims). Same file on the box: <code>/workspace/marketing-task-manager/qa-ac51-evidence/c032/live-3014-approved-claims.json</code> (identical md5). Claim IDs are shown as <code>[c0xx]</code>. [c117] is on PM's staging list and is not in that 110-claim file; drafts use Dean's exact approved mobile wording, which matches c117 in substance. Competitor facts about AutoHotkey are not in the claims list and are marked <code>[AHK: autohotkey.com]</code>.</p>
+<hr />
+<h2>1. Top 5 fixes, in priority order</h2>
+<p>Approval status: fixes 1–4 and parts (b) and (c) of fix 5 are <strong>held drafts, not approved</strong>. Part (a) of fix 5 (the rebind.app redirect) is <strong>approved for planning only</strong>; the plan is in §11.</p>
+<ol>
+<li><strong>[Held draft, not approved] Fix the Linux line on usinput.com (company-owned).</strong> https://www.usinput.com/products/rebind says <em>"Core scripting supports Windows, macOS, and Linux."</em> ChatGPT cited this exact page ("US Input Company - Rebind") in its Rebind vs AutoHotkey answer, and the homepage Organization schema lists usinput.com in <code>sameAs</code>, so models treat it as first-party. This is the most likely root of error 1, and of the 12 directory pages that copy it. Replacement copy in §4.7. [c013, c015, c016, c021]</li>
+<li><strong>[Held draft, not approved] Add an explicit, text-only platform statement plus a "Linux is not supported" FAQ to /compare/autohotkey</strong>, and rewrite its comparison table so every cell has words (today the Yes/No marks are SVG icons with only <code>aria-label</code>, so text extractors see blank cells) and so it has rows for Automation, Custom scripts, and Complex macros. Those three rows don't exist today, so the model filled them in from priors and got "Limited". Phrase the platforms block, the Platforms table row, and the platform FAQs as what is supported today, and include a "Does Rebind work on my phone?" FAQ that answers: not today; Android and iOS apps are in development — paired with a "Today, Rebind runs on…" sentence. §4.1–4.5.</li>
+<li><strong>[Held draft, not approved] Put the requirements and the negatives at the top of docs.rebind.gg/concepts/platforms</strong> (and its meta description). Today the page never says the word "Linux"; "Intel Macs are not supported" sits under a lower heading after the SDK introduction. §4.5.</li>
+<li><strong>[Held draft, not approved] Add a platforms section to both llms.txt files</strong> (docs.rebind.gg/llms.txt has no requirements line and no negative; www.rebind.gg/llms.txt has requirements but no negative). §4.6.</li>
+<li><strong>rebind.app and the site's identity.</strong> (a) <strong>Dean confirmed US Input owns rebind.app and approved planning a redirect to www.rebind.gg (§11). Not executed.</strong> (b) [Held draft, not approved] Ship the Organization/WebSite/SoftwareApplication JSON-LD with one <code>@id</code> on www.rebind.gg (§5). (c) [Held draft, not approved] Change the apex redirect <code>rebind.gg → www.rebind.gg</code> from <strong>307 (temporary)</strong> to <strong>301/308 (permanent)</strong> so the canonical host is unambiguous. This is separate from the rebind.app go-live. §6.</li>
+</ol>
+<p>Also needed (Dean/PM decision, not SEO's to change): the live compare page, homepage, Link page, and www llms.txt still use phrases that are banned in our claims fence ("8,000 Hz", "catches input before the OS does", "before the OS sees it", "VID, PID", "zero drift", "Rewrite any key or click"). The compare-page FAQ also says <em>"porting is quick"</em>; the approved claim says porting is a rewrite [c095]. §3.4.</p>
+<hr />
+<h2>2. What ChatGPT said (exact lines from the captures)</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Prompt (capture)</th>
+<th>Exact wrong line</th>
+<th>Error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>"best program to remap mouse buttons on Windows and Mac" (<code>chatgpt-2.txt</code>)</td>
+<td>"Rebind · Windows / Mac / Linux · Free engine; paid extras · Cross-platform remapping" (table row)</td>
+<td>Linux</td>
+</tr>
+<tr>
+<td>2</td>
+<td>"Rebind vs AutoHotkey" (<code>chatgpt-5.txt</code>)</td>
+<td>"Works on Windows, macOS, and Linux."</td>
+<td>Linux</td>
+</tr>
+<tr>
+<td>3</td>
+<td>"Rebind vs AutoHotkey" (<code>chatgpt-5.txt</code>)</td>
+<td>"Complex macros · More limited · Excellent" / "Automation · Limited · Excellent" / "Custom scripts · Limited · Full scripting" (table rows: feature · Rebind · AutoHotkey)</td>
+<td>Scripting undersold</td>
+</tr>
+<tr>
+<td>4</td>
+<td>"Rebind vs AutoHotkey" (<code>chatgpt-5.txt</code>)</td>
+<td>"Short answer: … AutoHotkey is better if you want powerful macros, automation, and custom scripting." · "Remap mouse buttons · Depends on support", "Windows support · Depends on version", "macOS support · Depends on version", "Free · Depends on version" (Rebind column)</td>
+<td>Hedged/vague (no clear source text)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>"AutoHotkey alternatives" (<code>chatgpt-4.txt</code>)</td>
+<td>"[Rebind website]" → <code>https://rebind.app/?utm_source=chatgpt.com</code></td>
+<td>Wrong domain</td>
+</tr>
+</tbody>
+</table>
+<p>What it got right and we want to keep: "Rebind uses Luau scripting, not AutoHotkey syntax. It isn't a drop-in replacement for existing AHK scripts." and the <code>rb.bind.remap("Mouse4", "LCtrl+C")</code> example (lifted from www.rebind.gg/llms.txt). The "Rebind vs AutoHotkey" sources were usinput.com/products/rebind, a rebind.gg compare page, and the rebind.gg install page.</p>
+<hr />
+<h2>3. Why a model misreads the live pages (diagnosis)</h2>
+<h3>3.1 www.rebind.gg/compare/autohotkey (fetched 200, canonical <code>https://www.rebind.gg/compare/autohotkey</code>, server-rendered HTML, no JSON-LD)</h3>
+<ul>
+<li><strong>Platforms row is thin and has no negative:</strong> <code>Platforms | AutoHotkey: Windows | Rebind: Windows, macOS</code>. There are no versions, no "Apple Silicon", no "Intel Macs are not supported", and no "Linux is not supported". The page text contains "Linux" 0 times, "Apple Silicon" 0 times, and "Windows 10/11" 0 times.</li>
+<li><strong>Yes/No values are icons only.</strong> Rows like "Built-in HTTP / WS server", "Declarative UI panels", and "Works across keyboard and mouse brands" draw a check/dash SVG with <code>aria-label="Yes"</code>/<code>"No"</code> and no visible text. Plain-text extraction (what most AI crawlers keep) shows an empty AutoHotkey cell, and for some rows an empty Rebind cell.</li>
+<li><strong>No rows for the three things ChatGPT rated.</strong> There are no rows for "Automation", "Custom scripts", or "Complex macros". The table compares runtime features (HTTP, IPC, coroutines, UI panels) that a model doesn't map onto those everyday words, so it fell back on its priors (AHK is famous for automation), and Rebind came out "Limited".</li>
+<li><strong>Only "Limited" on the page is AHK's coroutines.</strong> "Real coroutines | AutoHotkey: Limited" is the only "Limited" in the text. The model may have attached the word to the wrong column.</li>
+<li><strong>Hero and meta lead with hardware specs we no longer approve</strong> ("real USB output at up to 8,000 Hz", "Rebind Link catches input before the OS does"). This pushes the page's meaning toward hardware and away from scripting depth.</li>
+<li><strong>FAQ:</strong> "Not as-is: scripts are Luau. Same model, so porting is quick." "Porting is quick" is outside the claims list. Use [c095] instead.</li>
+</ul>
+<h3>3.2 docs.rebind.gg/concepts/platforms (fetched 200, Mintlify, canonical self)</h3>
+<ul>
+<li>Correct text exists, but it's buried: "System requirements — Windows: Windows 10 or 11, 64-bit. macOS: macOS 13 or later on Apple Silicon. Intel Macs are not supported." It sits after an SDK-differences intro.</li>
+<li><strong>The word "Linux" never appears.</strong> A model that has read third-party pages saying "Windows, macOS, and Linux" finds nothing here that contradicts them. The meta description is "What Rebind supports on Windows and macOS…", which implies but never negates.</li>
+<li>Docs JSON-LD declares <code>Organization</code> with <code>url: https://docs.rebind.gg</code>, a second "Rebind" organization separate from the homepage's <code>https://www.rebind.gg</code>.</li>
+</ul>
+<h3>3.3 llms.txt files</h3>
+<ul>
+<li><strong>docs.rebind.gg/llms.txt:</strong> the summary is "a programmable input layer for Windows and macOS". It has no requirements line and no "not supported" line. <strong>docs.rebind.gg/llms-full.txt</strong> mentions Linux exactly once: "Rebind knows the positions for controllers driven by Linux's <code>xpad</code>, <code>hid-playstation</code>… drivers". Out of context, that line links Rebind and Linux.</li>
+<li><strong>www.rebind.gg/llms.txt:</strong> good install lines ("Windows (Windows 10 or 11 / 64-bit)", "macOS (macOS 13 or later / Apple Silicon)") but no negative. Its summary line uses "catch input before the OS does" (fence conflict).</li>
+</ul>
+<h3>3.4 Live phrases that conflict with the claims fence (for Dean/PM; we will not reuse them)</h3>
+<table>
+<thead>
+<tr>
+<th>Page</th>
+<th>Live text</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/compare/autohotkey meta + hero + table</td>
+<td>"real USB output at up to 8,000 Hz", "Rebind Link catches input before the OS does", "USB report rate … Up to 8,000 Hz"</td>
+</tr>
+<tr>
+<td>/compare/autohotkey FAQ</td>
+<td>"Same model, so porting is quick." (claims say a rewrite [c095])</td>
+</tr>
+<tr>
+<td>www.rebind.gg/</td>
+<td>"Rewrite any key or click in Luau." ("any key" is out; use "keys and clicks" [c004]); "8000 hz"</td>
+</tr>
+<tr>
+<td>/products/rebind-link</td>
+<td>"Up to 8,000 Hz input, before the OS sees it", "Your VID, PID, and HID interfaces", "Hours-long replays, zero drift"</td>
+</tr>
+<tr>
+<td>www.rebind.gg/llms.txt</td>
+<td>"Add Rebind Link to catch input before the OS does"</td>
+</tr>
+<tr>
+<td>usinput.com/products/rebind</td>
+<td>"Currently backordered" (rebind.gg Link page says "In stock"; neither is in the claims list)</td>
+</tr>
+</tbody>
+</table>
+<h3>3.5 Canonical host</h3>
+<p><code>https://rebind.gg/</code> → <strong>307</strong> → <code>https://www.rebind.gg/</code>. All canonicals and <code>og:url</code> use <code>https://www.rebind.gg</code>. So the canonical host is <strong>www</strong>. A 307 is a temporary redirect; make it 301 or 308.</p>
+<hr />
+<h2>4. Proposed copy (plain server-rendered HTML; not JS-only, not image-only)</h2>
+<p>Implementation rules for every block: render it in the initial HTML response; give each Yes/No real text (keep any icon <code>aria-hidden="true"</code> beside the word); no platform info in images, tabs that load later, or tooltips.</p>
+<h3>4.1 /compare/autohotkey — title, meta, hero line</h3>
+<pre><code class="language-html">&lt;title&gt;Rebind vs AutoHotkey: Luau Scripting on Windows and macOS | Rebind&lt;/title&gt;
+&lt;meta name=&quot;description&quot; content=&quot;Rebind vs AutoHotkey: Luau scripts with coroutines, built-in HTTP and WebSocket, and per-app targeting. Today, Rebind runs on Windows 10/11 (64-bit) and macOS 13+ (Apple Silicon). Intel Macs and Linux are not supported. Use both.&quot;&gt;
+&lt;h1&gt;Rebind vs AutoHotkey&lt;/h1&gt;
+&lt;p&gt;Keep AutoHotkey. Move the jobs that need macOS, networking, or hardware output to Rebind. Your AHK files do not run as-is.&lt;/p&gt;
+</code></pre>
+<p>Claims: hero = [c115] verbatim. Meta = [c002, c070, c074, c072, c013, c015, c016, c021, c094]. The meta uses form 2, "Intel Macs and Linux are not supported," so it cites both [c016] and [c021]. <strong>Optional line</strong> [c117] (include as written, or omit; do not reword; only beside the "Today, Rebind runs on…" sentence already in this meta; do not imply mobile is available now): "Android and iOS apps are in development." Drafts use Dean's exact approved wording, which matches c117 in substance (staging text: "Rebind's Android and iOS apps are in development.").</p>
+<h3>4.2 /compare/autohotkey — "Supported platforms" block (directly under the hero)</h3>
+<pre><code class="language-html">&lt;section id=&quot;platforms&quot;&gt;
+  &lt;h2&gt;Supported platforms&lt;/h2&gt;
+  &lt;p&gt;Today, Rebind runs on Windows 10 or 11 (64-bit) and macOS 13 or later on Apple Silicon. Intel Macs are not supported. Linux is not supported.&lt;/p&gt;
+  &lt;!-- optional line: include this sentence as written, or omit it; do not reword --&gt;
+  &lt;p&gt;Android and iOS apps are in development.&lt;/p&gt;
+  &lt;p&gt;The same Rebind scripts move between Windows and macOS, but not every API is identical on both.
+     AutoHotkey runs on Windows.&lt;/p&gt;
+  &lt;p&gt;Full requirements: &lt;a href=&quot;https://docs.rebind.gg/concepts/platforms&quot;&gt;Rebind platforms&lt;/a&gt;.&lt;/p&gt;
+&lt;/section&gt;
+</code></pre>
+<p>Claims: [c013, c015, c016, c021, c017]. AHK on Windows: [AHK: autohotkey.com] (already on the live page). The second paragraph is the <strong>optional line</strong> [c117], sitting beside the "Today, Rebind runs on…" sentence. Include it as written, or omit that paragraph; do not reword it, and do not add dates, features, pricing, or any availability claim for mobile. Drafts use Dean's exact approved wording, which matches c117 in substance.</p>
+<h3>4.3 /compare/autohotkey — "How deep the scripting goes" block</h3>
+<pre><code class="language-html">&lt;section id=&quot;scripting&quot;&gt;
+  &lt;h2&gt;How deep the scripting goes&lt;/h2&gt;
+  &lt;p&gt;Rebind lets you rewrite keys and clicks in Luau. Every script is a plain .lua or .luau file.&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Remaps and chords: &lt;code&gt;rb.bind.remap(&quot;CapsLock&quot;, &quot;Escape&quot;)&lt;/code&gt;, or a key to a chord such as Kp1 to LCtrl+LAlt+1.&lt;/li&gt;
+    &lt;li&gt;Handlers for keys, buttons and scroll with &lt;code&gt;rb.on&lt;/code&gt;.&lt;/li&gt;
+    &lt;li&gt;Timed sequences with Luau coroutines: &lt;code&gt;rb.run&lt;/code&gt;, &lt;code&gt;rb.sleep&lt;/code&gt; and &lt;code&gt;rb.async&lt;/code&gt;.&lt;/li&gt;
+    &lt;li&gt;Macros: record in the Rebind app and play them with &lt;code&gt;rb.macro&lt;/code&gt;.&lt;/li&gt;
+    &lt;li&gt;Per-app behavior: a &lt;code&gt;process=&lt;/code&gt; or &lt;code&gt;window=&lt;/code&gt; modeline or a &lt;code&gt;when&lt;/code&gt; callback, with focus and blur handlers.&lt;/li&gt;
+    &lt;li&gt;Built-in networking: &lt;code&gt;rb.net.get&lt;/code&gt;, &lt;code&gt;rb.net.post&lt;/code&gt;, &lt;code&gt;rb.net.listen&lt;/code&gt; and &lt;code&gt;rb.net.ws_listen&lt;/code&gt;.&lt;/li&gt;
+    &lt;li&gt;Screen, window and UI: &lt;code&gt;rb.screen&lt;/code&gt;, &lt;code&gt;rb.window&lt;/code&gt;, &lt;code&gt;rb.ui&lt;/code&gt; panels and &lt;code&gt;rb.overlay&lt;/code&gt;.&lt;/li&gt;
+    &lt;li&gt;Drive Rebind from your own code: official TypeScript, Python and Rust clients, local WebSocket remote control, and an MCP server.&lt;/li&gt;
+    &lt;li&gt;Edit scripts in VS Code, organize them in subfolders, and track them with git.&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;p&gt;In software mode Rebind handles mouse buttons, not mouse movement. Mouse-movement transforms need hardware mode.&lt;/p&gt;
+&lt;/section&gt;
+</code></pre>
+<p>Claims, line by line: [c004, c087] · [c061, c062] · [c067] · [c070] · [c069] · [c072, c073] · [c074] · [c100, c078, c077] · [c080, c079, c081] · [c088] · [c068, c031].</p>
+<h3>4.4 /compare/autohotkey — comparison table rewrite (text in every cell)</h3>
+<p>Remove the rows "Input capture … before the OS does" and "USB report rate … 8,000 Hz". Add Automation, Custom scripts, Complex macros, and Existing scripts. AutoHotkey is shown as strong where it is strong.</p>
+<pre><code class="language-html">&lt;table&gt;
+&lt;caption&gt;AutoHotkey and Rebind, side by side&lt;/caption&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th scope=&quot;col&quot;&gt;Capability&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;AutoHotkey&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;Rebind&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;Scripting language&lt;/th&gt;&lt;td&gt;AutoHotkey language (v2 and v1)&lt;/td&gt;&lt;td&gt;Luau, with coroutines&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;Custom scripts&lt;/th&gt;&lt;td&gt;Yes. Full scripting language&lt;/td&gt;&lt;td&gt;Yes. Scripts are plain .lua or .luau files you can edit in VS Code and track with git&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;Automation&lt;/th&gt;&lt;td&gt;Yes. Hotkeys, hotstrings, window control, and a large community script library&lt;/td&gt;&lt;td&gt;Yes. Coroutines (rb.run, rb.sleep, rb.async), per-app targeting, rb.screen and rb.window, and built-in HTTP and WebSocket&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;Complex macros&lt;/th&gt;&lt;td&gt;Yes. Loops, conditions and timing written in AHK&lt;/td&gt;&lt;td&gt;Yes. Record in the app and play with rb.macro, or write timed sequences with Luau coroutines&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;Remap mouse buttons&lt;/th&gt;&lt;td&gt;Yes (for example XButton1::Send &quot;^c&quot;)&lt;/td&gt;&lt;td&gt;Yes, in free software mode (for example rb.bind.remap(&quot;Mouse4&quot;, &quot;LCtrl+C&quot;)), with any standard-HID USB mouse&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;Keyboard remapping&lt;/th&gt;&lt;td&gt;Yes&lt;/td&gt;&lt;td&gt;Yes. Keys to keys or to chords with rb.bind.remap&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;Per-app behavior&lt;/th&gt;&lt;td&gt;Yes (#HotIf WinActive)&lt;/td&gt;&lt;td&gt;Yes (process= or window= modeline, or a when callback)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;Built-in HTTP and WebSocket&lt;/th&gt;&lt;td&gt;Through community libraries&lt;/td&gt;&lt;td&gt;Yes. rb.net.get, rb.net.post, rb.net.listen, rb.net.ws_listen&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;UI panels&lt;/th&gt;&lt;td&gt;Yes. Gui windows built in code&lt;/td&gt;&lt;td&gt;Yes. rb.ui panels&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;Drive from other languages&lt;/th&gt;&lt;td&gt;Community libraries&lt;/td&gt;&lt;td&gt;Official TypeScript, Python and Rust clients, plus an MCP server&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;Output&lt;/th&gt;&lt;td&gt;Software input (SendInput and related)&lt;/td&gt;&lt;td&gt;Software mode: SendInput on Windows, CGEvent on macOS. Hardware mode: real USB HID from Rebind Link&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;Platforms&lt;/th&gt;&lt;td&gt;Windows&lt;/td&gt;&lt;td&gt;Today, Rebind runs on Windows 10 or 11 (64-bit) and macOS 13 or later on Apple Silicon. Intel Macs are not supported. Linux is not supported. &lt;!-- optional line: include as written, or omit; do not reword --&gt; Android and iOS apps are in development.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;Existing .ahk scripts&lt;/th&gt;&lt;td&gt;Run as-is&lt;/td&gt;&lt;td&gt;Do not run as-is. Porting is a rewrite to Luau; RebindGPT can draft it (requires Pro)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;Price&lt;/th&gt;&lt;td&gt;Free, open source&lt;/td&gt;&lt;td&gt;The Rebind app is free. Rebind Link is optional, $140, one payment&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+<p>Rebind-column claims, row by row: [c002, c070] · [c004, c087, c088] · [c070, c072, c100, c074] · [c069, c070] · [c030, c068, c102; Mouse4 example is on www.rebind.gg/llms.txt] · [c061, c062] · [c072] · [c074] · [c078] · [c080, c081] · [c028, c029] · [c013, c015, c016, c021] · [c095, c096] · [c012, c041]. AutoHotkey column: [AHK: autohotkey.com docs: v2/v1, Hotstrings, #HotIf, Gui, SendInput, free/open source, Windows]. The live page already uses "(external libraries)" for AHK HTTP.</p>
+<p>The trailing sentence in the Rebind Platforms cell is the <strong>optional line</strong> [c117], sitting beside the "Today, Rebind runs on…" sentence in the same cell. Include it as written, or omit that sentence; do not reword it. Do not list Android or iOS as supported in the cell.</p>
+<p>Keep the existing "When each one fits" section. Change the "Use both" line to [c115] verbatim, as in the hero.</p>
+<h3>4.5 /compare/autohotkey — FAQ block (visible HTML; mirrored in FAQPage JSON-LD §5.2)</h3>
+<pre><code class="language-html">&lt;section id=&quot;faq&quot;&gt;
+&lt;h2&gt;Common questions&lt;/h2&gt;
+&lt;h3&gt;Does Rebind work on Linux?&lt;/h3&gt;
+&lt;p&gt;No. Linux is not supported. Today, Rebind runs on Windows 10 or 11 (64-bit) and macOS 13 or later on Apple Silicon.&lt;/p&gt;
+&lt;h3&gt;Does Rebind run on Intel Macs?&lt;/h3&gt;
+&lt;p&gt;No. Intel Macs are not supported. Today, on a Mac, Rebind needs macOS 13 or later on Apple Silicon.&lt;/p&gt;
+&lt;h3&gt;Does Rebind work on my phone?&lt;/h3&gt;
+&lt;p&gt;Not today. Android and iOS apps are in development. Today, Rebind runs on Windows 10 or 11 (64-bit) and macOS 13 or later on Apple Silicon. Intel Macs and Linux are not supported.&lt;/p&gt;
+&lt;h3&gt;Can I run my AutoHotkey scripts in Rebind?&lt;/h3&gt;
+&lt;p&gt;Not as-is. Rebind scripts are Luau, so porting an AutoHotkey script is a rewrite. RebindGPT can draft the port, and RebindGPT requires Rebind Pro.&lt;/p&gt;
+&lt;h3&gt;Should I switch from AutoHotkey to Rebind?&lt;/h3&gt;
+&lt;p&gt;You can use both. Keep AutoHotkey, and move the jobs that need macOS, networking, or hardware output to Rebind.&lt;/p&gt;
+&lt;h3&gt;How much can Rebind scripts do?&lt;/h3&gt;
+&lt;p&gt;Rebind scripts are Luau files. They can use coroutines (rb.run, rb.sleep, rb.async), built-in HTTP and WebSocket (rb.net), per-app targeting, recorded macros played with rb.macro, screen and window APIs, and UI panels.&lt;/p&gt;
+&lt;h3&gt;Is Rebind free?&lt;/h3&gt;
+&lt;p&gt;Yes. The Rebind app is free. Software mode needs no hardware and no account for local scripts. Rebind Link is optional hardware, $140, one payment.&lt;/p&gt;
+&lt;h3&gt;Does Rebind work with game controllers?&lt;/h3&gt;
+&lt;p&gt;Controller and joypad output needs hardware mode and a Rebind Link whose USB profile includes a joypad.&lt;/p&gt;
+&lt;h3&gt;What is Rebind's official website?&lt;/h3&gt;
+&lt;p&gt;The official website is www.rebind.gg. Documentation is at docs.rebind.gg.&lt;/p&gt;
+&lt;/section&gt;
+</code></pre>
+<p>Claims: [c021, c013, c015] · [c016, c015] · phone FAQ: [c117] plus today's platforms [c013, c015, c016, c021] (form 2 in this answer, "Intel Macs and Linux are not supported," cites both [c016] and [c021]) · [c095, c096] · [c094, c115] · [c004, c070, c074, c072, c069, c100, c078] · [c012, c024, c041] · [c032] · site fact (canonical tags; the docs link from www.rebind.gg). The phone FAQ is not optional if that question is included: the answer must pair the mobile line with a "Today, Rebind runs on…" sentence, use Dean's exact approved wording [c117], and must not imply the apps are available or released. The Linux FAQ uses the approved main form "Linux is not supported." [c021]. The optional development line may be added to the Linux and Intel Mac answers only if it sits beside a "Today, Rebind runs on…" sentence; otherwise omit it there, because the phone FAQ is the place that question is answered.</p>
+<h3>4.6 docs.rebind.gg/concepts/platforms</h3>
+<p>Put this immediately under the H1, before the SDK intro:</p>
+<pre><code class="language-html">&lt;p&gt;&lt;strong&gt;Supported platforms today:&lt;/strong&gt; Today, Rebind runs on Windows 10 or 11 (64-bit) and macOS 13 or later on Apple Silicon. Intel Macs are not supported. Linux is not supported.&lt;/p&gt;
+&lt;!-- optional line: include this sentence as written, or omit it; do not reword --&gt;
+&lt;p&gt;Android and iOS apps are in development.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Platform&lt;/th&gt;&lt;th&gt;Supported&lt;/th&gt;&lt;th&gt;Install&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Windows 10 or 11, 64-bit&lt;/td&gt;&lt;td&gt;Yes&lt;/td&gt;&lt;td&gt;Administrator PowerShell: irm https://rebind.gg/install.ps1 | iex&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;macOS 13 or later, Apple Silicon&lt;/td&gt;&lt;td&gt;Yes&lt;/td&gt;&lt;td&gt;curl -fsSL https://rebind.gg/install.sh | sh, then allow Accessibility&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Intel Mac&lt;/td&gt;&lt;td&gt;No&lt;/td&gt;&lt;td&gt;Not supported&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Linux&lt;/td&gt;&lt;td&gt;No&lt;/td&gt;&lt;td&gt;Not supported&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;The same scripts move between Windows and macOS, but not every API is identical:
+rb.pipe and rb.registry are Windows-only, rb.window is only partially supported on macOS,
+and on Windows rb.overlay does not draw over exclusive full-screen games.&lt;/p&gt;
+</code></pre>
+<p>Claims: [c013, c015, c016, c021] · [c014, c058] · [c059] · [c016] · [c021] · [c017, c018, c019, c020].
+Meta description: "Today, Rebind runs on Windows 10 or 11 (64-bit) and macOS 13 or later on Apple Silicon. Intel Macs and Linux are not supported. Requirements, permissions, and the SDK calls that differ by platform." [c013, c015, c016, c021] (form 2 cites both [c016] and [c021]).
+<strong>Optional line</strong> [c117] for the meta description or the intro paragraph (include as written, or omit; do not reword; only beside the "Today, Rebind runs on…" sentence): "Android and iOS apps are in development." Drafts use Dean's exact approved wording, which matches c117 in substance. Do not add Android or iOS rows to the support table until they ship.
+In Mintlify this is the page front-matter <code>description:</code>. The bold line, optional line, and table are plain MDX and render server-side.</p>
+<p><strong>llms-full / SDK Reference clarifier</strong> (next to the <code>xpad</code> line): "Rebind itself runs on Windows and macOS only; these driver names identify controller layouts." [c021, c002] (For Content &amp; Copy and Product to confirm the wording.)</p>
+<h3>4.7 llms.txt additions</h3>
+<p><strong>docs.rebind.gg/llms.txt</strong> (Mintlify auto-generates this file; a custom <code>llms.txt</code> at the docs repo root overrides it; the developer should confirm on the current Mintlify plan). Add right after the <code>&gt;</code> summary:</p>
+<pre><code class="language-text">## Platforms
+- Today, Rebind runs on Windows 10 or 11 (64-bit) and macOS 13 or later on Apple Silicon.
+- Not supported: Linux, Intel Macs.
+- Android and iOS apps are in development.
+- Official website: https://www.rebind.gg  Documentation: https://docs.rebind.gg
+- Scripting: Luau. Coroutines (rb.run, rb.sleep, rb.async), built-in HTTP and WebSocket (rb.net), per-app targeting, macros (rb.macro), screen and window APIs, UI panels.
+- AutoHotkey scripts do not run as-is in Rebind; porting is a rewrite to Luau.
+</code></pre>
+<p>The "Not supported" bullet is the llms.txt-only form approved by PM (cite [c016], [c021]); do not use that wording in other platform blocks. The third bullet is the <strong>optional line</strong> [c117], sitting beside the "Today, Rebind runs on…" sentence. Include it as written, or omit that bullet; do not reword it. Do not list Android or iOS as supported.
+<strong>www.rebind.gg/llms.txt</strong>: add under "Install:" the same llms.txt-only block:</p>
+<pre><code class="language-text">- Today, Rebind runs on Windows 10 or 11 (64-bit) and macOS 13 or later on Apple Silicon.
+- Not supported: Linux, Intel Macs.
+- Android and iOS apps are in development.
+</code></pre>
+<p>The third bullet is again the <strong>optional line</strong> [c117] (include as written, or omit; do not reword; only beside the Today sentence). Also replace the summary sentence "Add Rebind Link to catch input before the OS does and send it back out as real USB hardware." with "Adding Rebind Link lets you drive the mouse, and gamepads when the Link USB profile includes a joypad, as real USB HID." [c005]
+Claims: [c013, c015, c016, c021, c070, c074, c072, c069, c100, c078, c095, c005, c117].</p>
+<h3>4.8 usinput.com/products/rebind (company site; priority 1)</h3>
+<p>Replace: "Core scripting supports Windows, macOS, and Linux. Screen, window, and clipboard capabilities vary by platform."
+With:</p>
+<pre><code class="language-html">&lt;p&gt;Today, Rebind runs on Windows 10 or 11 (64-bit) and macOS 13 or later on Apple Silicon. Intel Macs are not supported. Linux is not supported.
+The same scripts move between Windows and macOS, but not every API is identical on both.&lt;/p&gt;
+&lt;!-- optional line: include this sentence as written, or omit it; do not reword --&gt;
+&lt;p&gt;Android and iOS apps are in development.&lt;/p&gt;
+</code></pre>
+<p>Claims: [c013, c015, c016, c021, c017]. The second paragraph is the <strong>optional line</strong> [c117], sitting beside the "Today, Rebind runs on…" sentence. Include it as written, or omit that paragraph; do not reword it, and do not add dates, features, pricing, or any availability claim for mobile. Also consider "The free Rebind app" in place of "Rebind Engine" so models stop inventing a separate free "engine" product [c012]. Resolve the usinput.com line quoted as "Currently backordered" against rebind.gg's "In stock" (Dean/PM).</p>
+<hr />
+<h2>5. JSON-LD (canonical host: https://www.rebind.gg)</h2>
+<p>Note: Google now shows FAQ rich results only for a narrow set of sites. The value here is machine-readable entity and platform facts for AI crawlers, not rich results. All schema text must match visible page text.</p>
+<h3>5.1 www.rebind.gg (homepage) — replaces the current single Organization block</h3>
+<pre><code class="language-json">{
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;@type&quot;: &quot;Organization&quot;,
+      &quot;@id&quot;: &quot;https://www.rebind.gg/#organization&quot;,
+      &quot;name&quot;: &quot;Rebind&quot;,
+      &quot;legalName&quot;: &quot;US Peripheral Input Company, LLC&quot;,
+      &quot;url&quot;: &quot;https://www.rebind.gg/&quot;,
+      &quot;logo&quot;: &quot;https://www.rebind.gg/icon-512.png&quot;,
+      &quot;sameAs&quot;: [
+        &quot;https://github.com/usinput&quot;,
+        &quot;https://discord.gg/rebind&quot;,
+        &quot;https://www.usinput.com&quot;
+      ]
+    },
+    {
+      &quot;@type&quot;: &quot;WebSite&quot;,
+      &quot;@id&quot;: &quot;https://www.rebind.gg/#website&quot;,
+      &quot;name&quot;: &quot;Rebind&quot;,
+      &quot;url&quot;: &quot;https://www.rebind.gg/&quot;,
+      &quot;publisher&quot;: { &quot;@id&quot;: &quot;https://www.rebind.gg/#organization&quot; }
+    },
+    {
+      &quot;@type&quot;: &quot;SoftwareApplication&quot;,
+      &quot;@id&quot;: &quot;https://www.rebind.gg/#software&quot;,
+      &quot;name&quot;: &quot;Rebind&quot;,
+      &quot;url&quot;: &quot;https://www.rebind.gg/&quot;,
+      &quot;description&quot;: &quot;Rebind is a programmable input layer for Windows and macOS that lets you script your keyboard and mouse with Luau. Today, Rebind runs on Windows 10 or 11 (64-bit) and macOS 13 or later on Apple Silicon. Intel Macs and Linux are not supported. Android and iOS apps are in development.&quot;,
+      &quot;applicationCategory&quot;: &quot;UtilitiesApplication&quot;,
+      &quot;applicationSubCategory&quot;: &quot;Keyboard and mouse remapping and scripting&quot;,
+      &quot;operatingSystem&quot;: &quot;Windows 10, Windows 11, macOS 13+ (Apple Silicon)&quot;,
+      &quot;softwareRequirements&quot;: &quot;Today, Rebind runs on Windows 10 or 11 (64-bit) and macOS 13 or later on Apple Silicon. Intel Macs are not supported. Linux is not supported.&quot;,
+      &quot;downloadUrl&quot;: &quot;https://www.rebind.gg/install&quot;,
+      &quot;offers&quot;: {
+        &quot;@type&quot;: &quot;Offer&quot;,
+        &quot;price&quot;: &quot;0&quot;,
+        &quot;priceCurrency&quot;: &quot;USD&quot;,
+        &quot;description&quot;: &quot;The Rebind app is free.&quot;
+      },
+      &quot;publisher&quot;: { &quot;@id&quot;: &quot;https://www.rebind.gg/#organization&quot; }
+    }
+  ]
+}
+</code></pre>
+<p>Claims: description [c002] plus today's platforms [c013, c015, c016, c021] and optional [c117]; OS/requirements [c013, c015, c016, c021]; offer [c012]. The description uses form 2, so it cites both [c016] and [c021]. The last sentence of <code>description</code> is the <strong>optional line</strong> [c117], sitting beside the "Today, Rebind runs on…" sentence in the same field. Include it as written, or omit that sentence; do not reword it. Mobile may appear only in the description text, as that optional line. <code>operatingSystem</code> lists only Windows 10/11 and macOS 13+; do not list Android or iOS in <code>operatingSystem</code> or <code>softwareRequirements</code> until they ship. Organization <code>legalName</code>, logo, and <code>sameAs</code> are copied from the live homepage schema. No new profiles were added.</p>
+<h3>5.2 /compare/autohotkey — WebPage + FAQPage</h3>
+<pre><code class="language-json">{
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;@type&quot;: &quot;WebPage&quot;,
+      &quot;@id&quot;: &quot;https://www.rebind.gg/compare/autohotkey#webpage&quot;,
+      &quot;url&quot;: &quot;https://www.rebind.gg/compare/autohotkey&quot;,
+      &quot;name&quot;: &quot;Rebind vs AutoHotkey&quot;,
+      &quot;isPartOf&quot;: { &quot;@id&quot;: &quot;https://www.rebind.gg/#website&quot; },
+      &quot;about&quot;: { &quot;@id&quot;: &quot;https://www.rebind.gg/#software&quot; },
+      &quot;mentions&quot;: { &quot;@type&quot;: &quot;SoftwareApplication&quot;, &quot;name&quot;: &quot;AutoHotkey&quot;, &quot;url&quot;: &quot;https://www.autohotkey.com/&quot;, &quot;operatingSystem&quot;: &quot;Windows&quot; }
+    },
+    {
+      &quot;@type&quot;: &quot;FAQPage&quot;,
+      &quot;@id&quot;: &quot;https://www.rebind.gg/compare/autohotkey#faq&quot;,
+      &quot;mainEntity&quot;: [
+        { &quot;@type&quot;: &quot;Question&quot;, &quot;name&quot;: &quot;Does Rebind work on Linux?&quot;,
+          &quot;acceptedAnswer&quot;: { &quot;@type&quot;: &quot;Answer&quot;, &quot;text&quot;: &quot;No. Linux is not supported. Today, Rebind runs on Windows 10 or 11 (64-bit) and macOS 13 or later on Apple Silicon.&quot; } },
+        { &quot;@type&quot;: &quot;Question&quot;, &quot;name&quot;: &quot;Does Rebind run on Intel Macs?&quot;,
+          &quot;acceptedAnswer&quot;: { &quot;@type&quot;: &quot;Answer&quot;, &quot;text&quot;: &quot;No. Intel Macs are not supported. Today, on a Mac, Rebind needs macOS 13 or later on Apple Silicon.&quot; } },
+        { &quot;@type&quot;: &quot;Question&quot;, &quot;name&quot;: &quot;Does Rebind work on my phone?&quot;,
+          &quot;acceptedAnswer&quot;: { &quot;@type&quot;: &quot;Answer&quot;, &quot;text&quot;: &quot;Not today. Android and iOS apps are in development. Today, Rebind runs on Windows 10 or 11 (64-bit) and macOS 13 or later on Apple Silicon. Intel Macs and Linux are not supported.&quot; } },
+        { &quot;@type&quot;: &quot;Question&quot;, &quot;name&quot;: &quot;Can I run my AutoHotkey scripts in Rebind?&quot;,
+          &quot;acceptedAnswer&quot;: { &quot;@type&quot;: &quot;Answer&quot;, &quot;text&quot;: &quot;Not as-is. Rebind scripts are Luau, so porting an AutoHotkey script is a rewrite. RebindGPT can draft the port, and RebindGPT requires Rebind Pro.&quot; } },
+        { &quot;@type&quot;: &quot;Question&quot;, &quot;name&quot;: &quot;Should I switch from AutoHotkey to Rebind?&quot;,
+          &quot;acceptedAnswer&quot;: { &quot;@type&quot;: &quot;Answer&quot;, &quot;text&quot;: &quot;You can use both. Keep AutoHotkey, and move the jobs that need macOS, networking, or hardware output to Rebind.&quot; } },
+        { &quot;@type&quot;: &quot;Question&quot;, &quot;name&quot;: &quot;How much can Rebind scripts do?&quot;,
+          &quot;acceptedAnswer&quot;: { &quot;@type&quot;: &quot;Answer&quot;, &quot;text&quot;: &quot;Rebind scripts are Luau files. They can use coroutines (rb.run, rb.sleep, rb.async), built-in HTTP and WebSocket (rb.net), per-app targeting, recorded macros played with rb.macro, screen and window APIs, and UI panels.&quot; } },
+        { &quot;@type&quot;: &quot;Question&quot;, &quot;name&quot;: &quot;Is Rebind free?&quot;,
+          &quot;acceptedAnswer&quot;: { &quot;@type&quot;: &quot;Answer&quot;, &quot;text&quot;: &quot;Yes. The Rebind app is free. Software mode needs no hardware and no account for local scripts. Rebind Link is optional hardware, $140, one payment.&quot; } },
+        { &quot;@type&quot;: &quot;Question&quot;, &quot;name&quot;: &quot;What is Rebind's official website?&quot;,
+          &quot;acceptedAnswer&quot;: { &quot;@type&quot;: &quot;Answer&quot;, &quot;text&quot;: &quot;The official website is www.rebind.gg. Documentation is at docs.rebind.gg.&quot; } }
+      ]
+    }
+  ]
+}
+</code></pre>
+<p>Claims: same as §4.5.</p>
+<h3>5.3 docs.rebind.gg</h3>
+<p>Point the docs Organization to the main entity: <code>"@id": "https://www.rebind.gg/#organization"</code>, <code>"url": "https://www.rebind.gg/"</code>. Mintlify generates the docs JSON-LD, so the developer should check whether docs.json/SEO settings allow overriding it. If not, the visible text in §4.6 and the llms.txt lines in §4.7 carry the fix.</p>
+<hr />
+<h2>6. rebind.app — read-only ownership check (Nov 11 2026, ~9:32 AM ET)</h2>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Registry RDAP (pubapi.registry.google via rdap.org)</td>
+<td>Registered <strong>Sep 22 2024 12:20 PM ET</strong> (2024-09-22T16:20Z); expires Sep 22 2027; registrar <strong>GoDaddy.com, LLC</strong> (IANA 146); status client delete/transfer/renew/update prohibited (standard registrar lock)</td>
+</tr>
+<tr>
+<td>Registrar RDAP (rdap.godaddy.com)</td>
+<td>Registrant and technical contact: <strong>"Registration Private", Domains By Proxy, LLC</strong>, Tempe AZ (privacy service). The owner is not public. Registrar last changed Sep 23 2026 12:31 PM ET</td>
+</tr>
+<tr>
+<td>DNS (dns.google DoH; <code>whois</code>/<code>dig</code> not installed on box)</td>
+<td>A 15.197.148.33, 3.33.130.190 (GoDaddy-hosted parking/forwarding IPs); NS ns37/ns38.domaincontrol.com (GoDaddy); no MX; no TXT; www → same IPs</td>
+</tr>
+<tr>
+<td>Site</td>
+<td><code>https://rebind.app/</code> returns a 114-byte page that JS-redirects to <code>/lander</code>, whose script sets <code>LANDER_SYSTEM="PW"</code> and <code>ap:"parking"</code>. It's a <strong>GoDaddy parked page</strong> with no product content</td>
+</tr>
+<tr>
+<td>Wayback</td>
+<td>CDX shows one unique capture digest (Sep 24 2024, 531 bytes); the "closest" snapshot is Jul 10 2025. It has been parked since registration, and no product has ever lived there</td>
+</tr>
+<tr>
+<td>Other "Rebind" entities seen in search</td>
+<td>A euro fintech app "Rebind" (rebind.co; Android package id <code>co.rebind.app</code>) and an open-source macOS menu-bar app "Rebind" (rebind.moduix.dev, listed on AlternativeTo as /software/rebind). Neither is Rebind.gg.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>What this means:</strong> ChatGPT most likely made up "rebind.app" from the brand name (the <code>.app</code> TLD pattern, and possibly the fintech's <code>co.rebind.app</code> package id). There was no live site to crawl.</p>
+<p><strong>Dean's answer (Nov 11 2026, 9:45 AM ET, via Agency CEO):</strong> "Yes, we own rebind.app; plan a redirect to www.rebind.gg."</p>
+<p><strong>Status:</strong> ownership confirmed. A redirect is <strong>approved for planning, not execution</strong>. The plan is in §11. Nothing has changed at GoDaddy, in DNS, or on the hosting.</p>
+<p>So the earlier options are settled. No acquisition inquiry or trademark consult is needed. Since rebind.app is ours, the redirect makes ChatGPT's "Rebind website" link land on the right site. The site-identity work (§5 schema, "official website" FAQ) stays a held draft.</p>
+<hr />
+<h2>7. Listings that repeat the errors (verified Nov 11 2026, 9:33–9:40 AM ET)</h2>
+<p><strong>Count:</strong> 1 company-owned page with the Linux error (usinput.com) · 12 third-party pages with the Linux error · 1 owned page where only the search snippet is stale · 0 pages pairing Rebind.gg with rebind.app.
+The 11 template sites appear to share one publisher network (identical "Keyboard and Mouse Customization Software" category, "Facts checked/read 22 Sep 2026", Link at "$199", "backordered"). They probably scraped usinput.com and an older rebind.gg in September. Every listing in that network also repeats "$199" (live: $140 [c041]) and "8,000 Hz" (banned). Corrections should fix price and platforms together.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>URL</th>
+<th>Exact wrong text (quoted)</th>
+<th>Error</th>
+<th>Recommended correction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>https://www.usinput.com/products/rebind (owned)</td>
+<td>"Core scripting supports Windows, macOS, and Linux."</td>
+<td>Linux</td>
+<td>§4.8 copy. Priority 1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>https://techyorker.com/products/rebind/</td>
+<td>"Rebind Engine runs on Windows, macOS, and Linux" · JSON-LD <code>"operatingSystem":"Windows, Mac, Linux"</code> · "Rebind Link costs $199"</td>
+<td>Linux, price</td>
+<td>Platforms: Windows 10/11 (64-bit), macOS 13+ Apple Silicon; Intel Macs and Linux are not supported [c013, c015, c016, c021]. Link $140, one payment [c041]</td>
+</tr>
+<tr>
+<td>3</td>
+<td>https://techyorker.com/products/rebind/pricing/</td>
+<td>"Runs on Windows, Mac, Linux" · "Starting price $199 once"</td>
+<td>Linux, price</td>
+<td>Same</td>
+</tr>
+<tr>
+<td>4</td>
+<td>https://www.itechguides.com/products/rebind/</td>
+<td>"Rebind is a desktop programmable input layer for keyboards and mice on Windows, macOS, and Linux." · "Platforms Windows, macOS, Linux" · JSON-LD <code>"operatingSystem":"Windows, macOS, Linux"</code></td>
+<td>Linux, price</td>
+<td>Same; the page offers "Claim this listing — free"</td>
+</tr>
+<tr>
+<td>5</td>
+<td>https://www.itechguides.com/products/rebind/pricing/</td>
+<td>"Windows, macOS, and Linux" · "from $199 one-time"</td>
+<td>Linux, price</td>
+<td>Same</td>
+</tr>
+<tr>
+<td>6</td>
+<td>https://www.itechfaqs.com/tools/rebind/</td>
+<td>"Which platforms does Rebind run on? Windows, Mac, Linux, as rebind.gg lists it." · "the Engine itself installs on Linux"</td>
+<td>Linux (misattributed to rebind.gg)</td>
+<td>Same, and note rebind.gg does not list Linux (docs: "Windows 10 or 11, 64-bit… macOS 13 or later on Apple Silicon")</td>
+</tr>
+<tr>
+<td>7</td>
+<td>https://geekchamp.com/products/rebind/</td>
+<td>"Runs on Windows, macOS, and Linux" · "Rebind Link $199/mo"</td>
+<td>Linux, price</td>
+<td>Same; Link is one payment, not monthly [c041]</td>
+</tr>
+<tr>
+<td>8</td>
+<td>https://geekchamp.com/products/rebind/review/</td>
+<td>"We get programmable keyboard and mouse input on Windows, macOS, and Linux."</td>
+<td>Linux, price</td>
+<td>Same</td>
+</tr>
+<tr>
+<td>9</td>
+<td>https://geekchamp.com/best/keyboard-and-mouse-customization-software/</td>
+<td>"Why #1: Runs on Windows, macOS, and Linux." · "Rebind runs on Windows, macOS, and Linux, while SharpKeys and X-Mouse Button Control are Windows tools."</td>
+<td>Linux</td>
+<td>Same. Note: Rebind is ranked #1 here, so ask only for the fact fix and leave the ranking alone</td>
+</tr>
+<tr>
+<td>10</td>
+<td>https://pcnmobile.com/tools/rebind/</td>
+<td>"Rebind is a keyboard and mouse remapping engine for Windows, macOS and Linux." · "Where it runs … Linux"</td>
+<td>Linux, price</td>
+<td>Same</td>
+</tr>
+<tr>
+<td>11</td>
+<td>https://mobilestalk.net/software/rebind/review/</td>
+<td>"Engine is free and works on Windows, macOS, and Linux." · JSON-LD <code>"operatingSystem":"Linux, Mac, Windows"</code></td>
+<td>Linux, price</td>
+<td>Same</td>
+</tr>
+<tr>
+<td>12</td>
+<td>https://howpremium.com/plans/rebind/</td>
+<td>"Rebind is a keyboard and mouse remapping engine for Windows, macOS, and Linux."</td>
+<td>Linux, price</td>
+<td>Same</td>
+</tr>
+<tr>
+<td>13</td>
+<td>https://acidalchamy.com/blog/rebind-programmable-input-layer</td>
+<td>"Plug it into any machine — Windows, macOS, Linux, identical behavior — and it just works. No admin rights, no software footprint." · "The pipeline runs at 8,000 Hz"</td>
+<td>Linux; also wrong that Link works without software</td>
+<td>Rebind Link is not onboard keyboard firmware and does not run without the Rebind app [c023]; Windows 10/11 and macOS 13+ Apple Silicon only [c013, c015, c016, c021]</td>
+</tr>
+<tr>
+<td>14</td>
+<td>https://www.rebind.gg/marketplace/script_1uWMkfbAxIXEgCJ7qDus_ (owned, @rebind/keyboard-mouse)</td>
+<td>The search index snippet still shows "Needs Rebind 3.5.0 or newer on Windows, macOS, or Linux." <strong>The live page now says "Windows or macOS"</strong></td>
+<td>Stale snippet only</td>
+<td>No copy change. Request a recrawl in Search Console (owner action)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>rebind.app + Rebind:</strong> no page found that pairs rebind.app with Rebind.gg. <code>"rebind.app"</code> search returns only the unrelated fintech (Google Play id <code>co.rebind.app</code>, rebind.co).
+<strong>Name collision (not an error about us, but confuses entity matching):</strong> https://alternativeto.net/software/rebind/about/ is a different "Rebind" (macOS menu-bar app, rebind.moduix.dev, MIT, macOS 15+). curl got 403; read via WebFetch.
+<strong>Correct or neutral (brief):</strong> Glama <code>@rebind.gg/mcp-server</code> (https://glama.ai/mcp/servers/usinput/rebind-mcp-server) and GitHub usinput/rebind-mcp-server make no platform claim. SaaSHub /rebind-gg loads with no Linux text. docs.rebind.gg and www.rebind.gg never claim Linux.
+<strong>Unverified (403 to curl):</strong> Product Hunt /products/rebind, npm @rebind.gg/mcp-server.
+<strong>Dropped (404):</strong> alternativeto.net/software/rebind-gg/about/ (our AlternativeTo submission from Nov 10; not public yet), smithery.ai, mcp.so, pulsemcp guesses, saashub.com/rebind. No Rebind.gg entries found on Slant, G2, Capterra, or GitHub awesome-lists in this pass.</p>
+<p>Correction route (needs Dean's yes; nothing sent): the template network offers "Claim this listing"; the corrections in <code>01-review-site-corrections.md</code> (Nov 10) can be reused with the platform line above, phrased as what is supported today (Windows 10/11 64-bit and macOS 13+ on Apple Silicon; Intel Macs and Linux are not supported [c016, c021]). Do not list Android or iOS as supported on those listings until they ship. The optional line "Android and iOS apps are in development" [c117] may be used only as written, only beside a "Today, Rebind runs on…" sentence, and only if the listing has a place for in-development platforms; it is not a correction for an <code>operatingSystem</code> field. Fix usinput.com first so the scrapers' source is right before anyone asks them to re-check.</p>
+<hr />
+<h2>8. For Content &amp; Copy review</h2>
+<ol>
+<li><strong>Resolved (PM, Nov 12 2026, 12:18 AM ET, America/New_York).</strong> The c021 short forms are approved, with scope: (1) "Linux is not supported." is the main form, equivalent to c021. (2) "Intel Macs and Linux are not supported." is approved; cite both [c016] and [c021] everywhere it appears. (3) The llms.txt-only "Not supported" bullet in the §4.7 fenced blocks is approved for llms.txt only — do not use that wording in other platform blocks. Do not hint at a future Linux or Intel Mac version beside those statements.</li>
+<li>"Rebind lets you rewrite keys and clicks in Luau. Every script is a plain .lua or .luau file." (§4.3 opener)</li>
+<li>AutoHotkey column wording: "Hotkeys, hotstrings, window control, and a large community script library", and "Yes. Gui windows built in code". Is it fair, not inflated, not dismissive?</li>
+<li>FAQ question "Should I switch from AutoHotkey to Rebind?" with the answer "You can use both." Check tone and that there's no replace-AHK reading.</li>
+<li>Compare page title "Rebind vs AutoHotkey: Luau Scripting on Windows and macOS".</li>
+<li>llms-full clarifier: "Rebind itself runs on Windows and macOS only; these driver names identify controller layouts." (Product to confirm the technical meaning.)</li>
+<li>Mobile line [c117] (on PM's staging list; c117 text: "Rebind's Android and iOS apps are in development."). Drafts use Dean's exact approved wording, "Android and iOS apps are in development," which matches c117 in substance. It is optional on the platform blocks, and only beside a "Today, Rebind runs on…" sentence. <code>operatingSystem</code> still lists only Windows 10/11 and macOS 13+. The "Does Rebind work on my phone?" FAQ answers "Not today" plus that exact sentence, paired with the Today sentence, and does not imply the apps are available or released. No dates, features, pricing, or availability claims for mobile. Publishing still needs Dean's OK.</li>
+</ol>
+<h2>9. Needs Dean's yes (nothing done)</h2>
+<ul>
+<li><strong>rebind.app redirect go-live:</strong> planning approved Nov 11, 9:45 AM ET. Making the change needs whoever holds the GoDaddy/Vercel login, acting on Dean's go (§11).</li>
+<li>Held draft, not approved: any edit to www.rebind.gg, docs.rebind.gg (Mintlify), either llms.txt, or usinput.com (§4, §5).</li>
+<li>Held draft, not approved: apex redirect rebind.gg 307 → 301/308 (kept separate from the rebind.app go-live).</li>
+<li>Claiming or correcting the 12 third-party listings (accounts, forms, emails).</li>
+<li>Search Console recrawl requests.</li>
+<li>Removing the fence-conflicting live phrases in §3.4 (PM/Dean decision).</li>
+</ul>
+<h2>10. Confirmation</h2>
+<p>Read-only work only: HTTP GETs, RDAP, DNS-over-HTTPS, web search. No live page, listing, DNS, or account was edited. No form was submitted. Nobody was contacted (not rebind.app's owner, GoDaddy/Domains By Proxy, directory editors, or teammates). Nothing was posted, sent, or spent. Ads HOLD.</p>
+<p><strong>v2 (Nov 12 2026, 12:15 AM ET, America/New_York):</strong> files only. That version updated the held drafts; nothing live was changed, no DNS was touched, and v1 files were left untouched. Outputs: <code>/workspace/visibility/fixes/chatgpt-accuracy-fixes-seo-v2.md</code> and <code>.html</code>.</p>
+<p><strong>v3 (Nov 12 2026, 12:20 AM ET, America/New_York):</strong> files only. This version records PM's c021 short-form ruling and [c117]. Nothing live was changed, no DNS was touched, and v1 and v2 files were left untouched. Outputs: <code>/workspace/visibility/fixes/chatgpt-accuracy-fixes-seo-v3.md</code> and <code>.html</code>, copied to <code>E:\Marketing Repo\visibility\</code> on BingBong1. Page updated in place: https://cursor.com/canvas/store-9a3396b3-8ce6-4cac-aaac-e55e53f917b8/0bc6f8d0-4c60-464e-9bdc-5332621ab1c8</p>
+<hr />
+<h2>11. rebind.app → www.rebind.gg redirect plan (approved for PLANNING only; not executed)</h2>
+<p><strong>Authority:</strong> Dean, Nov 11 2026, 9:45 AM ET (via Agency CEO): "Yes, we own rebind.app; plan a redirect to www.rebind.gg." Nothing goes live until whoever holds the GoDaddy (and, for the recommended option, Vercel) login makes the change on Dean's go. I made no changes and logged in nowhere. Checks below were read-only (DNS over HTTPS via dns.google, <code>curl -I</code>, <code>openssl s_client</code>, RDAP, public docs) on Nov 11 2026, 9:46–9:50 AM ET.</p>
+<h3>11.1 Recommendation</h3>
+<ul>
+<li><strong>Option:</strong> <strong>(b) Vercel domain redirect.</strong> Add <code>rebind.app</code> and <code>www.rebind.app</code> to the Vercel project that serves www.rebind.gg, set each to "Redirect to <code>www.rebind.gg</code>", and point rebind.app's GoDaddy DNS at Vercel.</li>
+<li><strong>Status code:</strong> <strong>301 (Moved Permanently).</strong> Google treats both 301 and 308 as permanent and passes signals through either. 301 is the most widely understood code across SEO tools, crawlers and AI fetchers. 308's advantage is that it preserves the request method and body (POST stays POST), which only matters for APIs or forms, and rebind.app has neither. Vercel's domain-redirect setting lets you pick 301 or 308. If the team prefers Vercel's 308 default, that's equally acceptable for SEO.</li>
+<li><strong>Paths:</strong> <strong>preserve path and query</strong> (<code>rebind.app/foo?x=1</code> → <code>https://www.rebind.gg/foo?x=1</code>). Vercel domain redirects do this automatically. It's one hop with no chain: a path that exists on www.rebind.gg (for example <code>/compare/autohotkey</code>) lands correctly, and an unknown path ends in a single 404 on www.rebind.gg. rebind.app never had content (parked since Sep 2024), so no old deep links need mapping. Sending everything to the homepage would only add value if paths caused 404 chains, and they don't here. If option (a) is used instead and GoDaddy drops the path, everything lands on the homepage, which is also acceptable for a domain that never had pages.</li>
+<li><strong>Why not the alternatives:</strong> (a) GoDaddy forwarding is the simplest no-Vercel fallback, but GoDaddy doesn't document path/query handling and only offers 301/302. (c) Cloudflare isn't in use anywhere in this setup (rebind.app DNS is GoDaddy; rebind.gg DNS is AWS Route 53; www.rebind.gg is served by Vercel). Adding it would mean a nameserver move for no gain.</li>
+</ul>
+<h3>11.2 Scope</h3>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Target</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>https://rebind.app/*</code></td>
+<td><code>https://www.rebind.gg/*</code> (path + query kept)</td>
+<td>301</td>
+</tr>
+<tr>
+<td><code>https://www.rebind.app/*</code></td>
+<td><code>https://www.rebind.gg/*</code> (path + query kept)</td>
+<td>301</td>
+</tr>
+<tr>
+<td><code>http://</code> versions of both</td>
+<td>Same target, ideally in one hop</td>
+<td>301 (or Vercel's automatic 308 http→https, then 301; acceptable, since browsers never send http for .app)</td>
+</tr>
+</tbody>
+</table>
+<p>Target is <strong>always <code>https://www.rebind.gg</code></strong>, never <code>https://rebind.gg</code>. Going to the apex would chain through its current <strong>307</strong> (rebind.gg → www). <strong>Held separately:</strong> the rebind.gg 307 → 301 fix is a held draft, not approved, and is <strong>not</strong> part of this go-live.</p>
+<h3>11.3 Current state (read-only, Nov 11 2026, 9:46 AM ET)</h3>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rebind.app A / AAAA / CNAME</td>
+<td>A 3.33.130.190, 15.197.148.33 (GoDaddy parking); no AAAA; no CNAME</td>
+</tr>
+<tr>
+<td>rebind.app NS</td>
+<td>ns37.domaincontrol.com, ns38.domaincontrol.com (GoDaddy DNS)</td>
+</tr>
+<tr>
+<td>www.rebind.app</td>
+<td>CNAME → rebind.app (resolves to the same two IPs)</td>
+</tr>
+<tr>
+<td>rebind.app MX / TXT</td>
+<td>none (so no email can break)</td>
+</tr>
+<tr>
+<td><code>curl -sI https://rebind.app/</code></td>
+<td><code>HTTP/1.1 200 OK</code>, 114-byte page that JS-redirects to <code>/lander</code> (GoDaddy parked page)</td>
+</tr>
+<tr>
+<td><code>curl -sI https://www.rebind.app/</code></td>
+<td><code>HTTP/1.1 200 OK</code>, same parked page</td>
+</tr>
+<tr>
+<td>TLS</td>
+<td><strong>Valid</strong>, no errors: <code>subject=CN=rebind.app</code> and <code>CN=www.rebind.app</code>, issuer "GoDaddy TLS Intermediate CA DV - R1v1", verify return code 0</td>
+</tr>
+<tr>
+<td><code>http://</code> probes</td>
+<td>Every <code>http://</code> probe from the box (rebind.app and rebind.gg alike) returned <code>500</code> with <code>Server: Pingora</code>. That looks like an egress proxy on my side, not the site. <strong>Re-run http checks from a normal network.</strong></td>
+</tr>
+<tr>
+<td>www.rebind.gg host</td>
+<td><code>server: Vercel</code>, <code>x-powered-by: Next.js</code>, <code>x-vercel-id</code> present; www CNAME → <code>2095c41d692b08e4.vercel-dns-017.com</code>; HSTS <code>max-age=63072000</code></td>
+</tr>
+<tr>
+<td>rebind.gg apex</td>
+<td>A 216.198.79.1 (Vercel); NS AWS Route 53; <code>https://rebind.gg/…</code> → <strong>307</strong> → <code>https://www.rebind.gg/…</code> (keeps path and query)</td>
+</tr>
+<tr>
+<td>Cloudflare</td>
+<td>Not in use (no <code>cf-ray</code>/<code>cf-cache-status</code> headers; no Cloudflare nameservers)</td>
+</tr>
+</tbody>
+</table>
+<h3>11.4 HTTPS and certificates (the deal-breaker to get right)</h3>
+<ul>
+<li><strong>Verified:</strong> the whole <code>.app</code> TLD is HSTS-preloaded. hstspreload.org reports <code>{"name":"app","status":"preloaded","preloadedDomain":"app"}</code> (https://hstspreload.org/api/v2/status?domain=app). Browsers will only ever request <strong>https://rebind.app</strong> and <strong>https://www.rebind.app</strong>; they won't fall back to http.</li>
+<li><strong>Consequence:</strong> a redirect that only works on <code>http://</code> is a dead link for real users. The redirecting server needs a valid certificate covering <strong>both</strong> <code>rebind.app</code> and <code>www.rebind.app</code>.</li>
+<li><strong>Option (b) Vercel:</strong> Vercel issues and renews certificates automatically for every domain added to a project once DNS points at Vercel. Expect a short window (usually minutes) between the DNS switch and certificate issuance, when HTTPS may error. That's low impact because rebind.app has no real traffic, but do the switch at a quiet time and verify right after.</li>
+<li><strong>Option (a) GoDaddy forwarding:</strong> GoDaddy's help center says "Forwarding over HTTPS is now available on all forwarded domains… we'll apply automatically when you set up new forwarding or edit existing forwarding at no extra cost" (https://www.godaddy.com/help/what-forwarding-types-are-available-2376). Today's parked page already serves valid GoDaddy DV certificates for both names, which supports that. Older community reports of http-only forwarding predate this feature, so still verify with the checklist.</li>
+<li><strong>Option (c) Cloudflare:</strong> would issue edge certificates automatically, but it isn't in use (see above).</li>
+</ul>
+<h3>11.5 Options compared</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>(a) GoDaddy forwarding</th>
+<th>(b) Vercel domain redirect (<strong>recommended</strong>)</th>
+<th>(c) Cloudflare redirect rule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Who acts</td>
+<td>GoDaddy login only</td>
+<td>GoDaddy login (DNS) + Vercel project access</td>
+<td>GoDaddy (nameserver move) + Cloudflare account</td>
+</tr>
+<tr>
+<td>Setting</td>
+<td>DNS → Forwarding → Add → Domain → <code>https://</code> + <code>www.rebind.gg</code> → <strong>Permanent (301)</strong> → <strong>Forward only</strong>. <strong>Never "Forward with masking"</strong> (it loads the target in a frame, the address bar keeps rebind.app, and it harms SEO).</td>
+<td>Vercel → Project → Settings → Domains → add <code>rebind.app</code> and <code>www.rebind.app</code> → Edit → Redirect to <code>www.rebind.gg</code>, status 301</td>
+<td>Redirect Rule <code>rebind.app/*</code> and <code>www.rebind.app/*</code> → <code>https://www.rebind.gg/${1}</code>, 301, preserve query</td>
+</tr>
+<tr>
+<td>DNS it sets</td>
+<td>GoDaddy updates <strong>and locks</strong> the <code>@</code> A record to its forwarding IPs. <strong>www is covered only if <code>www</code> CNAME → <code>@</code></strong> (it already is) or a separate subdomain forward is added</td>
+<td>In GoDaddy DNS: remove parking/forwarding; <code>@</code> A → the apex value Vercel shows (rebind.gg uses 216.198.79.1); <code>www</code> CNAME → the target Vercel shows</td>
+<td>Nameservers move to Cloudflare; proxied records for <code>@</code> and <code>www</code></td>
+</tr>
+<tr>
+<td>Covers www</td>
+<td>Yes, via the existing <code>www</code> CNAME → <code>@</code></td>
+<td>Yes (added explicitly)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>HTTPS for source</td>
+<td>Yes, automatic per current GoDaddy docs; verify</td>
+<td>Yes, automatic Vercel certificates</td>
+<td>Yes, automatic edge certificates</td>
+</tr>
+<tr>
+<td>Path + query</td>
+<td><strong>Not documented by GoDaddy</strong>; third-party reports say the path is dropped. Treat it as homepage-only until tested</td>
+<td>Kept</td>
+<td>Kept (with <code>${1}</code> and preserve query)</td>
+</tr>
+<tr>
+<td>Codes</td>
+<td>301 or 302 only</td>
+<td>301 / 302 / 307 / 308</td>
+<td>301 / 302 / 307 / 308</td>
+</tr>
+<tr>
+<td>Risk</td>
+<td>Lowest effort; least control</td>
+<td>Small certificate window at cutover; same platform as the main site</td>
+<td>Nameserver change; new vendor; not justified</td>
+</tr>
+</tbody>
+</table>
+<p>Sources: GoDaddy "Forward my domain" (https://www.godaddy.com/help/forward-my-domain-12123: masking option, "@ A record is automatically updated and locked", "make sure your www CNAME points to @"); GoDaddy forwarding API docs (https://developer.godaddy.com/en/docs/api-users/domains/manage/forwarding: <code>REDIRECT_PERMANENT</code> = 301; <code>MASKED</code> uses an inline frame); Vercel "Deploying &amp; Redirecting Domains" (https://vercel.com/docs/domains/working-with-domains/deploying-and-redirecting) and the changelog "Domains can now be redirected with a custom status code" (https://vercel.com/changelog/domains-can-now-be-redirected-with-a-custom-status-code).</p>
+<h3>11.6 Go-live steps (for the person with access; on Dean's go)</h3>
+<ol>
+<li>Confirm in Vercel that the project serving www.rebind.gg is the one being edited. Add <code>rebind.app</code> and <code>www.rebind.app</code>. Set both to <strong>Redirect to www.rebind.gg, 301</strong>.</li>
+<li>Note the exact DNS values Vercel displays for each name.</li>
+<li>In GoDaddy → rebind.app → DNS: screenshot or export the current records (for rollback). Remove any parking or forwarding. Set <code>@</code> A to the Vercel value. Change <code>www</code> from CNAME <code>@</code> to the Vercel CNAME target. There are no MX/TXT records to keep.</li>
+<li>Wait for Vercel to show both domains "Valid Configuration" with certificates issued, then run the checklist in §11.7.</li>
+<li>Fallback if Vercel access isn't available: GoDaddy forwarding (option a) with <strong>Permanent (301), Forward only, <code>https://www.rebind.gg</code></strong>, keeping <code>www</code> CNAME → <code>@</code>. Then run the same checklist and record whether the path is kept.</li>
+</ol>
+<h3>11.7 Verification checklist (after the change)</h3>
+<p>Run from a normal network (my box's plain-http egress returns proxy 500s):</p>
+<pre><code class="language-bash">for h in rebind.app www.rebind.app; do
+  for s in https http; do
+    for p in &quot;/&quot; &quot;/compare/autohotkey&quot; &quot;/foo?x=1&quot;; do
+      echo &quot;== $s://$h$p&quot;; curl -sI &quot;$s://$h$p&quot; | grep -iE '^HTTP|^location'
+    done
+  done
+done
+# full chain, should be ONE hop to www.rebind.gg:
+curl -sIL https://rebind.app/compare/autohotkey | grep -iE '^HTTP|^location'
+# certificate:
+echo | openssl s_client -connect rebind.app:443 -servername rebind.app 2&gt;/dev/null | grep -E 'subject=|Verify return'
+echo | openssl s_client -connect www.rebind.app:443 -servername www.rebind.app 2&gt;/dev/null | grep -E 'subject=|Verify return'
+</code></pre>
+<p>Pass criteria:
+- [ ] <code>https://rebind.app/</code> and <code>https://www.rebind.app/</code> → <strong>one</strong> <code>301</code> with <code>location: https://www.rebind.gg/</code>, then 200.
+- [ ] Deep path and query: <code>https://rebind.app/foo?x=1</code> → <code>location: https://www.rebind.gg/foo?x=1</code> (Vercel). With GoDaddy forwarding, record whether the path is dropped; homepage is acceptable.
+- [ ] <code>/compare/autohotkey</code> ends at <code>https://www.rebind.gg/compare/autohotkey</code> with 200.
+- [ ] <strong>No hop through <code>https://rebind.gg</code></strong> (no 307 anywhere in the <code>-L</code> chain).
+- [ ] Valid certificate for both <code>rebind.app</code> and <code>www.rebind.app</code> (verify return code 0); no browser warning.
+- [ ] <code>http://</code> versions reach the same target (one or two hops; http matters little since <code>.app</code> is HSTS-preloaded).
+- [ ] <strong>No masking or iframe:</strong> response is a 3xx with a <code>location</code> header, not a 200 page containing a <code>&lt;frame&gt;</code>/<code>&lt;iframe&gt;</code>, and the browser address bar shows <code>www.rebind.gg</code>.
+- [ ] Browser check (Chrome and Safari, private window): typing <code>rebind.app</code> lands on www.rebind.gg.
+- [ ] Optional, Google Search Console: add a Domain property for <code>rebind.app</code> (DNS TXT verification) to watch crawl and redirect status. <strong>Change of Address is probably not applicable</strong>: it's for moving an existing site with indexed content, and rebind.app has only ever been a parked page. A plain redirect is enough.
+- [ ] AI Search Visibility keeps re-checking ChatGPT daily ("AutoHotkey alternatives" → the "Rebind website" link). Even if ChatGPT keeps citing rebind.app for a while, users will land on www.rebind.gg.</p>
+<h3>11.8 Who does what</h3>
+<ul>
+<li><strong>Dean:</strong> gives the go (planning is approved; execution is not yet).</li>
+<li><strong>Whoever holds the GoDaddy login (and Vercel project access for option b):</strong> makes the change in §11.6. Nothing goes live without that person acting.</li>
+<li><strong>SEO Lead:</strong> runs the §11.7 checks read-only after being told the change is made, and reports results to Agency CEO.</li>
+<li><strong>AI Search Visibility:</strong> daily ChatGPT recheck.</li>
+</ul>
+<h3>11.9 Rollback</h3>
+<ul>
+<li><strong>Option (b):</strong> in Vercel, remove <code>rebind.app</code> and <code>www.rebind.app</code> from the project (or clear the redirect). In GoDaddy DNS, restore the saved records (<code>@</code> A 3.33.130.190 and 15.197.148.33 for parking, <code>www</code> CNAME <code>@</code>), or re-enable parking.</li>
+<li><strong>Option (a):</strong> GoDaddy → DNS → Forwarding → Delete the rule. That unlocks the <code>@</code> A record, which can then be restored as above.</li>
+<li><strong>Caveat:</strong> browsers cache 301s, so repeat visitors may keep being sent to www.rebind.gg after a rollback. That's harmless here (the target is our own site), and it's another reason not to use 301 for anything we might point elsewhere later.</li>
+</ul>
+</body></html>

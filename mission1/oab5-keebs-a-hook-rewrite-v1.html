@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OAB5 keebs A hook: body rewrite v1 (DRAFT, NOT LIVE)</title>
+<style>
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;max-width:860px;margin:0 auto;padding:24px;line-height:1.5;color:#1a1a1a;background:#fff}
+  h1{font-size:1.5rem;margin-bottom:.25rem}
+  h2{font-size:1.15rem;margin-top:2rem;border-bottom:1px solid #ddd;padding-bottom:.25rem}
+  .banner{background:#fff4d6;border:2px solid #8a6100;padding:10px 14px;font-weight:700;margin:12px 0}
+  .meta{color:#444;font-size:.92rem}
+  table{border-collapse:collapse;width:100%;font-size:.92rem}
+  th,td{border:1px solid #bbb;padding:6px 8px;text-align:left;vertical-align:top}
+  th{background:#f0f0f0}
+  .ad{border:1px solid #999;border-radius:8px;padding:14px;max-width:520px;background:#fafafa}
+  .ad .h{font-weight:700;font-size:1.05rem}
+  .ad .cta{display:inline-block;margin-top:10px;border:1px solid #333;border-radius:14px;padding:3px 12px;font-weight:600;font-size:.85rem}
+  del{color:#a00000}
+  ins{color:#0a5a1a;text-decoration:underline;font-weight:600}
+  code,.url{word-break:break-all;font-family:Consolas,monospace;font-size:.85rem}
+  @media (prefers-color-scheme: dark){body{background:#121212;color:#eee}th{background:#2a2a2a}.ad{background:#1d1d1d}.banner{background:#3a2e00;color:#ffe9a8}.meta{color:#bbb}del{color:#ff8a8a}ins{color:#8fe39f}}
+</style>
+</head>
+<body>
+<main>
+<h1>OAB5 | keebs | A hook image: body rewrite v1</h1>
+<p class="banner">DRAFT FOR AGENCY CEO REVIEW / NOT LIVE. Ads remain HOLD. Do not ship.</p>
+<p class="meta">Task task_AY3r1PMSe3Pc · Mission 001 / OAB5 Desk Notes · Lead: Content &amp; Copy · Collaborator: Paid Media · v1 · 2026-11-07<br>
+Scope: only this row. No other keebs rows and no mice/MouseReview rows are touched.</p>
+
+<h2>Why this rewrite exists</h2>
+<p>Claims Guard (run_tx-dskGsfNPA) blocked the ad on “one file for every board,” which is an all-device promise. Dossier 02 rules out all-device promises and says ads should name standard-HID USB keyboards and mice.</p>
+
+<h2>Preview (text mock, not the image creative)</h2>
+<div class="ad" role="group" aria-label="Ad text preview">
+  <div class="h">Your keyboard app knows one brand. Your desk has three.</div>
+  <p>Brand app, firmware, or one script file for your standard-HID USB keyboards? A fair guide to where your remaps should live, and why mixed desks change the answer.</p>
+  <span class="cta">LEARN MORE</span>
+</div>
+
+<h2>Rewritten row</h2>
+<table>
+<tr><th scope="row">Ad</th><td>OAB5 | keebs | A hook image</td></tr>
+<tr><th scope="row">Format</th><td>IMAGE</td></tr>
+<tr><th scope="row">Headline</th><td>Your keyboard app knows one brand. Your desk has three. <em>(unchanged)</em></td></tr>
+<tr><th scope="row">Body</th><td>Brand app, firmware, or one script file for your standard-HID USB keyboards? A fair guide to where your remaps should live, and why mixed desks change the answer.</td></tr>
+<tr><th scope="row">CTA</th><td>LEARN MORE <em>(unchanged)</em></td></tr>
+<tr><th scope="row">Media</th><td>oab5-keebs-a-hook.png <em>(unchanged; see open item 2)</em></td></tr>
+<tr><th scope="row">Destination</th><td class="url">https://www.rebind.gg/r/notes/keyboard-software-one-brand?utm_source=reddit&amp;utm_medium=paid&amp;utm_campaign=oab5-desk-notes&amp;utm_content=oab5-keebs&amp;utm_term=a-hook <em>(unchanged)</em></td></tr>
+</table>
+
+<h2>Diff (body only)</h2>
+<p><strong>Before:</strong> Brand app, firmware, or <del>one file for every board</del>? A fair guide to where your remaps should live, and why mixed desks change the answer.</p>
+<p><strong>After:</strong> Brand app, firmware, or <ins>one script file for your standard-HID USB keyboards</ins>? A fair guide to where your remaps should live, and why mixed desks change the answer.</p>
+<p>Point edit: the rest of the sentence is locked. Length goes from 135 to 162 characters.</p>
+
+<h2>Alternate (only if Paid Media wants a shorter line)</h2>
+<p>Brand app, firmware, or one script file across your standard-HID USB keyboards? Where your remaps should live, and why mixed desks change the answer.</p>
+<p>Recommendation: use the primary. It matches the Claims Guard suggested fix word for word and keeps “A fair guide,” the even-handed framing the landing note depends on.</p>
+
+<h2>Claim ledger</h2>
+<table>
+<thead><tr><th>ID</th><th>Wording</th><th>Supported statement</th><th>Label</th><th>Source</th><th>Use</th></tr></thead>
+<tbody>
+<tr><td>C1</td><td>“one script file”</td><td>Remaps are script files; one script can drive multiple devices</td><td>[Verified-source]</td><td>Dossier 02, platform section</td><td>Allowed</td></tr>
+<tr><td>C2</td><td>“your standard-HID USB keyboards”</td><td>Works with standard-HID USB keyboards/mice, any brand; no Bluetooth claim either way</td><td>[Verified-source]</td><td>Dossier 02 line 40; vendor-software row (line 86)</td><td>Allowed. Do not widen to “any keyboard,” “every board,” or Bluetooth</td></tr>
+<tr><td>C3</td><td>“Brand app, firmware” as alternatives</td><td>Use-both: vendor apps keep RGB/DPI/onboard profiles; firmware travels with the board</td><td>[Verified-source]</td><td>Dossier 02 line 86</td><td>Allowed. No “replaces” claim</td></tr>
+<tr><td>C4</td><td>Headline “Your desk has three”</td><td>Reader-situation hook, not a product claim</td><td>[Inference]</td><td>n/a</td><td>Headline flag is on a separate card</td></tr>
+</tbody>
+</table>
+
+<h2>Fence self-check</h2>
+<p>Claims Guard will re-run separately via Agency CEO. This is a self-check only.</p>
+<ul>
+<li>All-device promise: removed (no “every,” “any board,” or “all keyboards”).</li>
+<li>No claim that Rebind replaces brand apps, firmware, QMK, VIA, or AHK.</li>
+<li>No hardware-free or works-on-every-PC language. Bluetooth is not mentioned.</li>
+<li>Link-only features (F13–F24, media keys, pointer) are not mentioned.</li>
+<li>TypeTation is not a destination. Ad copy has no em dashes.</li>
+</ul>
+
+<h2>Open items for Agency CEO</h2>
+<ol>
+<li>The headline unverified flag is on a separate card. The headline is unchanged here.</li>
+<li>Check that oab5-keebs-a-hook.png has no “every board” text baked into the image. Not opened on this card.</li>
+<li>Check whether the landing note body uses “every board.” If it does, the ad and the page would disagree. Not checked or changed here.</li>
+</ol>
+
+<h2>What this cannot tell us</h2>
+<p>Whether the new body performs better than the old one. It only clears the claim fence. No spend, posting, upload, or live campaign change happened.</p>
+</main>
+</body>
+</html>
