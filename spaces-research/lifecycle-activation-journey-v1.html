@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Mass-reach spaces: from discovery to first useful activation · v1 · DRAFT / NOT LIVE</title>
+<style>
+:root{color-scheme:light dark;--bg:#fff;--ink:#111;--muted:#555;--line:#ccc;--accent:#b0342c;--soft:#f4f4f4}
+@media (prefers-color-scheme:dark){:root{--bg:#111;--ink:#eee;--muted:#aaa;--line:#444;--soft:#1c1c1c}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+main{max-width:1100px;margin:0 auto;padding:24px 20px 80px}
+h1{font-size:1.7em;margin:.2em 0 .4em}
+h2{font-size:1.3em;margin-top:2.2em;padding-top:.6em;border-top:2px solid var(--line)}
+.banner{background:var(--accent);color:#fff;padding:10px 14px;border-radius:6px;font-weight:600;margin:12px 0}
+.meta{color:var(--muted);font-size:.92em}
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:.9em}
+th,td{border:1px solid var(--line);padding:6px 8px;vertical-align:top;text-align:left}
+th{background:var(--soft)}
+code{background:var(--soft);padding:1px 4px;border-radius:3px;font-size:.92em}
+.tag{font-size:.8em;color:var(--muted);white-space:nowrap}
+.unpub{color:var(--accent);font-weight:700}
+nav{background:var(--soft);padding:10px 14px;border-radius:6px;font-size:.92em}
+nav a{color:inherit;margin-right:12px}
+.wall td{background:var(--soft);font-style:italic}
+footer{margin-top:3em;color:var(--muted);font-size:.9em;border-top:1px solid var(--line);padding-top:1em}
+@media print{.banner{color:#000;border:2px solid #000;background:none}}
+</style>
+</head>
+<body>
+<main>
+<h1>Mass-reach spaces: from discovery to first useful activation, v1</h1>
+<p class="meta"><strong>Version:</strong> v1 (revised 2026-11-07; replaces an earlier fallback draft, kept in <code>_superseded/</code>) · <strong>Lane:</strong> Lifecycle Lead (<code>lifecycle</code>) · <strong>To:</strong> Agency CEO (<code>agency-ceo</code>) only · <strong>Task:</strong> <code>task_CvWVv2o8y9dr</code> · <strong>Initiative:</strong> Mass-Reach Spaces Research, Wave 2</p>
+<div class="banner">DRAFT / NOT LIVE. Research and written recommendations only. No email, SMS, push or in-app message was written for sending, scheduled, or sent. No list, audience, automation or page was created or changed. Ads remain HOLD. Organic Reddit remains stopped. TypeTation stays on verification hold.</div>
+
+<nav><a href="#s1">1 Bottom line</a><a href="#s2">2 State map</a><a href="#s3">3 Journey</a><a href="#s4">4 Drop-off risks</a><a href="#s5">5 No-email path</a><a href="#s6">6 Concepts</a><a href="#s7">7 Measurement</a><a href="#s8">8 Order &amp; gates</a><a href="#s9">9 Limits</a><a href="#s10">10 Questions</a></nav>
+
+<h2>Evidence labels</h2>
+<ul>
+<li><strong>[Verified-source]</strong>: the cited file under <code>E:\Marketing Repo</code> says this. That confirms what the source records, not current live product behavior.</li>
+<li><strong>[Verified-web]</strong>: none. No public page was fetched for this memo.</li>
+<li><strong>[Inference]</strong>: my proposed journey, risk, concept or measurement design.</li>
+<li><strong>[Unknown]</strong>: not confirmed in any reviewed source.</li>
+</ul>
+<p>No rates, install counts, CPI, time-to-value numbers or social proof appear here because none are verified. Where a number is missing, I name the event that would measure it instead.</p>
+<table>
+<tr><th>Key</th><th>File (under E:\Marketing Repo)</th></tr>
+<tr><td>P</td><td><code>dossier\02-product-truth-claims-and-fences.md</code></td></tr>
+<tr><td>A</td><td><code>dossier\03-audience-sectors-positioning.md</code></td></tr>
+<tr><td>O</td><td><code>dossier\04-offers-pricing-and-commercial-model.md</code></td></tr>
+<tr><td>L</td><td><code>dossier\05-landing-pages-advertorials-and-longform.md</code></td></tr>
+<tr><td>H</td><td><code>dossier\09-status-conflicts-gaps-and-handoff.md</code></td></tr>
+<tr><td>G</td><td><code>spaces-research\growth-loops-v1.md</code> (cites <code>Rebind\campaigns\reddit-seed\landing-pages\LANDING-PAGES-README.md</code>)</td></tr>
+<tr><td>S</td><td><code>spaces-research\strategy-brand-beachheads-v1.md</code></td></tr>
+<tr><td>K</td><td><code>spaces-research\cro-conversion-paths-v1.md</code></td></tr>
+<tr><td>F</td><td><code>spaces-research\creative-format-specs-v1.md</code></td></tr>
+<tr><td>B</td><td>Task brief fences from Agency CEO for <code>task_CvWVv2o8y9dr</code></td></tr>
+</table>
+
+<h2 id="s1">1. Bottom line for the CEO</h2>
+<ol>
+<li><strong>Activation is the named script doing its visible job.</strong> A completed install, first launch or welcome tour doesn't count. Someone has activated only when all three happen: they install Rebind, then separately install the named Marketplace script, then see the script do the thing they came for. <span class="tag">[Verified-source: B, G]</span></li>
+<li><strong>The biggest structural risk is the gap between the two installs.</strong> Installing Rebind does not install any script <span class="tag">[Verified-source: B, G]</span>. Someone who arrived for "the keystroke overlay" can finish the app install with no overlay and no clear next step. Every discovery space should hand off a <strong>named job plus the exact listing</strong>, not a generic "download Rebind." <span class="tag">[Inference]</span></li>
+<li><strong>Permission and OS screens are the second big risk.</strong> These include Windows Administrator PowerShell, macOS Accessibility, the script's own permission screen, and capture permissions such as OBS Display Capture or macOS Screen Recording/Capture. We should explain each one <em>before</em> it appears and allow a clean "no." We should never tell anyone to click past a security warning. <span class="tag">[Verified-source: P, G; Inference: handling]</span></li>
+<li><strong>We can't see past the download click today.</strong> <code>passRefToInstaller=false</code>, so <code>?ref=</code> stops at download-start. Install, script install and activation can't be tied to a space. Even the web events still need their collection verified. <span class="tag">[Verified-source: G, L, H]</span></li>
+<li><strong>Help should live in the page and the app before any email.</strong> Local scripts need no account, so the free path needs no email address. Lifecycle support should be on-page and in-app first. Email and SMS stay out of scope until there's consent, a verified trigger and Dean's specific approval. <span class="tag">[Verified-source: P; Inference: priority]</span></li>
+</ol>
+
+<h2 id="s2">2. Lifecycle state map</h2>
+<p>The journey is designed as states with entry and exit conditions, not as a timed message sequence. <span class="tag">[Inference]</span></p>
+<table>
+<tr><th>#</th><th>State</th><th>Entry condition</th><th>Exit to next state</th><th>Main way out (drop-off)</th><th>Observable today?</th></tr>
+<tr><td>S0</td><td><strong>Discovered a job</strong></td><td>Saw a specific job demonstrated in a space (e.g., a keystroke overlay in a tutorial)</td><td>Opens a Rebind page that names the same job</td><td>Promise too generic; demo hides limits</td><td>Landing visit only, and only if collection works <span class="tag">[Verified-source: G, L]</span></td></tr>
+<tr><td>S1</td><td><strong>Eligible visitor</strong></td><td>On a Rebind page with the job and listing visible</td><td>Confirms Windows 10/11 64-bit or macOS 13+ Apple Silicon</td><td>On a phone, Linux or an Intel Mac. <strong>Unsupported is a valid exit, not a failure</strong> <span class="tag">[Verified-source: P]</span></td><td>No</td></tr>
+<tr><td>S2</td><td><strong>App download started</strong></td><td>Clicks the installer or copies the install command at <code>https://www.rebind.gg/install</code></td><td>App installed and launched</td><td>Browser/OS warning, no admin rights, copied command never run</td><td><code>rebind_download</code> (platform + method) exists in the source design; ingestion not proven <span class="tag">[Verified-source: G, L]</span></td></tr>
+<tr class="wall"><td>—</td><td colspan="5">Attribution wall: <code>?ref=</code> is not passed to the installer <span class="tag">[Verified-source: G]</span></td></tr>
+<tr><td>S3</td><td><strong>App installed, named script not installed</strong></td><td>Rebind runs; no target script yet</td><td>Opens the exact Marketplace listing</td><td>Browser closed, listing forgotten, generic Marketplace browsing overwhelms the job</td><td>No <span class="tag">[Unknown: G]</span></td></tr>
+<tr><td>S4</td><td><strong>Script installed, no visible result yet</strong></td><td>Script installed with its permissions reviewed</td><td>First action produces the expected output</td><td>Wrong capture mode, a declined permission, wrong mode/hardware, an exclusive-fullscreen game</td><td>No</td></tr>
+<tr><td>S5</td><td><strong>First useful activation</strong></td><td>The person sees the script do its job in the intended context, e.g., the overlay appears <em>in the recording</em></td><td>Voluntary repeat use</td><td>One-off curiosity; script conflict</td><td>No</td></tr>
+<tr><td>S6</td><td><strong>Repeat useful use</strong></td><td>Returns to the same job on a later session</td><td>Stays, or adds a second script</td><td>Script stops fitting the job; no support route</td><td>No</td></tr>
+<tr><td>SX</td><td><strong>Blocked, incompatible or opted out</strong></td><td>Unsupported OS, hardware-gated feature, declined permission, or chose to stop</td><td>Clean exit with an accurate explanation; nothing is followed up unless the person asks</td><td>—</td><td>No</td></tr>
+</table>
+<p><strong>Note on definitions:</strong> strategy-brand's broader success definition includes continued use <span class="tag">[Verified-source: S]</span>. Keep <strong>S5 first useful activation</strong> separate from <strong>S6 repeat use</strong>, so retention doesn't quietly change the activation denominator. <span class="tag">[Inference]</span></p>
+
+<h2 id="s3">3. Journey map: discovery → install → marketplace script → first useful result</h2>
+<p>Worked example: <strong>Keystroke Overlay</strong> (<code>@rebind/keystroke-overlay</code>, listing <code>https://www.rebind.gg/marketplace/script_FhIdJaL7uLVeBUjo6gcuQ</code>). It's the strategy-brand beachhead job and appears in the dossier as named marketplace proof, with freshness limits. <span class="tag">[Verified-source: P, S]</span> The same shape applies to any named script.</p>
+<table>
+<tr><th>Step</th><th>What the person is asking</th><th>Truth that has to be visible here</th><th>What they should see (<span class="unpub">UNPUBLISHED</span> concept)</th></tr>
+<tr><td>1. Discovery space</td><td>"Can I get that overlay?"</td><td>One job, an honest demo, limits shown first. Any later human post starts "Disclosure: I work on Rebind." <span class="tag">[Verified-source: B, S]</span></td><td>n/a: no space activity is proposed here</td></tr>
+<tr><td>2. Job page / guide</td><td>"Will it work on my computer?"</td><td>Windows 10/11 64-bit or macOS 13+ Apple Silicon only, with no Linux and no Intel Mac. The app is free, and local scripts need no account or hardware. <span class="tag">[Verified-source: P, B]</span></td><td><strong>"Two steps" card</strong>: (1) install the free Rebind app, (2) install <em>Keystroke Overlay</em> from Marketplace. The listing name and URL stay visible; a "copy both links" button covers people browsing on a phone.</td></tr>
+<tr><td>3. App install</td><td>"Can I trust this, and what will it ask?"</td><td>Windows source instructions use Administrator PowerShell. The macOS flow needs Accessibility permission. <span class="tag">[Verified-source: P]</span></td><td><strong>Permission preview</strong>: what each prompt is, why it's asked, and what to do on a managed or work machine (ask IT, don't bypass).</td></tr>
+<tr><td>4. First launch</td><td>"Now what?"</td><td>Installing Rebind does not install the script <span class="tag">[Verified-source: B, G]</span>. No deep link or intent recovery is confirmed <span class="tag">[Unknown: G]</span>.</td><td><strong>"You're halfway" note</strong> on the job page: return to the listing link and open it in Rebind/Marketplace.</td></tr>
+<tr><td>5. Script install</td><td>"What does this script access, and does it cost anything?"</td><td>Third-party scripts run only within permissions the user approves. Marketplace purchases can be one-time or subscription. Whether a Marketplace install needs an account is <strong>not confirmed</strong>. <span class="tag">[Verified-source: P, G; Unknown: account, price for this listing]</span></td><td><strong>Permission explainer</strong> from verified listing metadata only. If the listing has a price or account condition, it's stated here, before the person invests time.</td></tr>
+<tr><td>6. First action</td><td>"What do I try?"</td><td>Overlay: Rebind 3.14.0+, Display Capture (OBS) or macOS Screen Capture/Recording; app-window capture misses it; hidden in Windows exclusive fullscreen; set "Show in screenshots and recordings." <span class="tag">[Verified-source: G, S]</span></td><td><strong>First-run checklist</strong>: set the capture source → press a key → record a 5-second clip. Kill switch shown alongside: <strong>Left Ctrl+Left Alt+K</strong> (Mac: <strong>Left Control+Left Option+K</strong>) <span class="tag">[Verified-source: P]</span>.</td></tr>
+<tr><td>7. Confirm result</td><td>"Did it actually work?"</td><td>Activation means the overlay is visible <strong>in the recorded clip</strong>, not just showing as enabled in the UI. <span class="tag">[Verified-source: G; Inference]</span></td><td><strong>"Not showing?" decision tree</strong>: capture mode → system permission → fullscreen mode → version → stop with an honest "not supported in this setup."</td></tr>
+<tr><td>8. Repeat use</td><td>"Do I want this next time?"</td><td>No forced watermark, share prompt or upsell <span class="tag">[Verified-source: G]</span></td><td>Optional, user-invoked setup notes. No outbound follow-up based on click history.</td></tr>
+</table>
+
+<h2 id="s4">4. Drop-off risk register</h2>
+<p>These are candidate drop-offs. They are <strong>not measured</strong> and are ordered by my judgment of how structural each one is, not by any abandonment rate. <span class="tag">[Inference; Unknown: stage counts]</span></p>
+<table>
+<tr><th>#</th><th>Risk</th><th>State</th><th>Source fact</th><th>Mitigation concept [Inference]</th><th>Still unverified [Unknown]</th></tr>
+<tr><td>R1</td><td><strong>Two-step install gap</strong>: app installed, script never found</td><td>S3</td><td>Separate installs <span class="tag">[Verified-source: B, G]</span></td><td>Keep the listing name and URL visible on the page before download; "copy both links"; a "halfway" reminder on return</td><td>Deep link from the web listing to the app; in-app Marketplace search behavior</td></tr>
+<tr><td>R2</td><td><strong>Attribution wall</strong> hides where people stall</td><td>S2→S6</td><td><code>passRefToInstaller=false</code> <span class="tag">[Verified-source: G]</span></td><td>Engineering scope for ref acceptance/storage plus first-launch, script-install and result events (§7)</td><td>Collector ingestion; any installer change</td></tr>
+<tr><td>R3</td><td><strong>Windows admin / SmartScreen / unverified publisher</strong> prompts</td><td>S2</td><td>Administrator PowerShell in source instructions <span class="tag">[Verified-source: P]</span></td><td>Explain why admin is needed using current installer docs. Managed machines → IT. Never "click Run anyway" copy</td><td>Current signing status and actual SmartScreen behavior. <strong>No warning was reproduced for this memo.</strong></td></tr>
+<tr><td>R4</td><td><strong>macOS Accessibility</strong> permission refusal or confusion</td><td>S2–S3</td><td>Accessibility required in the source flow <span class="tag">[Verified-source: P]</span></td><td>Name the exact System Settings pane, the reason, and what happens if declined</td><td>Current prompt wording and order on macOS 13/14/15</td></tr>
+<tr><td>R5</td><td><strong>Capture permission</strong>: OBS Display Capture vs window capture; macOS Screen Recording/Capture</td><td>S4</td><td>Overlay needs Display Capture / macOS Screen Capture; app-window capture misses it <span class="tag">[Verified-source: G]</span></td><td>Set the capture mode in the first-run checklist; check the actual recording, not the UI</td><td>Exact macOS prompt label on current builds; whether Rebind or OBS triggers it</td></tr>
+<tr><td>R6</td><td><strong>Exclusive fullscreen</strong> games hide the overlay</td><td>S4</td><td>Hidden in exclusive fullscreen <span class="tag">[Verified-source: S]</span></td><td>State it next to the demo and in "Not showing?"</td><td>Behavior per title</td></tr>
+<tr><td>R7</td><td><strong>Script permission screen</strong> feels risky or unclear</td><td>S4</td><td>User-approved permissions; don't present encrypted bytecode as a security guarantee <span class="tag">[Verified-source: P]</span></td><td>Plain-language explainer from the real manifest; cancel stays easy</td><td>Exact manifest and install UI for each listing</td></tr>
+<tr><td>R8</td><td><strong>Unexpected account or price</strong> at Marketplace</td><td>S3–S4</td><td>Purchases can be one-time/subscription; "no account" applies only to local scripts <span class="tag">[Verified-source: P]</span></td><td>State listing conditions upfront; never say a bare "no account"</td><td>Account requirement for Marketplace installs; this listing's price</td></tr>
+<tr><td>R9</td><td><strong>Wrong OS or mode</strong>: Intel Mac, Linux, phone; hardware-gated jobs</td><td>S1, S4</td><td>F13–F24, media keys and pointer movement need Link/BYOH; many features USB-only; Mac window control partial <span class="tag">[Verified-source: P, B]</span></td><td>Show the eligibility card before download. Lead with software-mode jobs. State the hardware gate before asking for a download</td><td>Per-script tested behavior</td></tr>
+<tr><td>R10</td><td><strong>Version floor</strong></td><td>S4</td><td>Overlay needs Rebind 3.14.0+ <span class="tag">[Verified-source: G]</span></td><td>Current-version check in the first-run checklist</td><td>Whether the installer always ships ≥ 3.14.0</td></tr>
+<tr><td>R11</td><td><strong>Silent "success"</strong>: the script looks enabled but does nothing useful</td><td>S4→S5</td><td>Visible result required; e.g., Universal Mute doesn't confirm the microphone is off <span class="tag">[Verified-source: G, S]</span></td><td>Activation needs observed output, never a toggle</td><td>Per-script QA</td></tr>
+</table>
+<p><strong>Safety lines for any later help copy:</strong> kill switch <strong>Left Ctrl+Left Alt+K</strong> (Mac: <strong>Left Control+Left Option+K</strong>), which stops every script and releases held input. Rebind is not a medical device. Use-both framing with AutoHotkey, Keyboard Maestro, PowerToys, QMK, VIA and Stream Deck, never "replaces." RebindGPT is Pro. <span class="tag">[Verified-source: P, B]</span></p>
+
+<h2 id="s5">5. The no-account, no-email path (must always work)</h2>
+<p><span class="tag">[Verified-source: P]</span> Local scripts need no account and no hardware. So the full S0→S5 path has to be completable by someone who never gives us an email address. <span class="tag">[Inference]</span> Consequences:</p>
+<ul>
+<li>No email gate on the job page, the download, or the first-run checklist.</li>
+<li>Help reaches people through owned pages and (later, if product approves) in-app surfaces, not outbound sends.</li>
+<li>Phone-to-desktop handoff uses a <strong>user-initiated copy/save</strong> of both links. No "email me the link" field unless separately approved with consent.</li>
+<li>Being a local user is not consent to be marketed to.</li>
+</ul>
+
+<h2 id="s6">6. Unpublished lifecycle concept library</h2>
+<p class="unpub">Every row is UNPUBLISHED / DRAFT / NOT TO SEND.</p>
+<p>These are structural concepts, not send-ready copy. Triggers are hypothetical, and no tracking or consent is assumed. <span class="tag">[Inference]</span></p>
+<table>
+<tr><th>ID</th><th>Concept</th><th>Surface</th><th>Trigger (hypothetical)</th><th>Job</th><th>Exit / suppression</th></tr>
+<tr><td>C1</td><td><strong>Two steps card</strong></td><td>Owned job page</td><td>Page view</td><td>Name the job, show the listing, set the "app then script" expectation</td><td>Hidden for ineligible visitors, who see the eligibility card instead</td></tr>
+<tr><td>C2</td><td><strong>Eligibility card</strong></td><td>Owned job page</td><td>Every visit; auto-hint if the UA looks like a phone/Linux</td><td>Stop unsupported visitors politely before they download</td><td>Done once they choose; unsupported → SX with no follow-up</td></tr>
+<tr><td>C3</td><td><strong>Copy both links</strong></td><td>Owned job page</td><td>User click</td><td>Phone-to-desktop continuity without email</td><td>n/a, user-initiated only</td></tr>
+<tr><td>C4</td><td><strong>Permission preview</strong></td><td>Owned page / help doc</td><td>User opens it before or at an install prompt</td><td>Explain admin, Accessibility and capture prompts; allow a safe "no"</td><td>No pressure copy, no bypass steps</td></tr>
+<tr><td>C5</td><td><strong>"You're halfway"</strong></td><td>Job page on return visit; later an in-app first-run panel if product approves</td><td>Return visit after download (no tracking needed: static copy)</td><td>Bridge S3: "now install <em>[listing]</em>"</td><td>Hidden once the script is installed (needs an in-app signal)</td></tr>
+<tr><td>C6</td><td><strong>First-run checklist</strong></td><td>Listing / help doc</td><td>Script installed</td><td>Capture source → press a key → record a clip → confirm. Kill switch shown</td><td>Ends at S5</td></tr>
+<tr><td>C7</td><td><strong>"Not showing?" decision tree</strong></td><td>Help doc</td><td>User-invoked</td><td>Diagnose R5/R6/R10/R11; end honestly if unsupported</td><td>Stops at "not supported in this setup"</td></tr>
+<tr><td>C8</td><td><strong>Optional setup email</strong> <em>(future only)</em></td><td>Email</td><td>Only if the person explicitly asks for a copy, with consent</td><td>Repeat the job, listing link, both steps, permission notes, kill switch</td><td>One send, no sequence. Needs consent review, a verified sender and Dean's specific approval. <strong>No list, field or automation exists.</strong></td></tr>
+<tr><td>C9</td><td><strong>Optional continuation tip</strong> <em>(future only)</em></td><td>In-app, user-invoked</td><td>User opens help after S5</td><td>Tuning tips for the same job; a share option entirely under the user's control</td><td>No inactivity campaign, no forced watermark, no incentive</td></tr>
+</table>
+<p><strong>SMS:</strong> not recommended for this path. A desktop local-script job gains nothing from SMS, and we have no permissioned phone audience. Do not collect phone numbers. <span class="tag">[Inference; Verified-source: P on account scope]</span></p>
+
+<h2 id="s7">7. Measurement plan (proposed events, none claimed as live)</h2>
+<table>
+<tr><th>Question</th><th>Evidence today</th><th>Proposed event</th><th>Reporting rule</th></tr>
+<tr><td>Which space sends eligible visitors?</td><td><code>rebind_landing_visit</code> (ref, ad_group, path, UTMs) in the source design; collector empty by default <span class="tag">[Verified-source: G, L]</span></td><td>Verify actual receipt first</td><td>Unknown until collection is proven</td></tr>
+<tr><td>Who started a download?</td><td><code>rebind_download</code> with platform + method (installer / PowerShell / macOS command) <span class="tag">[Verified-source: G]</span></td><td>Separate an installer click from a copied command</td><td>Download-start ≠ install</td></tr>
+<tr><td>Who installed and launched?</td><td>Not joined to source <span class="tag">[Verified-source: G]</span></td><td><code>first_launch {ref}</code> after the installer accepts ref</td><td>No CPI until this exists</td></tr>
+<tr><td>Who installed the named script?</td><td>Not established <span class="tag">[Unknown]</span></td><td><code>script_installed {script_id}</code></td><td>An app install is not a proxy for this</td></tr>
+<tr><td>Who saw it work?</td><td>Not established <span class="tag">[Unknown]</span></td><td><code>first_useful_result_confirmed {script_id, evidence_type}</code> (observed vs self-report)</td><td>A run flag is not activation</td></tr>
+<tr><td>Where do people stop?</td><td>No stage counts <span class="tag">[Unknown]</span></td><td><code>script_permission_outcome</code>, <code>activation_blocker_reported {category}</code></td><td>Missing telemetry ≠ refusal</td></tr>
+<tr><td>Did it stick?</td><td>No baseline <span class="tag">[Unknown]</span></td><td><code>script_return_use</code> with the window defined in advance</td><td>No invented retention target</td></tr>
+</table>
+<p>Privacy guard <span class="tag">[Inference]</span>: event payloads must never contain keystroke contents, clipboard text, screen images or window titles. Cross-device identity stitching is not recommended.</p>
+
+<h2 id="s8">8. Recommended order and gates</h2>
+<table>
+<tr><th>Order</th><th>Recommendation</th><th>Gate before anything executes</th></tr>
+<tr><td>1</td><td>Verify the lead script end-to-end on current Windows and macOS builds: version, permissions, capture, account/price, first result</td><td>Coding/Testing evidence</td></tr>
+<tr><td>2</td><td>Draft C1–C4 and C6–C7 as page and help copy for the chosen beachhead job</td><td>CEO review → Claims Guard → Dean go/no-go to publish</td></tr>
+<tr><td>3</td><td>Scope <code>passRefToInstaller</code> + first-launch, script-install and result events</td><td>Engineering + privacy review</td></tr>
+<tr><td>4</td><td>C5 in-app "halfway" panel</td><td>Product approval</td></tr>
+<tr><td>5</td><td>C8/C9 outbound or optional help, if ever</td><td>Consent policy, sender, verified trigger, Dean's specific approval</td></tr>
+</table>
+
+<h2 id="s9">9. What this work cannot tell us</h2>
+<ul>
+<li>No live install, permission screen, SmartScreen prompt or capture setup was reproduced. Everything about OS prompts is from sources or is [Unknown].</li>
+<li>No stage-level drop-off is measured. The risk order is judgment.</li>
+<li>Marketplace account requirements, this listing's current price and availability, and any web→app deep link are unconfirmed.</li>
+<li>Nothing here estimates install, activation or retention rates for any space.</li>
+</ul>
+
+<h2 id="s10">10. Open questions for Agency CEO (to route as you see fit)</h2>
+<ol>
+<li>Which named script leads the beachhead help: Keystroke Overlay, or another one after Testing verifies it?</li>
+<li>Can Coding confirm whether Marketplace installs need a signed-in account? This decides how "no account" can be worded near step 2.</li>
+<li>Is engineering time available for ref persistence and first-launch/script events before more discovery traffic is considered?</li>
+<li>Who owns the factual trust answer for Windows publisher/SmartScreen warnings?</li>
+<li>Confirm that lifecycle stays in-page/in-app for now, with outbound (C8/C9) out of scope.</li>
+</ol>
+
+<footer>Prepared by Lifecycle Lead for Agency CEO · v1 · DRAFT / NOT LIVE · Nothing was posted, emailed, texted, scheduled, published or spent. Source: <code>lifecycle-activation-journey-v1.md</code> (same folder).</footer>
+</main>
+</body>
+</html>

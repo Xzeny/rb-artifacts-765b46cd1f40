@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Mass-reach spaces: product-led loops and shareable entry points, v1 · Rebind / Spaces Research · v1</title>
+  <style>
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --ink: #111111;
+  --muted: rgba(17, 17, 17, 0.72);
+  --line: rgba(17, 17, 17, 0.25);
+  --accent: #b0342c;
+  --code: rgba(17, 17, 17, 0.06);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #000000;
+    --ink: #ffffff;
+    --muted: rgba(255, 255, 255, 0.72);
+    --line: rgba(255, 255, 255, 0.25);
+    --code: rgba(255, 255, 255, 0.08);
+  }
+}
+[data-theme="dark"] {
+  --bg: #000000;
+  --ink: #ffffff;
+  --muted: rgba(255, 255, 255, 0.72);
+  --line: rgba(255, 255, 255, 0.25);
+  --code: rgba(255, 255, 255, 0.08);
+}
+[data-theme="light"] {
+  --bg: #ffffff;
+  --ink: #111111;
+  --muted: rgba(17, 17, 17, 0.72);
+  --line: rgba(17, 17, 17, 0.25);
+  --code: rgba(17, 17, 17, 0.06);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--ink); }
+body { font: 18px/1.7 system-ui, -apple-system, "Segoe UI", sans-serif; }
+.mast {
+  display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+  border-bottom: 1px solid var(--line); padding: 0.75rem 1.25rem; font-size: 13px; color: var(--muted);
+}
+.mast a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); }
+.mast button {
+  background: transparent; color: var(--ink); border: 1px solid var(--line);
+  font: inherit; font-size: 13px; padding: 0.15rem 0.55rem; cursor: pointer;
+}
+main { max-width: 54rem; margin: 0 auto; padding: 2rem 1.25rem 5rem; }
+h1, h2, h3, h4 { line-height: 1.25; font-weight: 650; }
+h1 { font-size: 2rem; margin: 0 0 1rem; }
+h2 { font-size: 1.35rem; margin: 2.2rem 0 0.8rem; padding-top: 0.4rem; border-top: 1px solid var(--line); }
+h3 { font-size: 1.1rem; margin: 1.6rem 0 0.5rem; }
+p { margin: 0.85rem 0; }
+a { color: var(--accent); }
+ul, ol { padding-left: 1.3rem; }
+li { margin: 0.25rem 0; }
+blockquote {
+  margin: 1rem 0; padding: 0.15rem 0 0.15rem 1rem;
+  border-left: 3px solid var(--accent); color: var(--muted);
+}
+code, pre { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 0.88em; }
+code { background: var(--code); padding: 0.1em 0.28em; }
+pre { background: var(--code); padding: 0.9rem 1rem; overflow-x: auto; }
+pre code { background: transparent; padding: 0; }
+.table-wrap { overflow-x: auto; margin: 1rem 0; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; line-height: 1.45; }
+th, td { border: 1px solid var(--line); padding: 0.45rem 0.6rem; vertical-align: top; text-align: left; }
+th { font-weight: 650; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 1.6rem 0; }
+footer {
+  border-top: 1px solid var(--line); padding: 1rem 1.25rem 2rem;
+  font-size: 13px; color: var(--muted); max-width: 54rem; margin: 0 auto;
+}
+</style>
+</head>
+<body>
+  <div class="mast">
+    <div>Rebind / Mass-Reach Spaces Research · Test edition · v1 · <a href="index.html">All reports</a></div>
+    <button type="button" id="theme">Theme</button>
+  </div>
+  <main>
+<h1>Mass-reach spaces: product-led loops and shareable entry points, v1</h1>
+<p><strong>Task:</strong> task_eOZJ4YRdLLlo · <strong>Initiative:</strong> Mass-Reach Spaces Research, Wave 2<br>
+<strong>From:</strong> growth (Growth Lead) · claude-code / claude-opus-5-5 · <strong>To:</strong> agency-ceo only<br>
+<strong>Version:</strong> v1 · 2026-11-07 · <strong>Status:</strong> DRAFT. Research and recommendations only. Nothing was posted, sent, published, submitted, bought or launched. All five experiments below are unlaunched hypotheses.</p>
+<p><strong>Evidence labels used throughout</strong><br>
+- <strong>[Verified-source]</strong> stated in a canonical file under <code>E:\Marketing Repo</code> (path given). This is a dated source, not a fresh product check.<br>
+- <strong>[Verified-sibling]</strong> a figure another specialist verified today, cited to their file.<br>
+- <strong>[Inference]</strong> my reasoning. Not tested.<br>
+- <strong>[Unknown]</strong> a fact the loop depends on that no source settles. Listed in §7 as a check for Coding or Research.</p>
+<p>No benchmarks, CPI, conversion rates, follower counts or user counts are invented here. Where a number would normally sit, the report names the event to measure instead.</p>
+<hr>
+<h2>1. Bottom line for the CEO</h2>
+<ol>
+<li><strong>Rebind's loop runs on a script, not on the app.</strong> People search for a job ("show my keystrokes in a tutorial", "one mute key for every meeting app"). The marketplace listing and a working script are what spread. The app is the runtime they install along the way. Every entry point should lead with one script doing one visible thing.</li>
+<li><strong>The loop has two install steps, and both lose people.</strong> Step 1: install Rebind (Windows admin prompt, macOS Accessibility permission). Step 2: install the script from Marketplace and approve its permission screen. <em>Installing Rebind does not install the script.</em> [Verified-source: <code>mission1\Mission 001-v2\MISSION-001-LOCK.md</code>, "Two-step install"]</li>
+<li><strong>Activation means the script did the thing and the person saw it.</strong> The overlay showed their keystroke. The mute key muted the call. An install alone is not activation, and neither is the welcome tour. [Lock: "Welcome tour is optional SDK orientation, not Mission 001 activation"]</li>
+<li><strong>Today we can only measure as far as download-start.</strong> <code>passRefToInstaller</code> is <code>false</code>, and the app does not report first launch with a ref. So no install, script install, activation or share can be tied to a source. There is no honest CPI and this report gives none. [Verified-source: <code>Rebind\campaigns\reddit-seed\landing-pages\LANDING-PAGES-README.md</code>, Config + "Installs (first app launch)"; dossier 05 "Attribution design recorded, not implementation proof"]</li>
+<li><strong>The best loop-shaped spaces have $0 entry cost and run on artifacts, not posting:</strong> marketplace listings and author pages, an example-script GitHub repo, awesome-lists and package managers, the MCP registry, and show-your-setup cultures where <em>the output itself is visible on screen</em> (Keystroke Overlay in tutorials). Each of these still needs a human GO before any submission.</li>
+<li><strong>The one fix that matters most is engineering, not marketing:</strong> carry ref through the installer, then log <code>first_launch</code>, <code>script_installed</code> and <code>script_first_run</code>. Without that, every loop below can only be judged by daily install totals against a baseline.</li>
+</ol>
+<hr>
+<h2>2. The loop map</h2>
+<h3>2.1 The core product-led loop</h3>
+<pre><code> [A] DISCOVERY                         where attention already lives
+  │  search for a job, marketplace browse, a tutorial with the
+  │  overlay visible, an awesome-list / package manager, the MCP registry,
+  │  a shared setup or script link
+  ▼
+ [B] LANDING on a script page          marketplace listing or guide
+  │  (one job, one observable demo, OS eligibility, limits, use-both box)
+  │                                    ◄── MEASURABLE TODAY: visit (ref/UTM)
+  ▼
+ [C] STEP 1: INSTALL REBIND            free app, Win 10/11 x64 or macOS 13+ Apple Silicon
+  │  click installer or copy command   ◄── MEASURABLE TODAY: rebind_download
+  │  ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ATTRIBUTION WALL (passRefToInstaller=false)
+  │  admin prompt (Win) / Accessibility permission (Mac)
+  │  app launches for the first time   ◄── NOT tied to a source; day totals only
+  ▼
+ [D] STEP 2: INSTALL THE SCRIPT        separate action. Rebind does not ship it.
+  │  find it in Marketplace (or follow the listing URL), read the README,
+  │  read the permission screen, allow or cancel
+  │                                    ◄── NOT MEASURED by source today [Unknown]
+  ▼
+ [E] ACTIVATION = the script does the thing, and the person sees it work
+  │  e.g. overlay draws the key they pressed; the mute key mutes the call;
+  │  the paste lands without formatting. Kill switch shown: Left Ctrl+Left Alt+K
+  │  (Mac: Left Control+Left Option+K)
+  │                                    ◄── NOT MEASURED today [Unknown]
+  ▼
+ [F] HABIT: the script is still in use days later; they try a 2nd script or a tweak
+  ▼
+ [G] SHARE: the output is seen (a recording with the overlay, a setup post),
+  │  a listing link is passed on, a script is forked or published by them,
+  │  or a private Channel is shared inside a team
+  └──────────────► back to [A] for the next person
+</code></pre>
+<h3>2.2 What each stage depends on</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>What has to be true</th>
+<th>Evidence</th>
+<th>Main way people drop out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A Discovery</td>
+<td>A searchable, one-job script page exists; the listing name is real</td>
+<td>Marketplace showed 56 scripts; the five Mission 001 listings had no reviews [Verified-source: Mission 001 lock, "Growth priority"]. Ship-safe names: Keystroke Overlay, Input Display, Pocket Deck, Controller Map [dossier 02]</td>
+<td>Generic "productivity" framing; wrong OS (Linux, Intel Mac)</td>
+</tr>
+<tr>
+<td>B Landing</td>
+<td>OS eligibility, limits, the two steps and the listing URL are shown beside the CTA</td>
+<td>Lock requires "Installing Rebind does not install [script]" and the listing URL repeated by the button</td>
+<td>Visitor is on a phone; a click is not an install</td>
+</tr>
+<tr>
+<td>C Install Rebind</td>
+<td>Installer is reachable; the person passes the admin or Accessibility prompt</td>
+<td>Windows <code>/install</code> goes to a CloudFront URL with a <code>dl=</code> token, and whether it is public is unconfirmed [LANDING-PAGES-README]</td>
+<td>Permission prompts are the two points where a download most often fails to become an install [Inference, also stated in <code>REDDIT-ATTACK-PLAN-2026-11-07.md</code> §5.4]</td>
+</tr>
+<tr>
+<td>D Install script</td>
+<td>Marketplace is reachable in-app or through the listing URL; the permission screen is understandable</td>
+<td>Third-party scripts run only within permissions the user approved [dossier 02]. Whether a marketplace install needs an account is <strong>not confirmed</strong>, so "no account" must not cover it [Lock]</td>
+<td>The person installs the app, never finds the script, and leaves with an empty runtime</td>
+</tr>
+<tr>
+<td>E Activation</td>
+<td>The script runs on this OS and Rebind version, and its output is visible</td>
+<td>Keystroke Overlay needs Rebind 3.14.0+ and Display Capture / macOS Screen Capture; app-window capture misses it. Text Expander, Send to Your AI, Universal Mute and Clean Paste: live use unverified [Lock, "Documented limits"]</td>
+<td>Hidden limits (exclusive fullscreen, title matching, US-layout <code>@</code>) make the first run fail quietly</td>
+</tr>
+<tr>
+<td>F Habit</td>
+<td>The second script is one click away; the script folder is plain files they can edit</td>
+<td><code>.lua</code>/<code>.luau</code> files in <code>%APPDATA%\Rebind\scripts</code> / <code>~/Library/Application Support/Rebind/scripts</code> [dossier 02]</td>
+<td>The one-off demo gets used once and forgotten</td>
+</tr>
+<tr>
+<td>G Share</td>
+<td>A share path exists that does not depend on posting <em>for</em> the person</td>
+<td>Publishing, Channels and sharing are not gated by Pro [dossier 04]. Invite-only Channels exist; the CLI and <code>.rbp</code> packages are documented [dossier 02]</td>
+<td>No share prompt; a listing has no "share" link [Unknown]; posting on the user's behalf is off-limits</td>
+</tr>
+</tbody>
+</table></div>
+<h3>2.3 Sub-loops that feed the core loop</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Loop</th>
+<th>Mechanism</th>
+<th>Viral-spectrum fit</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>L1 Visible-output loop</strong></td>
+<td>The script's output appears on screen in someone else's content. Keystroke Overlay and Input Display draw in recordings and streams</td>
+<td><strong>Natural.</strong> The product is seen every time it is used</td>
+<td>Strongest fit for organic spread [Inference]. Any "made with" mark must be opt-in and user-controlled [Inference; not a shipped feature]</td>
+</tr>
+<tr>
+<td><strong>L2 Author loop</strong></td>
+<td>A script author publishes, then promotes their own listing to their own audience, which brings in new installs</td>
+<td>Natural for authors</td>
+<td>"Publish and earn, protected by encrypted bytecode" is the brief's author pitch [Verified-source: <code>rebind-marketing-brief.md</code>]. Revenue share is not quantified, so do not quote a margin [dossier 04]</td>
+</tr>
+<tr>
+<td><strong>L3 Team / Channel loop</strong></td>
+<td>One person sets up a private Channel; colleagues install Rebind plus the Channel scripts</td>
+<td>Limited but high-value (studios, post houses, IT)</td>
+<td>Distribution story in the CAD, video and enterprise sector plans [dossier 03]. Proposed pilots are not partnerships</td>
+</tr>
+<tr>
+<td><strong>L4 Search/content loop</strong></td>
+<td>Guide pages (indexable twins of the Mission 001 pages) rank for job queries and send people to a script</td>
+<td>Content loop, not viral</td>
+<td>The attack plan proposes indexable twins at <code>/guides/&lt;slug&gt;</code> [REDDIT-ATTACK-PLAN §5.8]. Drafts stay noindex until approved [Lock]</td>
+</tr>
+<tr>
+<td><strong>L5 Directory/registry loop</strong></td>
+<td>A one-time listing (awesome-list, package manager, MCP registry) sends a steady trickle of searchers</td>
+<td>Content, not viral</td>
+<td>$0 and long-lived, but each listing is a submission that needs GO</td>
+</tr>
+<tr>
+<td><strong>L6 Referral loop</strong></td>
+<td>Rewards for referring</td>
+<td><strong>Weak fit for now.</strong> The free app has no revenue event to reward. A referral on Link (hardware, $140, US/CA) or Pro ($9/month) is plausible later</td>
+<td>Referral credits appear in the market report as an <strong>unimplemented idea</strong> [dossier 03]. Credits must stay out of top-of-funnel copy [dossier 02, #12]. Several subreddits ban referral links outright [<code>subreddits.md</code>, r/automation rule 2]</td>
+</tr>
+</tbody>
+</table></div>
+<hr>
+<h2>3. The attribution gap, stated exactly</h2>
+<p><strong>What is built (as design, not proven in production)</strong> [LANDING-PAGES-README; dossier 05]<br>
+- <code>rebind_landing_visit</code>: ref, ad_group, path, UTMs, timestamp.<br>
+- <code>rebind_download</code>: platform and method (installer, PowerShell command or macOS command).<br>
+- A session <code>ref</code> joins visit to download. Events go to <code>dataLayer</code> (GTM). The collector endpoint is empty by default.</p>
+<p><strong>What is not built</strong><br>
+- <code>passRefToInstaller: false</code>. <code>install.ps1</code>, <code>install.sh</code> and the Windows installer do not accept <code>?ref=</code> today, so the ref stops at the download click.<br>
+- The app does not report <code>ref</code> on first launch, so a source cannot be joined to an install.<br>
+- No source mentions a <code>script_installed</code> or <code>script_first_run</code> event. [Unknown]</p>
+<p><strong>What follows for every loop in this report</strong><br>
+- The honest unit is <strong>download-start by source</strong>. Installs can only be read as <strong>daily totals against a pre-campaign baseline</strong> (the README's own fallback).<br>
+- <strong>No CPI, cost-per-install or cost-per-activation can be calculated or quoted.</strong> Any such figure would be invented.<br>
+- A copied install command or a CTA click is not a completed install [dossier 05]. A completed install is not a script install. A script install is not activation.<br>
+- Even the events that exist are unproven: "These code/config notes do not prove collector ingestion or installer/app instrumentation works" [dossier 05].</p>
+<p><strong>The fix, in order (a Coding scope, recommended, not requested by me)</strong><br>
+1. Installers accept and store <code>ref</code>, then set <code>passRefToInstaller: true</code> (the README documents exactly this).<br>
+2. On first launch the app reports <code>ref</code> with its install event.<br>
+3. Add <code>script_installed {script_id, ref}</code> and <code>script_first_run {script_id, ref}</code>. The attack plan's "Track first script run" item [§6] is the same idea.<br>
+4. A listing-level referrer (for example <code>?ref=</code> on marketplace URLs, carried into the app) so author and share loops (L1, L2, G) can be credited. [Unknown whether the marketplace supports this]</p>
+<p>Until steps 1–3 exist, experiments should be judged on <strong>download-start by source</strong> plus <strong>qualitative first-run checks</strong> done by our own testers, not by real users' activation rates.</p>
+<hr>
+<h2>4. Loop-shaped spaces, ranked</h2>
+<p>Ranked by: fit with a working-script loop, honest-presence feasibility, $0 entry cost, and how long a single action keeps paying back. Scores are my judgment (1–5) [Inference]. Every row needs Agency CEO review and Dean's GO before any submission, post or listing. Rows marked "listen only" get no presence.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Space</th>
+<th>Loop</th>
+<th>Why it fits</th>
+<th>Honest-presence shape (if ever approved)</th>
+<th style="text-align: right;">Fit</th>
+<th style="text-align: right;">Feasibility</th>
+<th style="text-align: right;">Durability</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Rebind Marketplace itself</strong> (listing pages, author pages, in-app browse)</td>
+<td>Core A→D, L2</td>
+<td>It is where step 2 happens, and it is owned. Better READMEs, "what you'll see" GIFs, OS badges and a "you need Rebind first" line fix the biggest drop-off</td>
+<td>Owned surface. Editorial and README work only</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td>56 scripts, no reviews on the five listings [Lock]</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Tutorial and screen-recording cultures</strong> (YouTube software tutorials, course makers, coding streamers) where Keystroke Overlay / Input Display appear in frame</td>
+<td>L1</td>
+<td>The output is the advertisement. Each recording shows the product to viewers who have the same need</td>
+<td>Creators choose it on their own. Any later creator contact goes through comms-creators and needs consent and disclosure [dossier 02, #11]</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td>Lock picks Keystroke Overlay as INVEST. The capture limit must stay visible</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Rebind-owned example-script GitHub repo</strong>, tagged <code>autohotkey</code>, <code>keyboard-remapping</code>, <code>luau</code></td>
+<td>L4/L5</td>
+<td>Script hunters browse GitHub topics. Self-tagging your own repo is allowed</td>
+<td>Our repo, honest README, use-both line, kill switch</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td><code>autohotkey</code> topic: 2,075 repos; <code>keyboard-remapping</code>: 58 [Verified-sibling: <code>insights-space-map-v1.md</code>]</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Official MCP Registry → aggregators</strong> (Smithery, Glama, MCP.so)</td>
+<td>L5</td>
+<td>Rebind ships an MCP server for agent input. Agent builders browse registries</td>
+<td>One accurate listing. The verify-docs-first gate applies; no invented tool names [dossier 02]</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td>Proposed in REDDIT-ATTACK-PLAN §7.1. Registry policies not checked today [Unknown]</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Package managers</strong> (winget, Homebrew cask, Scoop)</td>
+<td>L5</td>
+<td>Developers install this way. Note this only helps step 1; step 2 still has to happen</td>
+<td>Coding task, only if the installer meets each policy</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+<td>REDDIT-ATTACK-PLAN §7.1. Policy fit [Unknown]</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Awesome-lists</strong> (awesome-mac; Lua/Luau; MCP lists)</td>
+<td>L5</td>
+<td>Long-lived developer discovery</td>
+<td>One PR each with a one-line honest description, after GO</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td>Proposed in REDDIT-ATTACK-PLAN §7.1. Inclusion rules not checked today [Unknown]</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>AlternativeTo / SaaSHub / Slant</strong></td>
+<td>L5</td>
+<td>People search "AutoHotkey for Mac", "Karabiner for Windows"</td>
+<td>Honest listing under alternatives. Never claim parity or replacement</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td>REDDIT-ATTACK-PLAN §7.1</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Show-your-setup cultures</strong> (desk-setup, mechanical keyboard, battlestation communities; Geekhack/Deskthority software subforums)</td>
+<td>L1/G</td>
+<td>Members already share setups. Computer-side layers sit beside QMK/VIA, not instead of them</td>
+<td>Organic only, disclosed, and only if organic posting is lifted. <strong>Organic Reddit is stopped</strong></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td>Insights map ranks keyboard communities. QMK/VIA replacement is a banned claim [dossier 02, #6]</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>Private Channels in studios, post houses and IT teams</strong></td>
+<td>L3</td>
+<td>One setup spreads to a whole team</td>
+<td>Pilot conversations only, later, through the CEO</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
+<td>Sector plans 01–03 [dossier 03]. Proposed pilots are not partnerships</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>Product Hunt / Show HN</strong></td>
+<td>Spike → L5</td>
+<td>One-day spike plus a permanent page. Needs real demo footage first</td>
+<td>Founder-run, disclosed, one shot</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td>REDDIT-ATTACK-PLAN §7.1–7.2</td>
+</tr>
+<tr>
+<td>—</td>
+<td><strong>PowerToys, Karabiner and Kanata GitHub repos; Keyboard Maestro forum</strong></td>
+<td>—</td>
+<td>Gap language lives here</td>
+<td><strong>Listen only.</strong> No promotion in issues</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td>Insights map caps these at 3 as listening posts</td>
+</tr>
+</tbody>
+</table></div>
+<p>Spaces deliberately excluded: anything game-advantage shaped (recoil, turbo, anti-cheat); proctoring or "make AI text look typed" spaces (TypeTation stays on verification hold, with no campaign traffic); Roblox/young-audience spaces even though Luau overlaps [REDDIT-ATTACK-PLAN §7.2 note]; referral-link placements in communities that ban them.</p>
+<hr>
+<h2>5. Free-tool and lead-magnet ideas that fit the loop</h2>
+<p>All are concepts. None exist and none are proposed for a build without CEO and Dean approval.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Idea</th>
+<th>Type</th>
+<th>Path to product</th>
+<th style="text-align: right;">Scorecard (8 factors, 1–5)</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>"Will this script run on my machine?" checker</strong> (web page: pick OS, chip and capture setup → shows which showcased scripts work, which need Link, and the two install steps)</td>
+<td>Tester</td>
+<td>Removes the biggest silent failure (wrong OS, Intel Mac, missing hardware) before download</td>
+<td style="text-align: right;">~27</td>
+<td>Low maintenance if driven by listing metadata. Honest by design: it says "no" to Linux and Intel Mac</td>
+</tr>
+<tr>
+<td><strong>Keystroke-overlay preview</strong> (browser page shows how the overlay would look over a sample recording, then hands off to the listing)</td>
+<td>Interactive</td>
+<td>Shows the result before the two steps. Directly feeds L1</td>
+<td style="text-align: right;">~25</td>
+<td>Must be labeled as a preview or simulation, not the real script [Lock: "Label playback as playback"]</td>
+</tr>
+<tr>
+<td><strong>AHK-to-Luau "what ports" explainer</strong> (paste a short .ahk snippet → classifies lines as remap/text/per-app [portable] vs COM/ControlClick [keep on AHK])</td>
+<td>Analyzer</td>
+<td>Use-both framing; points to free scripts or a manual port</td>
+<td style="text-align: right;">~22</td>
+<td>Must not do or promise the port (RebindGPT is Pro, not free or automatic). No <code>.ahk</code> compatibility claim [dossier 02, #7]</td>
+</tr>
+<tr>
+<td><strong>Shortcut cheat-sheet generator for one app</strong> (Premiere/Blender/Figma) with a matching marketplace script</td>
+<td>Generator / lead magnet</td>
+<td>Sector-pack path [dossier 03]</td>
+<td style="text-align: right;">~19</td>
+<td>Only once a real per-app script exists. No certified-integration language</td>
+</tr>
+</tbody>
+</table></div>
+<p>Gating: ungated. The free app has no account requirement for local scripts, so email capture has no natural value exchange at the top [Inference]. A "send this page to my computer" email field is the one honest capture point, for phone visitors (already in the landing-page drafts).</p>
+<hr>
+<h2>6. Five loop experiments (hypotheses only, none launched)</h2>
+<p>Shared rules for all five: nothing goes live without Agency CEO review and Dean's GO. $0 unless Dean approves otherwise. No ads (Mission 001 ads stay HOLD). No organic Reddit. No posting, outreach or submission is drafted for sending. Any later human post opens with <code>Disclosure: I work on Rebind.</code> Activation always means <strong>the showcased script ran and the person saw it work</strong>. Because of §3, every metric is labeled with what can actually be measured today.</p>
+<h3>H1. Close the step-2 gap on the listing page (core loop, D)</h3>
+<ul>
+<li><strong>Hypothesis:</strong> If the five Mission 001 listings and pages show a "you'll need two steps" strip (install Rebind → then install this script, with the listing URL beside the button and a 10-second "what you'll see" clip), more downloads become script activations than with the current pages.</li>
+<li><strong>Loop stage:</strong> C→D→E.</li>
+<li><strong>Change tested:</strong> page and README copy only. No new traffic.</li>
+<li><strong>Measure now:</strong> download-start by page (exists). <strong>Measure properly once instrumented:</strong> <code>script_installed</code> and <code>script_first_run</code> per ref.</li>
+<li><strong>Interim proxy:</strong> moderated first-run tests with 5 internal testers per OS. Record where each one stops between download and seeing the script work.</li>
+<li><strong>Success signal (to set after baseline):</strong> a higher share of testers who reach "saw it work" without help. No numeric target until a baseline exists.</li>
+<li><strong>Stop/bail:</strong> if testers still miss step 2, escalate the in-app fix (H2) instead of rewriting copy again.</li>
+<li><strong>Owner lanes (for CEO to assign):</strong> CRO + content-copy; Growth measures.</li>
+</ul>
+<h3>H2. Arrive-with-intent first run (core loop, D→E)</h3>
+<ul>
+<li><strong>Hypothesis:</strong> If the app, on first launch, offers the script the person came for (the attack plan's "first-run recipe"), more installs reach activation than if they must find it in Marketplace themselves.</li>
+<li><strong>Dependency:</strong> needs the ref (or a script id) to survive the installer. This is the same engineering as §3. <strong>Blocked until Coding confirms feasibility.</strong></li>
+<li><strong>Measure:</strong> <code>first_launch → script_installed → script_first_run</code> by script id. Not possible today.</li>
+<li><strong>Guardrails:</strong> the person still sees and approves the permission screen. Nothing installs silently. Kill switch shown on that screen.</li>
+<li><strong>Stop/bail:</strong> if offering the script increases cancellations at the permission screen, revert to a plain Marketplace link.</li>
+<li><strong>Owner lanes:</strong> Coding (product) via CEO; Growth defines events.</li>
+</ul>
+<h3>H3. Visible-output loop for Keystroke Overlay (L1)</h3>
+<ul>
+<li><strong>Hypothesis:</strong> Tutorial makers who already need to show keystrokes will keep the overlay in their recordings, and their viewers will search for and install it. Making the listing easy to find from a recording (a short, user-controlled optional caption such as "keystroke overlay: Rebind" that the creator can switch off) increases listing visits from video referrers.</li>
+<li><strong>Loop stage:</strong> E→G→A.</li>
+<li><strong>What would be tested first:</strong> desk research only. Look at what share of public software tutorials show keystrokes and which tools they use. Then, internally, check whether an optional caption is even possible in the script (product question).</li>
+<li><strong>Measure now:</strong> listing visits with video-platform referrers, if marketplace analytics expose referrers [Unknown]. Downloads from guide pages.</li>
+<li><strong>Guardrails:</strong> the caption is off by default or clearly toggleable. No watermark forced on users. No creator contact without comms-creators and consent. The capture limit (Display Capture, not app-window capture) is stated.</li>
+<li><strong>Stop/bail:</strong> if no referrer data exists, park until marketplace analytics are confirmed.</li>
+</ul>
+<h3>H4. Author loop: give script authors a share kit (L2)</h3>
+<ul>
+<li><strong>Hypothesis:</strong> If marketplace authors get a ready share kit (listing URL with a per-author ref, a "requires Rebind (free), two steps" badge, a GIF template and claim fences), authors will promote their own listings and bring installs Rebind's channels do not reach.</li>
+<li><strong>Loop stage:</strong> G→A, with authors as the distribution.</li>
+<li><strong>Dependency:</strong> a listing-level ref that survives into the app (§3 step 4) [Unknown].</li>
+<li><strong>Measure now:</strong> listing visits by author ref, if supported. Otherwise only listing-level visit totals.</li>
+<li><strong>Guardrails:</strong> authors disclose their own interest. No incentive is offered until terms exist. No promised revenue share figures (not quantified in source).</li>
+<li><strong>Stop/bail:</strong> if fewer than a handful of authors are active, the loop has no fuel. Revisit when the publish count grows ("marketplace publishes per month" is already a brief metric).</li>
+</ul>
+<h3>H5. Directory and registry trickle (L5)</h3>
+<ul>
+<li><strong>Hypothesis:</strong> A small set of accurate, permanent listings (Rebind example-script GitHub repo with honest topics, the official MCP Registry, AlternativeTo, one or two awesome-lists) produces a steady, attributable trickle of download-starts at $0, with each listing linking to a specific script page rather than the homepage.</li>
+<li><strong>Loop stage:</strong> A→B.</li>
+<li><strong>Measure now:</strong> download-start with a per-listing <code>utm_content</code>. This works today because it is a landing-page event.</li>
+<li><strong>Pre-work (research only):</strong> read each site's inclusion and self-submission rules, check whether the MCP server meets registry requirements, verify docs before naming any MCP tool.</li>
+<li><strong>Guardrails:</strong> each submission needs GO. Honest one-line descriptions, use-both, no parity, no replacement wording. No referral or affiliate links where rules ban them.</li>
+<li><strong>Stop/bail:</strong> remove or correct any listing that becomes inaccurate (version, platforms). Drop a directory if it sends nothing after a fixed review window set by the CEO.</li>
+</ul>
+<h3>Experiment priority (recommendation)</h3>
+<ol>
+<li><strong>§3 attribution fix</strong> (prerequisite for judging anything beyond download-start).</li>
+<li><strong>H1</strong> (copy-only, no traffic, testable with internal testers now).</li>
+<li><strong>H5</strong> (lowest risk, measurable at download-start today).</li>
+<li><strong>H2</strong> (biggest likely effect, but blocked on Coding).</li>
+<li><strong>H3 / H4</strong> (strongest long-run loops, need product and analytics answers first).</li>
+</ol>
+<p>Nothing in this list has been launched, submitted, scheduled or sent.</p>
+<hr>
+<h2>7. Open questions for Coding or Research (none asked by me)</h2>
+<ol>
+<li>Do marketplace installs need a signed-in account? (This decides whether "no account" can be used anywhere near step 2.)</li>
+<li>Is there a deep link or "open in Rebind" URL for a listing, and does it survive a first install?</li>
+<li>Does marketplace analytics expose listing views, installs and referrers per script?</li>
+<li>Is the Windows <code>/install</code> CloudFront <code>dl=</code> URL public and stable?</li>
+<li>Can a script show an optional, user-toggleable caption in its own UI (for H3)?</li>
+<li>Can <code>install.ps1</code>, <code>install.sh</code> and the Windows installer accept and persist <code>ref</code> (the README's step 2)?</li>
+<li>Current, re-verified listing names, platforms and minimum versions for the five Mission 001 scripts plus Input Display.</li>
+</ol>
+<hr>
+<h2>8. Sources</h2>
+<ul>
+<li><code>E:\Marketing Repo\dossier\02-product-truth-claims-and-fences.md</code>: platforms, kill switch, modes, marketplace names, Do-Not-Claim.</li>
+<li><code>E:\Marketing Repo\dossier\03-audience-sectors-positioning.md</code>: sectors, Channels distribution, referral credits as an unimplemented idea.</li>
+<li><code>E:\Marketing Repo\dossier\04-offers-pricing-and-commercial-model.md</code>: free app, Pro scope, sharing/publishing not Pro-gated, no revenue-share figure.</li>
+<li><code>E:\Marketing Repo\dossier\05-landing-pages-advertorials-and-longform.md</code>: attribution design is not implementation proof.</li>
+<li><code>E:\Marketing Repo\mission1\Mission 001-v2\MISSION-001-LOCK.md</code>: two-step install, activation vs welcome tour, TypeTation hold, documented limits, 56 scripts / no reviews.</li>
+<li><code>E:\Marketing Repo\Rebind\campaigns\reddit-seed\landing-pages\LANDING-PAGES-README.md</code>: <code>passRefToInstaller: false</code>, events, install attribution steps.</li>
+<li><code>E:\Marketing Repo\Rebind\campaigns\reddit-seed\REDDIT-ATTACK-PLAN-2026-11-07.md</code> §5–7: first-run recipe, first-script-run event, directory and forum list (proposals, not actions).</li>
+<li><code>E:\Marketing Repo\Rebind\campaigns\reddit-seed\subreddits.md</code>: referral-link bans (r/automation).</li>
+<li><code>E:\Marketing Repo\spaces-research\insights-space-map-v1.md</code>: verified GitHub topic counts; listen-only policy for competitor repos.</li>
+<li><code>E:\Marketing Repo\Rebind\rebind-marketing-brief.md</code>: script-author pitch, publishing tooling, "marketplace publishes per month" metric.</li>
+</ul>
+<p>No live web pages were opened for this report. Directory and registry policies are flagged [Unknown] rather than asserted.</p>
+  </main>
+  <footer>
+    <div>Produced by Rebind. This file is a private Mass-Reach Spaces Research draft for internal review.</div>
+    <div>Private test edition · v1 · rendered 2026-11-07 · source growth-loops-v1.md</div>
+  </footer>
+  <script>
+(function () {
+  var root = document.documentElement;
+  var saved = null;
+  try { saved = localStorage.getItem("m001-spaces-theme"); } catch (e) {}
+  if (saved === "light" || saved === "dark") root.setAttribute("data-theme", saved);
+  var btn = document.getElementById("theme");
+  if (!btn) return;
+  btn.addEventListener("click", function () {
+    var next = root.getAttribute("data-theme") === "dark" ? "light" : (root.getAttribute("data-theme") === "light" ? "dark" : (matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "dark"));
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("m001-spaces-theme", next); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Mass-reach spaces: creators, communities and press (v1) · Rebind / Spaces Research · v1</title>
+  <style>
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --ink: #111111;
+  --muted: rgba(17, 17, 17, 0.72);
+  --line: rgba(17, 17, 17, 0.25);
+  --accent: #b0342c;
+  --code: rgba(17, 17, 17, 0.06);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #000000;
+    --ink: #ffffff;
+    --muted: rgba(255, 255, 255, 0.72);
+    --line: rgba(255, 255, 255, 0.25);
+    --code: rgba(255, 255, 255, 0.08);
+  }
+}
+[data-theme="dark"] {
+  --bg: #000000;
+  --ink: #ffffff;
+  --muted: rgba(255, 255, 255, 0.72);
+  --line: rgba(255, 255, 255, 0.25);
+  --code: rgba(255, 255, 255, 0.08);
+}
+[data-theme="light"] {
+  --bg: #ffffff;
+  --ink: #111111;
+  --muted: rgba(17, 17, 17, 0.72);
+  --line: rgba(17, 17, 17, 0.25);
+  --code: rgba(17, 17, 17, 0.06);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--ink); }
+body { font: 18px/1.7 system-ui, -apple-system, "Segoe UI", sans-serif; }
+.mast {
+  display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+  border-bottom: 1px solid var(--line); padding: 0.75rem 1.25rem; font-size: 13px; color: var(--muted);
+}
+.mast a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); }
+.mast button {
+  background: transparent; color: var(--ink); border: 1px solid var(--line);
+  font: inherit; font-size: 13px; padding: 0.15rem 0.55rem; cursor: pointer;
+}
+main { max-width: 54rem; margin: 0 auto; padding: 2rem 1.25rem 5rem; }
+h1, h2, h3, h4 { line-height: 1.25; font-weight: 650; }
+h1 { font-size: 2rem; margin: 0 0 1rem; }
+h2 { font-size: 1.35rem; margin: 2.2rem 0 0.8rem; padding-top: 0.4rem; border-top: 1px solid var(--line); }
+h3 { font-size: 1.1rem; margin: 1.6rem 0 0.5rem; }
+p { margin: 0.85rem 0; }
+a { color: var(--accent); }
+ul, ol { padding-left: 1.3rem; }
+li { margin: 0.25rem 0; }
+blockquote {
+  margin: 1rem 0; padding: 0.15rem 0 0.15rem 1rem;
+  border-left: 3px solid var(--accent); color: var(--muted);
+}
+code, pre { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 0.88em; }
+code { background: var(--code); padding: 0.1em 0.28em; }
+pre { background: var(--code); padding: 0.9rem 1rem; overflow-x: auto; }
+pre code { background: transparent; padding: 0; }
+.table-wrap { overflow-x: auto; margin: 1rem 0; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; line-height: 1.45; }
+th, td { border: 1px solid var(--line); padding: 0.45rem 0.6rem; vertical-align: top; text-align: left; }
+th { font-weight: 650; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 1.6rem 0; }
+footer {
+  border-top: 1px solid var(--line); padding: 1rem 1.25rem 2rem;
+  font-size: 13px; color: var(--muted); max-width: 54rem; margin: 0 auto;
+}
+</style>
+</head>
+<body>
+  <div class="mast">
+    <div>Rebind / Mass-Reach Spaces Research · Test edition · v1 · <a href="index.html">All reports</a></div>
+    <button type="button" id="theme">Theme</button>
+  </div>
+  <main>
+<h1>Mass-reach spaces: creators, communities and press (v1)</h1>
+<p><strong>Task:</strong> task_LufqrHnDKidJ · Mass-Reach Spaces Research, Wave 1<br>
+<strong>From:</strong> comms-creators (Comms &amp; Creators) → <strong>agency-ceo only</strong><br>
+<strong>Provider/model:</strong> claude-code / claude-opus-5-5 · <strong>Version:</strong> v1 · <strong>Date:</strong> 2026-11-07<br>
+<strong>Status:</strong> DRAFT research. For Agency CEO synthesis only. Not for Dean until CEO review.</p>
+<hr>
+<h2>0. Guardrails (read first)</h2>
+<ul>
+<li><strong>I did not contact anyone, and outreach is not authorized.</strong> I sent no emails, DMs, comments, posts, replies, pitches, gifts or follow-ups. I did not spend money or touch any live account. Naming a creator, community or outlet here is not a pitch, partnership, endorsement or consent. This file contains <strong>no outreach copy</strong>.</li>
+<li><strong>Organic Reddit is research-only and stays stopped.</strong> Subreddits appear here only as places where attention already lives. The last organic log (2026-11-01) says <em>DRAFTS ONLY — STAND DOWN</em>. There have been three removals so far (2× r/AutoHotkey, 1× r/ErgoMechKeyboards). Mission 001 ads stay <strong>HOLD</strong>.</li>
+<li><strong>The disclosure line comes first if Dean ever approves a human post:</strong><blockquote>
+<p><strong>Disclosure: I work on Rebind.</strong><br>
+  It goes first, everywhere: forum, Discord, HN, subreddit or comment. Gifted hardware counts as a material connection and must be disclosed. Creators also have to use the platform's paid or branded toggle.</p>
+</blockquote>
+</li>
+<li><strong>"Infiltrate the masses" means only finding where attention already lives.</strong> No astroturf, sockpuppets, alt accounts, coordinated comments, vote asks or stealth seeding (dossier 02, Do-Not-Claim #11).</li>
+<li><strong>TypeTation stays on verification hold.</strong> None of the surfaces below should send traffic to it. Nothing here frames any script as a way to fool proctors or fake a writing process. Exam, homework and "AI-detector" communities are excluded on purpose.</li>
+<li><strong>Claim fences apply to every row.</strong> Use-both framing, never "replaces" AHK, Keyboard Maestro, PowerToys, QMK, VIA or Stream Deck. Supported platforms are Windows 10/11 64-bit and macOS 13+ on Apple Silicon only; no Linux, no Intel Mac. Many features are USB-only. F13–F24, media keys and pointer movement need Link or BYOH. Mac window control is partial. RebindGPT is Pro. Rebind is not a medical device. Kill switch: Left Ctrl+Left Alt+K (Mac: Left Control+Left Option+K). Installing the app does not install a marketplace script; that is a second step.</li>
+<li><strong>Attribution blocker:</strong> download <code>?ref=</code> is not passed to the installer, so creator or community click-to-install can't be measured end to end yet. That makes any paid creator placement premature (see §6).</li>
+</ul>
+<h3>Evidence labels used</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Label</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>V-dossier</strong></td>
+<td>Fact recorded in <code>E:\Marketing Repo\dossier\07</code> or the creator map. Counts are a <strong>2026-10-31 snapshot</strong>, not re-checked today.</td>
+</tr>
+<tr>
+<td><strong>V-web</strong></td>
+<td>Seen in a web search on 2026-11-07 (search snippet or listing). Not a full page audit.</td>
+</tr>
+<tr>
+<td><strong>U</strong></td>
+<td>Well-known public URL that I did <strong>not</strong> re-fetch this session. Check it before use.</td>
+</tr>
+<tr>
+<td><strong>INF</strong></td>
+<td>Analyst inference: fit, culture, likely interest.</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Culture flags</h3>
+<ul>
+<li><strong>SPOKES:</strong> spokesperson-open. Runs sponsor reads, reviews gifted products, has done brand segments. Paid or gifted deals are culturally normal, but disclosure is mandatory.</li>
+<li><strong>TUT:</strong> tutorial-only. Covers a tool only if it teaches something real. No ad reads expected. Value is a recipe the creator can verify themselves.</li>
+<li><strong>MOD:</strong> community-mod. A moderated space where self-promotion is restricted or banned. You participate first, disclose affiliation and follow the rules read that day. Many of these allow no brand presence at all.</li>
+</ul>
+<h3>Disclosure expectations by surface (applies to every row)</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Surface</th>
+<th>Expectation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>YouTube</td>
+<td>"Includes paid promotion" toggle <strong>plus</strong> spoken and on-screen disclosure. Gifted counts. Description-only isn't enough (FTC).</td>
+</tr>
+<tr>
+<td>Twitch</td>
+<td>Branded Content toggle <strong>plus</strong> spoken and title disclosure (dossier 07, Twitch experiments). Gifted counts.</td>
+</tr>
+<tr>
+<td>Podcasts</td>
+<td>Spoken disclosure in the segment. Show notes alone aren't enough.</td>
+</tr>
+<tr>
+<td>Newsletters</td>
+<td>"Sponsored" label on paid placements. Editorial picks (e.g. Console) are never pay-to-play.</td>
+</tr>
+<tr>
+<td>Forums / Discord / HN / subreddits</td>
+<td>Human-only posting from a named, disclosed account. First line: <strong>Disclosure: I work on Rebind.</strong> Obey each space's self-promo rules. <strong>No organic Reddit activity under current orders.</strong></td>
+</tr>
+<tr>
+<td>Press</td>
+<td>Earned only. No paid "coverage". Any loaned or gifted Link unit is disclosed by the outlet under its own ethics policy.</td>
+</tr>
+</tbody>
+</table></div>
+<hr>
+<h2>1. Ranked beachhead shortlist (my recommendation to CEO)</h2>
+<p>Ranked by honest fit × reachable audience × claim safety. Rankings are <strong>INF</strong>.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Space</th>
+<th>Why first</th>
+<th>Main gate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>AHK-adjacent tutorial YouTube</strong> (AUTOHOTKEY Gurus, TAB Nation, linkarzu)</td>
+<td>Audience already scripts input. "Use both" is an honest, verifiable story. Mac + Windows on the same script is a real differentiator.</td>
+<td>No <code>.ahk</code> drop-in claim. RebindGPT porting is Pro.</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Ergo / split-keyboard reviewers</strong> (Ben Vallack, Cheese Turbulence, Ben Frain, If Coding Were Natural)</td>
+<td>OS-level per-app layers that work on any board is a story firmware can't tell. Software-first, so no hardware gate.</td>
+<td>No QMK/ZMK replacement claim. No strain or RSI outcome claim.</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Developer-tool newsletters and HN</strong> (Console.dev, Changelog News, Show HN)</td>
+<td>Editorial, free, architecture-first audiences. Luau, CLI and MCP are novel.</td>
+<td>Must be genuinely useful, no hype. HN self-post needs the disclosure line. No Linux, which this audience will ask about.</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Streaming-tool creators</strong> (nutty, EposVox)</td>
+<td>Overlay plus "reprogram the keys you have" complements Stream Deck. The audience likes tool tutorials.</td>
+<td>"A Stream Deck adds keys. Rebind reprograms the ones you have." No LCD or dial parity.</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Mac power-user media</strong> (Mac Power Users, Club MacStories)</td>
+<td>Mac programmable-input gap. Karabiner users exist.</td>
+<td>Apple Silicon only. Window control is partial. Keep Karabiner framing respectful.</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Accessibility orgs and press</strong> (SpecialEffect, AbleGamers, Can I Play That?, AT/OT podcasts)</td>
+<td>High-value need with real free recipes (dwell, sticky modifiers, one-handed layers).</td>
+<td>Partnership-only, consent-led, not a medical device. Hold until a CEO/Dean posture decision.</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Mass desk-setup / keyboard reviewers</strong> (Switch and Click, Hipyo Tech, Work From Hype)</td>
+<td>Reach</td>
+<td>Go last: attribution is blocked, and these are paid-deal cultures.</td>
+</tr>
+</tbody>
+</table></div>
+<hr>
+<h2>2. Creator types with named public examples</h2>
+<p>All counts are <strong>V-dossier 2026-10-31 snapshots</strong>. Fit, format notes, "why they'd care" and culture are <strong>INF</strong>. The full 25 YouTube / 24 Twitch rosters are in dossier 07. Below are the representatives per creator type.</p>
+<h3>2a. AutoHotkey / automation teachers (YouTube) — TUT</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Creator</th>
+<th>URL</th>
+<th>Snapshot</th>
+<th>Fit</th>
+<th>Typical format</th>
+<th>Why they might care</th>
+<th>Culture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AUTOHOTKEY Gurus (Joe Glines)</td>
+<td>https://www.youtube.com/@JoeGlines-Automator</td>
+<td>12.3K subs</td>
+<td>High</td>
+<td>Long tutorials, webinars, AHK+AI, MCP</td>
+<td>Mac reach for an AHK audience; MCP angle matches his recent content</td>
+<td>TUT; course-seller, possibly open to joint webinars (INF)</td>
+</tr>
+<tr>
+<td>TAB Nation – Automation</td>
+<td>https://www.youtube.com/@TABNationAutomation</td>
+<td>14.4K</td>
+<td>High</td>
+<td>AHK v1/v2, macro-recorder roundups, AppleScript</td>
+<td>Already runs "macro recorder" comparisons; same script on both OSes</td>
+<td>TUT</td>
+</tr>
+<tr>
+<td>linkarzu</td>
+<td>https://www.youtube.com/@linkarzu</td>
+<td>13.5K</td>
+<td>High</td>
+<td>macOS remapping (Karabiner vs Kanata), terminal</td>
+<td>Luau logic vs JSON rules is an honest comparison topic</td>
+<td>TUT</td>
+</tr>
+<tr>
+<td>Anders Jensen</td>
+<td>https://www.youtube.com/@andersjensenorg</td>
+<td>92.9K</td>
+<td>Med</td>
+<td>RPA (UiPath / Power Automate), classic AHK beginner tutorial</td>
+<td>Agentic automation + MCP</td>
+<td>TUT; may do sponsor segments (INF)</td>
+</tr>
+<tr>
+<td>Leila Gharani</td>
+<td>https://www.youtube.com/@LeilaGharani</td>
+<td>3.09M</td>
+<td>Med</td>
+<td>Excel/Office productivity, has done an AHK tutorial</td>
+<td>Text expansion, per-app shortcuts</td>
+<td>SPOKES (large, professional). <strong>No Excel COM claim.</strong> Later wave.</td>
+</tr>
+</tbody>
+</table></div>
+<h3>2b. Ergonomic / split / DIY keyboard reviewers (YouTube) — TUT leaning SPOKES</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Creator</th>
+<th>URL</th>
+<th>Snapshot</th>
+<th>Fit</th>
+<th>Format</th>
+<th>Why care</th>
+<th>Culture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ben Vallack</td>
+<td>https://www.youtube.com/@BenVallack</td>
+<td>95.7K</td>
+<td>High</td>
+<td>Minimal-keyboard essays, "computer as tool"</td>
+<td>Per-app layers on the board he already owns</td>
+<td>TUT/essay; picky about tools</td>
+</tr>
+<tr>
+<td>Cheese Turbulence</td>
+<td>https://www.youtube.com/@CheeseTurbulence</td>
+<td>53.4K</td>
+<td>High</td>
+<td>Long-form ergo reviews (Voyager, UHK80, Go60)</td>
+<td>Cross-board layers without a per-vendor configurator</td>
+<td>SPOKES (review units are normal)</td>
+</tr>
+<tr>
+<td>Joe Scotto</td>
+<td>https://www.youtube.com/@joe_scotto</td>
+<td>25.1K</td>
+<td>High</td>
+<td>Handwired builds, tiny layouts</td>
+<td>BYOH/Teensy, real USB HID</td>
+<td>TUT/maker</td>
+</tr>
+<tr>
+<td>Ben Frain</td>
+<td>https://www.youtube.com/@benfrainuk</td>
+<td>7.63K</td>
+<td>High</td>
+<td>Ergo reviews (Glove80, Dygma)</td>
+<td>Cross-board layers</td>
+<td>SPOKES (small)</td>
+</tr>
+<tr>
+<td>If Coding Were Natural</td>
+<td>https://www.youtube.com/@ifcodingwerenatural</td>
+<td>9.73K</td>
+<td>High</td>
+<td>Split keyboards for programmers</td>
+<td>Easing the split transition with per-app layers</td>
+<td>TUT</td>
+</tr>
+<tr>
+<td>Chyrosran22</td>
+<td>https://www.youtube.com/@Chyrosran22</td>
+<td>129K</td>
+<td>Med</td>
+<td>Keyboard reviews incl. one-handed (Maltron)</td>
+<td>One-handed layer recipe</td>
+<td>SPOKES</td>
+</tr>
+</tbody>
+</table></div>
+<h3>2c. Developer-productivity creators (YouTube / Twitch) — TUT</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Creator</th>
+<th>URL</th>
+<th>Snapshot</th>
+<th>Fit</th>
+<th>Format</th>
+<th>Why care</th>
+<th>Culture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dreams of Code</td>
+<td>https://www.youtube.com/@dreamsofcode</td>
+<td>211K</td>
+<td>High</td>
+<td>Dev tooling, remaps, Neovim/terminal</td>
+<td>CapsLock one-liner, cross-platform, MCP</td>
+<td>TUT; runs sponsor reads (INF)</td>
+</tr>
+<tr>
+<td>typecraft</td>
+<td>https://www.youtube.com/@typecraft_dev</td>
+<td>242K</td>
+<td>Med</td>
+<td>Terminal/dotfiles</td>
+<td>"Dotfiles for your input". <strong>Audience skews Linux, so expect objections.</strong></td>
+<td>TUT</td>
+</tr>
+<tr>
+<td>ThePrimeagen</td>
+<td>https://www.twitch.tv/theprimeagen</td>
+<td>296K followers</td>
+<td>Med</td>
+<td>Live coding, ZMK split</td>
+<td>OS-level layer on top of firmware</td>
+<td>SPOKES-ish but blunt; no Linux claim</td>
+</tr>
+<tr>
+<td>cmgriffing</td>
+<td>https://www.twitch.tv/cmgriffing</td>
+<td>52.3K</td>
+<td>High</td>
+<td>Builds chat-controls-computer tools live</td>
+<td>Local, opt-in chat → allowlisted action</td>
+<td>TUT/live-build</td>
+</tr>
+<tr>
+<td>teej_dv</td>
+<td>https://www.twitch.tv/teej_dv</td>
+<td>44.9K (last live &gt;30d at snapshot)</td>
+<td>Med</td>
+<td>Neovim core / Lua</td>
+<td>Luau is Lua-family</td>
+<td>TUT</td>
+</tr>
+<tr>
+<td>Tsoding</td>
+<td>https://www.twitch.tv/tsoding</td>
+<td>86K</td>
+<td>—</td>
+<td>Low-level C</td>
+<td><strong>PARK: Linux OS gate unresolved</strong></td>
+<td>TUT</td>
+</tr>
+</tbody>
+</table></div>
+<h3>2d. Streaming-tools creators — SPOKES/TUT</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Creator</th>
+<th>URL</th>
+<th>Snapshot</th>
+<th>Fit</th>
+<th>Format</th>
+<th>Why care</th>
+<th>Culture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nutty</td>
+<td>https://www.youtube.com/@nuttylmao · https://www.twitch.tv/nutty</td>
+<td>196K YT / 41K Twitch</td>
+<td>High</td>
+<td>OBS overlays, Stream Deck hacks</td>
+<td>Overlay + existing-key hotkey deck. <strong>One pitch across both platforms.</strong></td>
+<td>TUT + SPOKES</td>
+</tr>
+<tr>
+<td>EposVox</td>
+<td>https://www.youtube.com/@EposVox</td>
+<td>351K</td>
+<td>Med</td>
+<td>Stream tech, Stream Deck reviews</td>
+<td>Complements Stream Deck with no extra hardware</td>
+<td>SPOKES</td>
+</tr>
+<tr>
+<td>NerdOrDie</td>
+<td>https://www.twitch.tv/nerdordie</td>
+<td>49.7K (inactive at snapshot)</td>
+<td>Med</td>
+<td>Overlay/widget design</td>
+<td>rb.overlay tutorial</td>
+<td>SPOKES (brand)</td>
+</tr>
+<tr>
+<td>LumiaStream</td>
+<td>https://www.twitch.tv/lumiastream</td>
+<td>4K</td>
+<td>Low</td>
+<td>Brand channel</td>
+<td>Co-marketing integration candidate, not a creator</td>
+<td>Partner</td>
+</tr>
+</tbody>
+</table></div>
+<h3>2e. Mass desk / keyboard / mouse reach — SPOKES (go last)</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Creator</th>
+<th>URL</th>
+<th>Snapshot</th>
+<th>Fit</th>
+<th>Format</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Switch and Click</td>
+<td>https://www.youtube.com/@SwitchandClickOfficial</td>
+<td>1.44M</td>
+<td>High</td>
+<td>Desk setups, mice, keyboards</td>
+<td>"Any mouse, one script vs vendor apps"; paid culture</td>
+</tr>
+<tr>
+<td>Work From Hype</td>
+<td>https://www.youtube.com/@WorkFromHype</td>
+<td>120K</td>
+<td>High</td>
+<td>Desk gadgets, macropads</td>
+<td>Spare key row → macropad</td>
+</tr>
+<tr>
+<td>Hipyo Tech</td>
+<td>https://www.youtube.com/@HipyoTech</td>
+<td>1.76M</td>
+<td>Med</td>
+<td>Mechanical keyboard reviews</td>
+<td>Per-app remap on any board</td>
+</tr>
+<tr>
+<td>Rocket Jump Ninja</td>
+<td>https://www.youtube.com/@RocketJumpNinja</td>
+<td>286K</td>
+<td>Med</td>
+<td>Gaming mice</td>
+<td><strong>Productivity side-buttons only; no in-game demos</strong></td>
+</tr>
+<tr>
+<td>Taran Van Hemert</td>
+<td>https://www.youtube.com/@taranvh</td>
+<td>313K (last upload 2025-09 at snapshot)</td>
+<td>High</td>
+<td>2nd-keyboard macro legend</td>
+<td>Link/BYOH as a sequel; cadence risk</td>
+</tr>
+</tbody>
+</table></div>
+<h3>2f. Accessibility creators and orgs — partnership culture, not ad culture</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Creator/org</th>
+<th>URL</th>
+<th>Snapshot</th>
+<th>Fit</th>
+<th>Format</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SpecialEffect (UK charity)</td>
+<td>https://www.youtube.com/@specialeffectcharity</td>
+<td>9.3K</td>
+<td>Med</td>
+<td>Case films, accessibility gaming</td>
+<td>Partnership, not paid. Free recipes. No suffering framing.</td>
+</tr>
+<tr>
+<td>AbleGamers (US charity)</td>
+<td>https://www.twitch.tv/ablegamers · https://ablegamers.org (U)</td>
+<td>14.3K Twitch</td>
+<td>Med</td>
+<td>Charity streams, equipment program</td>
+<td>Existing <code>/accessibility</code> route; discounted Link case by case only</td>
+</tr>
+<tr>
+<td>halfcoordinated</td>
+<td>https://www.twitch.tv/halfcoordinated</td>
+<td>17.3K</td>
+<td>Med</td>
+<td>One-handed speedrunning</td>
+<td>One-handed layers. <strong>Must not enter competitive-advantage territory.</strong></td>
+</tr>
+<tr>
+<td>NoHandsKen</td>
+<td>https://www.twitch.tv/nohandsken</td>
+<td>34.3K (inactive at snapshot)</td>
+<td>Low</td>
+<td>Hands-free gaming</td>
+<td>Alternate input. Consent-first.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Accessibility handling (all rows):</strong> the person comes first, consent is required, there's no inspiration montage, no medical or outcome claim, and Rebind never replaces eye trackers, screen readers or voice tools. These are spaces for orgs and partnerships. Treat them as <strong>MOD/partner culture</strong>, never as ad inventory.</p>
+<hr>
+<h2>3. Community hubs (participation-first; no activity authorized)</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Hub</th>
+<th>URL</th>
+<th>Evidence</th>
+<th>Fit</th>
+<th>Format</th>
+<th>Disclosure / rules</th>
+<th>Culture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AutoHotkey Community forum</td>
+<td>https://www.autohotkey.com/boards/</td>
+<td>V-web; GitHub README names the forum as primary support</td>
+<td>High</td>
+<td>Help threads, script showcases</td>
+<td>Disclosed named account; no ad posts; answer AHK questions in AHK</td>
+<td>MOD</td>
+</tr>
+<tr>
+<td>AutoHotkey Discord (official)</td>
+<td>https://autohotkey.com/discord</td>
+<td>V-web (~24–25K members, third-party listing snapshots)</td>
+<td>High</td>
+<td>Help channels</td>
+<td>Same. Promotion likely restricted (rules unread).</td>
+<td>MOD</td>
+</tr>
+<tr>
+<td>splitkb Community Discord</td>
+<td>linked from https://splitkb.com (U)</td>
+<td>V-web (keebsforall roundup)</td>
+<td>High</td>
+<td>#help for QMK/ZMK and ergo builds</td>
+<td>Vendor-run, so Rebind is a guest. Self-promo unlikely to be welcome.</td>
+<td>MOD</td>
+</tr>
+<tr>
+<td>geekhack / Deskthority / KeebTalk</td>
+<td>https://geekhack.org · https://deskthority.net · https://keebtalk.com</td>
+<td>V-web (listed as sources by kbd.news)</td>
+<td>Med</td>
+<td>Build logs, wikis</td>
+<td>Forum self-promo rules apply. Deskthority wiki already has an AHK page.</td>
+<td>MOD</td>
+</tr>
+<tr>
+<td>Roblox OSS Discord (#luau-lang) / Luau GitHub Discussions</td>
+<td>https://github.com/luau-lang/luau (U) · https://devforum.roblox.com/t/luau-goes-open-source/1534471</td>
+<td>V-web (Luau team says no official Luau Discord; active in Roblox OSS Discord)</td>
+<td>Med</td>
+<td>Language-dev discussion</td>
+<td>Showcasing an embedding is fine only if genuinely technical. Not a marketing venue.</td>
+<td>MOD</td>
+</tr>
+<tr>
+<td>PJRC (Teensy) forum</td>
+<td>https://forum.pjrc.com (U)</td>
+<td>U</td>
+<td>Med (BYOH)</td>
+<td>Project threads</td>
+<td>Hardware-maker culture. Disclosure first.</td>
+<td>MOD</td>
+</tr>
+<tr>
+<td>Hacker News — Show HN</td>
+<td>https://news.ycombinator.com/showhn.html (U)</td>
+<td>U</td>
+<td>High (dev)</td>
+<td>Architecture-first self-post</td>
+<td>Founder/staff post is allowed if it's genuinely usable. <strong>First line: Disclosure: I work on Rebind.</strong> Vote rings are banned.</td>
+<td>MOD</td>
+</tr>
+<tr>
+<td>Blender Artists / CAD communities</td>
+<td>https://blenderartists.org (U)</td>
+<td>U</td>
+<td>Med (CAD sector)</td>
+<td>Workflow threads</td>
+<td>Self-promo rules. No 6DoF/SpaceMouse claim.</td>
+<td>MOD</td>
+</tr>
+<tr>
+<td>Subreddits — <strong>research only, organic stopped</strong></td>
+<td>r/AutoHotkey, r/ErgoMechKeyboards, r/MechanicalKeyboards, r/macapps, r/ProductivityApps, r/Trackballs, r/lua, r/accessibility, r/StreamDeck, r/obs</td>
+<td>V-dossier (dated rule snapshots; 3 prior removals)</td>
+<td>—</td>
+<td>—</td>
+<td><strong>No posting, commenting or import.</strong> Listed only to show where attention is. Any future human post needs Dean's per-post approval, rules read that day, and the disclosure line first.</td>
+<td>MOD</td>
+</tr>
+</tbody>
+</table></div>
+<hr>
+<h2>4. Press, newsletters and podcasts (earned only; no pitching performed)</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Outlet</th>
+<th>URL</th>
+<th>Evidence</th>
+<th>Fit</th>
+<th>Format</th>
+<th>Disclosure / policy</th>
+<th>Culture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Console.dev (weekly devtools newsletter)</td>
+<td>https://console.dev · selection criteria https://console.dev/selection-criteria</td>
+<td>V-web (says 28k+ subs, Thursdays; 2–3 tools/week; <strong>no sponsored reviews</strong>; sponsored text ads labelled)</td>
+<td>High</td>
+<td>Short editorial review</td>
+<td>Editorial picks can't be bought. Submission via their published route, only if Dean approves.</td>
+<td>TUT/editorial</td>
+</tr>
+<tr>
+<td>Changelog News</td>
+<td>https://changelog.com/news · submit https://changelog.com/submit</td>
+<td>V-web (account required; own work allowed; <strong>cadence after early 2024 unconfirmed</strong>)</td>
+<td>Med-High</td>
+<td>News blurb / podcast</td>
+<td>Submissions must explain why they're newsworthy. Podcast suggestions use a separate form.</td>
+<td>Editorial</td>
+</tr>
+<tr>
+<td>Keyboard Builders' Digest (kbd.news)</td>
+<td>https://kbd.news</td>
+<td>V-web (roughly biweekly; issue #214 in Jul 2026)</td>
+<td>High (ergo/DIY)</td>
+<td>Curated community roundup</td>
+<td>Curates community posts. Needs a real project or tutorial to link.</td>
+<td>Editorial/community</td>
+</tr>
+<tr>
+<td>Mac Power Users (Relay)</td>
+<td>https://www.relay.fm/mpu (U; feed V-web, episodes through ~Nov 2026)</td>
+<td>V-web</td>
+<td>Med</td>
+<td>Long-form Mac workflow podcast</td>
+<td>Host-chosen tools. Sponsor slots are separate from editorial.</td>
+<td>SPOKES (sponsor reads) + editorial</td>
+</tr>
+<tr>
+<td>Automators (Relay)</td>
+<td>https://www.relay.fm/automators (U)</td>
+<td>V-web: <strong>appears ended</strong> (Nov 2024 "sunset" episode)</td>
+<td>—</td>
+<td>—</td>
+<td>Do not target; listed so nobody wastes time</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Club MacStories (Automation Academy, Mac Hacks)</td>
+<td>https://www.macstories.net/club/</td>
+<td>V-web (paid newsletter; Mac automation columns)</td>
+<td>Med</td>
+<td>Automation tutorials</td>
+<td>Editorial. Apple Silicon-only caveat.</td>
+<td>TUT/editorial</td>
+</tr>
+<tr>
+<td>The Register (Windows how-to)</td>
+<td>https://www.theregister.com/2025/07/22/useless_keys_windows/</td>
+<td>V-web (Jul 2025 AHK remapping piece)</td>
+<td>Med</td>
+<td>Practical columns</td>
+<td>Earned. Use-both framing.</td>
+<td>Editorial</td>
+</tr>
+<tr>
+<td>How-To Geek / XDA Developers</td>
+<td>https://www.howtogeek.com · https://www.xda-developers.com (U)</td>
+<td>V-web (HTG PowerToys remap guide)</td>
+<td>Med</td>
+<td>How-to listicles</td>
+<td>Earned. Never "PowerToys replacement".</td>
+<td>Editorial</td>
+</tr>
+<tr>
+<td>Can I Play That?</td>
+<td>https://caniplaythat.com</td>
+<td>V-web (disabled-gamer accessibility reviews and news; results mostly 2018–2023)</td>
+<td>Med (access)</td>
+<td>Reviews, commentary</td>
+<td>Earned. Accessibility only, never advantage.</td>
+<td>Editorial/advocacy</td>
+</tr>
+<tr>
+<td>AT / OT podcasts (e.g. <em>OT Potential</em>, <em>Redefining What's Possible</em>, <em>The OT Schoolhouse</em>)</td>
+<td>https://podcasts.apple.com/us/podcast/id1457380767 · https://www.buzzsprout.com/2387027</td>
+<td>V-web</td>
+<td>Med (access)</td>
+<td>Clinician interviews</td>
+<td>Spoken disclosure. <strong>No clinical claims.</strong> Rebind is a tool, not therapy.</td>
+<td>TUT/professional</td>
+</tr>
+<tr>
+<td>Linus Tech Tips — WAN Show</td>
+<td>https://www.twitch.tv/linustech</td>
+<td>V-dossier (658K followers)</td>
+<td>Low</td>
+<td>News segment</td>
+<td>Earned "neat gadget" mention only. No paid ask. Long shot.</td>
+<td>Editorial</td>
+</tr>
+<tr>
+<td>Accessibility conferences (ATIA, CSUN AT)</td>
+<td>https://www.atia.org · https://www.csun.edu/cod/conference (U)</td>
+<td>U</td>
+<td>Med</td>
+<td>Sessions, exhibit hall</td>
+<td>Event lane. Hand to events planning later.</td>
+<td>Event</td>
+</tr>
+</tbody>
+</table></div>
+<hr>
+<h2>5. Excluded or parked (do not route Rebind here)</h2>
+<ul>
+<li><strong>Competitive gaming, cheat, macro-advantage, "undetected" or anti-cheat spaces.</strong> Brand risk and Do-Not-Claim #2.</li>
+<li><strong>Exam, proctoring, homework, "humanize AI text" communities.</strong> TypeTation verification hold. Never frame scripts as proctor evasion.</li>
+<li><strong>Linux-first spaces</strong> (r/linux, Tsoding-style audiences) until a platform change. Parking avoids "workaround" marketing.</li>
+<li><strong>Any outlet that sells "guaranteed coverage"</strong> or undisclosed sponsored reviews.</li>
+<li><strong>Automators podcast</strong>, which appears to have ended.</li>
+</ul>
+<hr>
+<h2>6. Notes for Agency CEO synthesis</h2>
+<ol>
+<li><strong>Best honest first move (INF):</strong> earned and editorial surfaces (Console.dev, kbd.news, Show HN) plus TUT creators in the AHK and ergo lanes. All of them reward one verifiable recipe and cost $0. They also don't depend on the broken <code>?ref=</code> attribution as much as paid placements do.</li>
+<li><strong>Hold paid or gifted creator deals</strong> until (a) <code>?ref=</code> reaches the installer, (b) Dean signs names and budget (dossier 07: $1,000 total envelope, prefer $0), and (c) the kits are re-checked against today's facts (Win+Mac kill-switch chords, two-step marketplace install).</li>
+<li><strong>Don't pitch the same creator twice.</strong> Overlap creators (nutty, Chris Titus Tech, EposVox, typecraft, Hipyo) get one pitch via their YouTube row.</li>
+<li><strong>Accessibility needs its own CEO/Dean posture decision</strong> before any contact. Partnership-led, not ads.</li>
+<li><strong>Reddit stays stopped.</strong> If organic is ever reopened, it should start with comment-first help in AHK/ergo spaces from a named, disclosed human account. Even then, the earned surfaces above carry less removal risk.</li>
+<li><strong>Before any human post anywhere, the first line is:</strong> <em>Disclosure: I work on Rebind.</em></li>
+</ol>
+<h3>Open questions / unverified</h3>
+<ul>
+<li>Public contact routes, rates, audience geography and current cadence for every creator are <strong>unknown</strong>. I did not research them, and they'd require contact.</li>
+<li><strong>Not re-fetched:</strong> splitkb Discord invite, PJRC forum, Blender Artists, Show HN rules page, Relay show pages and ATIA/CSUN URLs (marked U).</li>
+<li>Changelog News publishing cadence after early 2024 is unconfirmed.</li>
+<li>Self-promotion rules for each Discord or forum have not been read. They must be read on the day of any approved post.</li>
+<li>None of the counts here were re-checked after 2026-10-31.</li>
+</ul>
+<h3>Sources</h3>
+<ul>
+<li><code>E:\Marketing Repo\dossier\02-product-truth-claims-and-fences.md</code>, <code>03-audience-sectors-positioning.md</code>, <code>06-reddit-paid-ads-and-seeding.md</code>, <code>07-creators-youtube-twitch-and-seeding.md</code> (and the creator-map sources they cite)</li>
+<li><a href="https://discord.com/servers/autohotkey-115993023636176902" target="_blank" rel="noopener noreferrer">AutoHotkey Discord listing</a> · <a href="https://www.autohotkey.com/boards/?src=nws" target="_blank" rel="noopener noreferrer">AHK forum</a> · <a href="https://github.com/AutoHotkey/AutoHotkey" target="_blank" rel="noopener noreferrer">AutoHotkey GitHub</a></li>
+<li><a href="https://www.console.dev" target="_blank" rel="noopener noreferrer">Console.dev</a> · <a href="https://console.dev/selection-criteria" target="_blank" rel="noopener noreferrer">Console selection criteria</a> · <a href="https://console.dev/about" target="_blank" rel="noopener noreferrer">Console about</a></li>
+<li><a href="https://changelog.com/submit" target="_blank" rel="noopener noreferrer">Changelog submit</a> · <a href="https://changelog.com/news" target="_blank" rel="noopener noreferrer">Changelog News</a></li>
+<li><a href="https://kbd.news/column/community/" target="_blank" rel="noopener noreferrer">kbd.news</a> · <a href="https://kbd.news/Behind-the-scenes-214-2888.html" target="_blank" rel="noopener noreferrer">KBD #214</a></li>
+<li><a href="https://www.macstories.net/club/" target="_blank" rel="noopener noreferrer">Club MacStories</a> · <a href="https://podcasts.apple.com/podcast/id458066753" target="_blank" rel="noopener noreferrer">Mac Power Users (Apple Podcasts)</a> · <a href="https://playpodcasts.com/podcasts/automators" target="_blank" rel="noopener noreferrer">Automators listing</a></li>
+<li><a href="https://caniplaythat.com/page/2/" target="_blank" rel="noopener noreferrer">Can I Play That?</a> · <a href="https://podcasts.apple.com/us/podcast/id1457380767" target="_blank" rel="noopener noreferrer">OT Potential</a> · <a href="https://www.buzzsprout.com/2387027/episodes/16599015-introducing-the-redefining-what-s-possible-podcast" target="_blank" rel="noopener noreferrer">Redefining What's Possible</a></li>
+<li><a href="https://www.theregister.com/2025/07/22/useless_keys_windows/" target="_blank" rel="noopener noreferrer">The Register — useless keys</a> · <a href="https://www.howtogeek.com/830094/how-to-remap-any-key-or-shortcut-on-windows-11/" target="_blank" rel="noopener noreferrer">How-To Geek remap guide</a></li>
+<li><a href="https://devforum.roblox.com/t/luau-goes-open-source/1534471" target="_blank" rel="noopener noreferrer">Luau goes open source (DevForum)</a> · <a href="https://brianlovin.com/hn/45289558" target="_blank" rel="noopener noreferrer">Luau team comment on Discord</a></li>
+<li><a href="https://keebsforall.com/blogs/mechanical-keyboards-101/discord-servers-for-keyboard-builders" target="_blank" rel="noopener noreferrer">Keyboard Discord roundup (keebsforall)</a></li>
+</ul>
+  </main>
+  <footer>
+    <div>Produced by Rebind. This file is a private Mass-Reach Spaces Research draft for internal review.</div>
+    <div>Private test edition · v1 · rendered 2026-11-07 · source comms-creators-surfaces-v1.md</div>
+  </footer>
+  <script>
+(function () {
+  var root = document.documentElement;
+  var saved = null;
+  try { saved = localStorage.getItem("m001-spaces-theme"); } catch (e) {}
+  if (saved === "light" || saved === "dark") root.setAttribute("data-theme", saved);
+  var btn = document.getElementById("theme");
+  if (!btn) return;
+  btn.addEventListener("click", function () {
+    var next = root.getAttribute("data-theme") === "dark" ? "light" : (root.getAttribute("data-theme") === "light" ? "dark" : (matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "dark"));
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("m001-spaces-theme", next); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>
