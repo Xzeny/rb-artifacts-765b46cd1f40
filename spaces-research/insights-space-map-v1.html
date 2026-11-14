@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Mass-reach spaces: audience and community map, v1 · Rebind / Spaces Research · v1</title>
+  <style>
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --ink: #111111;
+  --muted: rgba(17, 17, 17, 0.72);
+  --line: rgba(17, 17, 17, 0.25);
+  --accent: #b0342c;
+  --code: rgba(17, 17, 17, 0.06);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #000000;
+    --ink: #ffffff;
+    --muted: rgba(255, 255, 255, 0.72);
+    --line: rgba(255, 255, 255, 0.25);
+    --code: rgba(255, 255, 255, 0.08);
+  }
+}
+[data-theme="dark"] {
+  --bg: #000000;
+  --ink: #ffffff;
+  --muted: rgba(255, 255, 255, 0.72);
+  --line: rgba(255, 255, 255, 0.25);
+  --code: rgba(255, 255, 255, 0.08);
+}
+[data-theme="light"] {
+  --bg: #ffffff;
+  --ink: #111111;
+  --muted: rgba(17, 17, 17, 0.72);
+  --line: rgba(17, 17, 17, 0.25);
+  --code: rgba(17, 17, 17, 0.06);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--ink); }
+body { font: 18px/1.7 system-ui, -apple-system, "Segoe UI", sans-serif; }
+.mast {
+  display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+  border-bottom: 1px solid var(--line); padding: 0.75rem 1.25rem; font-size: 13px; color: var(--muted);
+}
+.mast a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); }
+.mast button {
+  background: transparent; color: var(--ink); border: 1px solid var(--line);
+  font: inherit; font-size: 13px; padding: 0.15rem 0.55rem; cursor: pointer;
+}
+main { max-width: 54rem; margin: 0 auto; padding: 2rem 1.25rem 5rem; }
+h1, h2, h3, h4 { line-height: 1.25; font-weight: 650; }
+h1 { font-size: 2rem; margin: 0 0 1rem; }
+h2 { font-size: 1.35rem; margin: 2.2rem 0 0.8rem; padding-top: 0.4rem; border-top: 1px solid var(--line); }
+h3 { font-size: 1.1rem; margin: 1.6rem 0 0.5rem; }
+p { margin: 0.85rem 0; }
+a { color: var(--accent); }
+ul, ol { padding-left: 1.3rem; }
+li { margin: 0.25rem 0; }
+blockquote {
+  margin: 1rem 0; padding: 0.15rem 0 0.15rem 1rem;
+  border-left: 3px solid var(--accent); color: var(--muted);
+}
+code, pre { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 0.88em; }
+code { background: var(--code); padding: 0.1em 0.28em; }
+pre { background: var(--code); padding: 0.9rem 1rem; overflow-x: auto; }
+pre code { background: transparent; padding: 0; }
+.table-wrap { overflow-x: auto; margin: 1rem 0; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; line-height: 1.45; }
+th, td { border: 1px solid var(--line); padding: 0.45rem 0.6rem; vertical-align: top; text-align: left; }
+th { font-weight: 650; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 1.6rem 0; }
+footer {
+  border-top: 1px solid var(--line); padding: 1rem 1.25rem 2rem;
+  font-size: 13px; color: var(--muted); max-width: 54rem; margin: 0 auto;
+}
+</style>
+</head>
+<body>
+  <div class="mast">
+    <div>Rebind / Mass-Reach Spaces Research · Test edition · v1 · <a href="index.html">All reports</a></div>
+    <button type="button" id="theme">Theme</button>
+  </div>
+  <main>
+<h1>Mass-reach spaces: audience and community map, v1</h1>
+<p><strong>Version:</strong> v1 · <strong>Date:</strong> 2026-11-07 · <strong>Author:</strong> Insights Lead (fromRole: insights · fromProvider: claude-code · fromModel: claude-opus-5-5)<br>
+<strong>For:</strong> Agency CEO (the beachhead plan). Secondary readers: the specialist team.<br>
+<strong>Task:</strong> task_9nTiyIgKTJFe · Initiative: Mass-Reach Spaces Research, Wave 1<br>
+<strong>Status:</strong> Research draft only. No community was joined, posted in, commented on, DMed or contacted. Organic Reddit is still stopped and Mission 001 ads are still on HOLD. This file contains no ad creative and no outreach copy.</p>
+<hr>
+<h2>1. Bottom line</h2>
+<ul>
+<li><strong>This map lists 38 spaces, with 3 hard excludes.</strong> The highest-fit rooms are the places where people already run into problems an OS-level script layer solves: AutoHotkey (forum, Discord and subreddit), keyboard-firmware and ergo communities (QMK, ZMK, ErgoMech, olkb), Mac automation rooms (r/macapps, Keyboard Maestro, Hammerspoon, Karabiner) and Q&amp;A sites (Super User, Stack Overflow).</li>
+<li><strong>The biggest rooms have weak fit or are strongly gated.</strong> r/MechanicalKeyboards (~1.39M), r/blender (~1.46M), r/VideoEditing (~531k) and the OBS forum (432,511 members, verified) are huge. In most of them, though, unsolicited product posts are banned or frowned on. They suit answers to questions people actually ask, not launches.</li>
+<li><strong>Rooms owned by competitors or vendors are for listening, not presence.</strong> The PowerToys and Karabiner GitHub repos, the Keyboard Maestro forum and the Elgato Discord are where gap language is spoken most plainly. Rebind should read them. It should not seed them.</li>
+<li><strong>For accessibility, the right route is partners, not posts.</strong> AbleGamers and SpecialEffect are organisations, not open communities. The existing <code>rebind.gg/accessibility</code> partnership route is the honest path in. r/accessibility and r/AssistiveTechnology are small and sensitive: answer questions only, and only with mod approval.</li>
+<li><strong>Recommended beachhead shortlist for the CEO</strong> (priority 4, best honest-access ratio): Super User and SO answers, the AHK forum and Discord as a peer, r/macapps, r/ErgoMechKeyboards (after the account-trust issue is fixed), r/ProductivityApps, a Hacker News Show HN, and r/MechanicalKeyboards with Promotional flair. Every one of these needs Dean's approval before anyone posts. Each would open with "Disclosure: I work on Rebind."</li>
+</ul>
+<h2>2. Ranking method</h2>
+<p>Each space gets three sub-scores from 1 to 5:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Sub-score</th>
+<th>What it measures</th>
+<th>Anchors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>F: Problem fit</strong> (weighted ×2)</td>
+<td>How often members bring up problems Rebind solves honestly: remaps, per-app keys, text expansion, mute/push-to-talk, overlays, accessibility input, cross-OS scripts</td>
+<td>5 = core daily topic · 3 = recurring sub-topic · 1 = incidental</td>
+</tr>
+<tr>
+<td><strong>A: Attention</strong></td>
+<td>Audience size or activity signal</td>
+<td>5 = ≥400k members, or very high activity · 4 = 150–400k · 3 = 50–150k · 2 = 15–50k · 1 = &lt;15k or unknown-small</td>
+</tr>
+<tr>
+<td><strong>G: Honest access</strong></td>
+<td>Whether a disclosed vendor presence is allowed and practical (rules, gatekeeping, AutoMod, karma gates)</td>
+<td>5 = explicit vendor/promo lane · 3 = disclosed promo allowed with limits · 2 = comment/answer only, or mod permission needed · 1 = promo banned or vendor-owned</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Priority = round-half-up((2F + A + G) / 4).</strong></p>
+<p>Caps apply after the formula:<br>
+- Spaces owned by a commercial vendor or competitor are capped at <strong>2</strong>.<br>
+- Open-source project spaces (issue trackers, GitHub Discussions) are capped at <strong>3</strong> and treated as listening posts.<br>
+- Accessibility spaces are capped at <strong>3</strong> because of reputational risk and the non-medical framing rules.<br>
+- Any cheat, aim or anti-cheat audience is <strong>excluded</strong>, whatever its score.</p>
+<p>The scores are analyst judgment informed by the cited evidence. They are not measured conversion or reach.</p>
+<p><strong>Labels on size figures:</strong><br>
+- <strong>Verified:</strong> read today (2026-11-07) from a primary page or public API (Discord invite API, GitHub repo page, the forum's own stats).<br>
+- <strong>Estimated:</strong> from a dated third-party tracker (subriff/RedPulse via our 2026-10-31 Reddit research, Discord listing sites) or a cached page. Treat as approximate.<br>
+- <strong>Unknown:</strong> no figure could be reached. Reddit, autohotkey.com, alfredforum.com and stackexchange.com all blocked our fetcher today.</p>
+<h2>3. The map, ranked</h2>
+<p>Prio = priority score. Sizes carry the label described in section 2.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Space</th>
+<th>URL</th>
+<th>Audience</th>
+<th>Size / signal (label)</th>
+<th>Problem fit</th>
+<th>Tone</th>
+<th>Gatekeeping</th>
+<th>F/A/G</th>
+<th><strong>Prio</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Super User (Stack Exchange)</td>
+<td>https://superuser.com/questions/tagged/keyboard-shortcuts</td>
+<td>Power users asking how to remap keys, add shortcuts, expand text</td>
+<td>Unknown (site and API blocked today)</td>
+<td>Very high: question-led, with exactly Rebind's problems</td>
+<td>Precise, answer-first</td>
+<td>SE self-promotion policy requires disclosure in each answer and penalises answers that only push a product (from recall, unverified today)</td>
+<td>5/3*/2</td>
+<td><strong>4</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>AutoHotkey forum</td>
+<td>https://www.autohotkey.com/boards/</td>
+<td>Windows scripters, from beginners to library authors</td>
+<td>~517k posts, ~91.6k topics, ~71k members (Estimated: cached index, about Jul 2024)</td>
+<td>Very high: remaps, hotstrings, macros. Rebind sits beside AHK, not in place of it</td>
+<td>Helpful, protective of AHK, anti-cheat</td>
+<td>Zero tolerance for cheating. Promo rules not read first-party (site 403)</td>
+<td>5/3/2</td>
+<td><strong>4</strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td>AutoHotkey Discord (official)</td>
+<td>https://www.autohotkey.com/discord (server 115993023636176902)</td>
+<td>Live AHK help seekers</td>
+<td>3,136 online (Verified: Discord widget API). ~24–25k members (Estimated: listing sites)</td>
+<td>Very high</td>
+<td>Fast, peer help</td>
+<td>Help-channel culture. Promo rules unknown</td>
+<td>5/3/2</td>
+<td><strong>4</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td>r/AutoHotkey</td>
+<td>https://www.reddit.com/r/AutoHotkey/</td>
+<td>AHK users</td>
+<td>33,399 (Estimated: subriff 2026-10-31)</td>
+<td>Very high</td>
+<td>Protective, low-effort posts removed</td>
+<td>AutoMod. Mod permission needed for promo (third-party summary). Anti-cheat rule</td>
+<td>5/2/2</td>
+<td><strong>4</strong></td>
+</tr>
+<tr>
+<td>5</td>
+<td>r/macapps</td>
+<td>https://www.reddit.com/r/macapps/</td>
+<td>Mac power users hunting for utilities</td>
+<td>256,241 (Estimated: subriff 2026-10-31)</td>
+<td>High: Mac remap/automation. Say up front that Apple Silicon only</td>
+<td>Curious, security-skeptical</td>
+<td>Self-promo at most once a month, with relationship disclosed in comments. No shorteners</td>
+<td>4/4/3</td>
+<td><strong>4</strong></td>
+</tr>
+<tr>
+<td>6</td>
+<td>r/ErgoMechKeyboards</td>
+<td>https://www.reddit.com/r/ErgoMechKeyboards/</td>
+<td>Split/ergo builders, "strange input devices"</td>
+<td>101,974 (Estimated: subriff), 93,198 (RedPulse, 2026-10-30)</td>
+<td>High: layers without reflashing</td>
+<td>Tinkerer, tired of vendor posts</td>
+<td><code>[Ad]</code> tag plus vendor flair. Split-only rule. <strong>Our earlier seed was removed by Reddit filters</strong></td>
+<td>4/3/3</td>
+<td><strong>4</strong></td>
+</tr>
+<tr>
+<td>7</td>
+<td>r/ProductivityApps</td>
+<td>https://www.reddit.com/r/ProductivityApps/</td>
+<td>General productivity-tool shoppers</td>
+<td>198,707 (Estimated: subriff)</td>
+<td>Medium-high: text expansion, shortcuts</td>
+<td>Upbeat</td>
+<td>Self-promo allowed at 10 community karma. "No vibe-coded apps." Keep Pro/AI out</td>
+<td>3/4/4</td>
+<td><strong>4</strong></td>
+</tr>
+<tr>
+<td>8</td>
+<td>r/MechanicalKeyboards</td>
+<td>https://www.reddit.com/r/MechanicalKeyboards/</td>
+<td>Keyboard hobbyists</td>
+<td>1,392,339 (Estimated: subriff). Avg score ~96 (subriff)</td>
+<td>Medium: the hobby is hardware-first</td>
+<td>Enthusiast, visual</td>
+<td>Promotional flair, 7-day cooldown, pricing required, conflict of interest disclosed, astroturf banned</td>
+<td>3/5/3</td>
+<td><strong>4</strong></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Hacker News (Show HN)</td>
+<td>https://news.ycombinator.com/show</td>
+<td>Developers and tinkerers</td>
+<td>Unknown size (no official figure)</td>
+<td>Medium-high for the architecture story: Luau, local MCP, USB output</td>
+<td>Skeptical, technical</td>
+<td>Show HN is for things you made (from recall). Vote rings banned</td>
+<td>3/5/3</td>
+<td><strong>4</strong></td>
+</tr>
+<tr>
+<td>10</td>
+<td>r/blender</td>
+<td>https://www.reddit.com/r/blender/</td>
+<td>3D artists (CAD/3D is the #1 dollar sector)</td>
+<td>1,456,383 (Estimated: subriff)</td>
+<td>Medium: hotkey and mouse-button workflows</td>
+<td>Art-first</td>
+<td>"No Deception" rule, plus Non-free flair for paid offers</td>
+<td>3/5/3</td>
+<td><strong>4</strong></td>
+</tr>
+<tr>
+<td>11</td>
+<td>Stack Overflow [autohotkey] tag</td>
+<td>https://stackoverflow.com/questions/tagged/autohotkey</td>
+<td>Script authors</td>
+<td>Unknown (blocked today)</td>
+<td>High</td>
+<td>Strict Q&amp;A</td>
+<td>Same SE disclosure policy. Product-only answers removed</td>
+<td>4/3/2</td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td>12</td>
+<td>OBS Studio forum</td>
+<td>https://obsproject.com/forum/</td>
+<td>Streamers and tutorial makers</td>
+<td>161,007 threads, 647,831 messages, 432,511 members (Verified)</td>
+<td>Medium: hotkeys, push-to-talk, input overlays</td>
+<td>Support-desk</td>
+<td>Resources section lists tools and scripts. Self-promo rules not read</td>
+<td>3/5/2</td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td>13</td>
+<td>r/automation</td>
+<td>https://www.reddit.com/r/automation/</td>
+<td>Automation generalists, many no-code</td>
+<td>237,018 (Estimated: subriff)</td>
+<td>Medium</td>
+<td>Business-y</td>
+<td>9:1 rule. Website submissions blocked (our 2026-10-31 attempt)</td>
+<td>3/4/2</td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td>14</td>
+<td>QMK Discord</td>
+<td>https://discord.gg/qmk</td>
+<td>Firmware keyboard builders</td>
+<td>26,971 members, 4,879 online (Verified: invite API)</td>
+<td>Medium: app-aware layers QMK can't see. Complement, not replace</td>
+<td>Technical</td>
+<td>Unknown promo rules. Support-focused</td>
+<td>3/4/2</td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td>15</td>
+<td>ZMK Discord</td>
+<td>https://zmk.dev/community/discord/invite</td>
+<td>Wireless/split firmware builders</td>
+<td>15,121 members, 2,449 online (Verified)</td>
+<td>Medium</td>
+<td>Technical</td>
+<td>Unknown</td>
+<td>3/3/2</td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td>16</td>
+<td>r/olkb</td>
+<td>https://www.reddit.com/r/olkb/</td>
+<td>Ortholinear and QMK makers</td>
+<td>66,988 (Estimated: subriff), 65,303 (RedPulse)</td>
+<td>Medium</td>
+<td>"Just use QMK"</td>
+<td>Modmail or <code>[AD]</code> (third-party summary)</td>
+<td>3/2/2</td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td>17</td>
+<td>PowerToys GitHub (Keyboard Manager issues)</td>
+<td>https://github.com/microsoft/PowerToys</td>
+<td>Windows power users</td>
+<td>140.7k stars, 8.7k forks, 5k+ open issues (Verified, rounded)</td>
+<td>Very high as a listening post</td>
+<td>Feature-request queue</td>
+<td>Microsoft-owned repo. Product promo in issues is off-limits (judgment)</td>
+<td>5/5/1</td>
+<td><strong>3</strong> (cap)</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Karabiner-Elements GitHub Discussions</td>
+<td>https://github.com/pqrs-org/Karabiner-Elements</td>
+<td>Mac remappers</td>
+<td>23.1k stars, 958 forks, 31 open issues (Verified)</td>
+<td>High, listening only</td>
+<td>Technical</td>
+<td>Maintainer-run project space</td>
+<td>4/4/1</td>
+<td><strong>3</strong> (cap)</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Kanata GitHub Discussions</td>
+<td>https://github.com/jtroo/kanata</td>
+<td>Cross-OS software remappers (closest open-source analogue)</td>
+<td>8.1k stars, 310 forks (Verified)</td>
+<td>High, listening only</td>
+<td>Technical</td>
+<td>Maintainer project space</td>
+<td>4/2/1</td>
+<td><strong>3</strong> (cap)</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Hammerspoon Discord</td>
+<td>https://discord.gg/vxchqkRbkR</td>
+<td>Lua-scripting Mac automators</td>
+<td>1,017 members, 91 online (Verified)</td>
+<td>High: Lua scripting overlaps Luau</td>
+<td>Hacker</td>
+<td>Unknown</td>
+<td>4/1/2</td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td>21</td>
+<td>Espanso Discord + r/espanso</td>
+<td>https://discord.gg/DFcCNDg7bB · https://www.reddit.com/r/espanso/</td>
+<td>Cross-platform text-expansion users</td>
+<td>Discord 1,020 members, 109 online (Verified). Repo 14.7k stars. Subreddit size Unknown</td>
+<td>High for text expansion. Espanso already serves this well</td>
+<td>OSS-friendly</td>
+<td>Project-owned space</td>
+<td>4/1/2</td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td>22</td>
+<td>r/Trackballs</td>
+<td>https://www.reddit.com/r/Trackballs/</td>
+<td>Alt-mouse users</td>
+<td>33,539 (Estimated: subriff)</td>
+<td>Medium: button remaps. Movement transforms need Link</td>
+<td>Friendly niche</td>
+<td>Spam rule (summary)</td>
+<td>3/2/3</td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td>23</td>
+<td>geekhack</td>
+<td>https://geekhack.org/</td>
+<td>Long-time keyboard enthusiasts</td>
+<td>2,970,572 posts, 140,732 members, 7,466 online today (Verified)</td>
+<td>Low-medium: hardware-centric</td>
+<td>Veteran</td>
+<td>Vendor and group-buy boards exist. General promo rules not read</td>
+<td>2/4/3</td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td>24</td>
+<td>r/obs</td>
+<td>https://www.reddit.com/r/obs/</td>
+<td>OBS users</td>
+<td>213,506 (Estimated: subriff)</td>
+<td>Medium</td>
+<td>Support</td>
+<td>Self-promo "not allowed, except when directly asked"</td>
+<td>3/4/1</td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td>25</td>
+<td>r/VideoEditing</td>
+<td>https://www.reddit.com/r/VideoEditing/</td>
+<td>Hobbyist editors</td>
+<td>530,555 (Estimated: subriff)</td>
+<td>Medium: one-key edit macros</td>
+<td>Practical</td>
+<td>Self-promo frowned on, 10:1 ratio</td>
+<td>3/5/1</td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td>26</td>
+<td>r/davinciresolve</td>
+<td>https://www.reddit.com/r/davinciresolve/</td>
+<td>Resolve editors</td>
+<td>235,220 (Estimated: subriff)</td>
+<td>Medium</td>
+<td>Practical</td>
+<td>"Not a marketplace": selling or soliciting removed</td>
+<td>3/4/1</td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td>27</td>
+<td>r/Fusion360 + r/SolidWorks</td>
+<td>https://www.reddit.com/r/Fusion360/ · https://www.reddit.com/r/SolidWorks/</td>
+<td>CAD users</td>
+<td>131,601 / 131,826 (Estimated: subriff)</td>
+<td>Medium: mouse-button orbit/pan, view shortcuts. Sit beside SpaceMouse</td>
+<td>Professional</td>
+<td>Ads banned. Answers only</td>
+<td>3/3/1</td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td>28</td>
+<td>GitHub topic <code>autohotkey</code> (discovery surface)</td>
+<td>https://github.com/topics/autohotkey</td>
+<td>Script hunters browsing GitHub</td>
+<td>2,075 public repos (Verified)</td>
+<td>Medium: a place to list Rebind's own example-script repo honestly</td>
+<td>Neutral</td>
+<td>Self-tagging your own repo is allowed</td>
+<td>3/3/3</td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td>29</td>
+<td>r/software</td>
+<td>https://www.reddit.com/r/software/</td>
+<td>General software</td>
+<td>379,080 (Estimated: subriff)</td>
+<td>Low-medium</td>
+<td>Mixed</td>
+<td>Releases rule. Hidden karma gate</td>
+<td>2/4/2</td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td>30</td>
+<td>r/accessibility</td>
+<td>https://www.reddit.com/r/accessibility/</td>
+<td>Accessibility practitioners and users (mostly web a11y)</td>
+<td>21,779 (Estimated: subriff)</td>
+<td>Medium-high for input needs, but the room skews toward web standards</td>
+<td>Careful</td>
+<td>Rules not read first-party. Ask mods first</td>
+<td>4/2/2</td>
+<td><strong>3</strong> (cap)</td>
+</tr>
+<tr>
+<td>31</td>
+<td>r/AssistiveTechnology</td>
+<td>https://www.reddit.com/r/AssistiveTechnology/</td>
+<td>AT users, OTs, AT specialists</td>
+<td>5,316 (Estimated: RedPulse 2026-10-30)</td>
+<td>High: one-handed layers, sticky modifiers, dwell</td>
+<td>Supportive</td>
+<td>Rules not read. Answers only</td>
+<td>4/1/2</td>
+<td><strong>3</strong> (cap)</td>
+</tr>
+<tr>
+<td>32</td>
+<td>AbleGamers (partner lead, not a community)</td>
+<td>https://ablegamers.org/</td>
+<td>Disabled gamers and adaptive-setup advocates</td>
+<td>Reach Unknown. 20 years of operation (Verified, own site)</td>
+<td>High for controller/input accessibility. <strong>Gaming brand risk applies</strong></td>
+<td>Mission-led</td>
+<td>Organisational. Partner route only</td>
+<td>4/2/1</td>
+<td><strong>3</strong> (cap)</td>
+</tr>
+<tr>
+<td>33</td>
+<td>SpecialEffect (partner lead, not a community)</td>
+<td>https://www.specialeffect.org.uk/</td>
+<td>UK physically disabled gamers. GameAccess info hub</td>
+<td>Reach Unknown (Verified: programmes listed)</td>
+<td>High</td>
+<td>Mission-led</td>
+<td>Organisational. Partner route only</td>
+<td>4/2/1</td>
+<td><strong>3</strong> (cap)</td>
+</tr>
+<tr>
+<td>34</td>
+<td>Keyboard Maestro forum</td>
+<td>https://forum.keyboardmaestro.com/</td>
+<td>Mac automation power users</td>
+<td>294 active users/30 days, 429 posts/30 days. Questions category has 18,998 topics (Verified)</td>
+<td>High: repeated "Windows equivalent?" threads (see §4)</td>
+<td>Expert, generous</td>
+<td>Vendor-owned forum (admin: Peter Lewis)</td>
+<td>4/2/2</td>
+<td><strong>2</strong> (cap)</td>
+</tr>
+<tr>
+<td>35</td>
+<td>Elgato Discord / r/elgato</td>
+<td>https://discord.gg/elgato · https://www.reddit.com/r/elgato/</td>
+<td>Stream Deck owners</td>
+<td>Discord 53,117 members, 9,522 online (Verified). Subreddit 46,880 (Estimated)</td>
+<td>Medium. Use-both framing</td>
+<td>Brand support</td>
+<td>Vendor-owned. Self-promo forbidden (summary)</td>
+<td>2/5/1</td>
+<td><strong>2</strong> (cap)</td>
+</tr>
+<tr>
+<td>36</td>
+<td>r/PowerToys</td>
+<td>https://www.reddit.com/r/PowerToys/</td>
+<td>PowerToys users</td>
+<td>Unknown (trackers 404 today)</td>
+<td>High</td>
+<td>Unknown</td>
+<td>Rules not read</td>
+<td>4/1*/2</td>
+<td><strong>3</strong> → watchlist until verified</td>
+</tr>
+<tr>
+<td>37</td>
+<td>r/macropad</td>
+<td>https://www.reddit.com/r/macropad/</td>
+<td>Macropad owners</td>
+<td>Unknown (went public Jul 2026)</td>
+<td>Medium: second keyboard as macropad is <strong>Link/BYOH only</strong></td>
+<td>Photo-led</td>
+<td>Questions go in a megathread</td>
+<td>3/1/2</td>
+<td><strong>2</strong></td>
+</tr>
+<tr>
+<td>38</td>
+<td>r/lua</td>
+<td>https://www.reddit.com/r/lua/</td>
+<td>Lua developers</td>
+<td>32,691 (Estimated: subriff)</td>
+<td>Low-medium: interest in Luau API design</td>
+<td>Technical</td>
+<td>No explicit promo rule found</td>
+<td>2/2/3</td>
+<td><strong>2</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>* An A score marked with an asterisk is a placeholder, because size is unknown.</p>
+<p><strong>Hard excludes (not scored):</strong><br>
+- r/MouseReview (~372k, Estimated), competitive-FPS rooms, and anything to do with Cronus, XIM, recoil or "undetectable macros". These are aim and cheat audiences that conflict with brand fences.<br>
+- r/productivity (4.26M, Estimated): no self-promo, no links.<br>
+- r/battlestations and r/Workspaces: ads banned.<br>
+- r/robloxgamedev: Luau overlap, but input automation there reads as exploits.</p>
+<p><strong>Watchlist (not checked today):</strong><br>
+- Alfred forum (403), Raycast store and community, Logitech/Razer/Corsair community forums, MacRumors Mac apps forum, AppleVis (blind and low-vision Mac users: input is secondary to screen readers), ATIA/CSUN/RESNA conference communities (events, not open rooms), Text Blaze and TextExpander communities, r/Keychron (~50k, Estimated).</p>
+<h2>4. How adjacent-tool communities describe gaps (honest-fit notes)</h2>
+<p>These are listening findings. Rebind should not push into these threads. Under the claim fences, the only honest framing is use both.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Community</th>
+<th>Gap language observed</th>
+<th>Source (label)</th>
+<th>What Rebind can honestly say</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Keyboard Maestro</strong></td>
+<td>At least 7 threads asking for a Windows equivalent, spanning about 12 years (e.g. "Closest Alternative to Keyboard Maestro for Windows?", "Keyboard Maestro Alternatives for Windows", "Alternatives for KM and Typinator on Windows 10"). Replies say KM is Mac-only and point to AHK, Pulover's, Macro Express and PhraseExpress. Espanso and TextExpander are named as the cross-platform options</td>
+<td>forum.keyboardmaestro.com/t/14607, /35013, /31454, /20690, /37767 (thread titles Verified via search, 2026-11-07; posts are 2–12 years old)</td>
+<td>For people on both Mac and Windows: the same Luau script runs on Windows 10/11 and macOS 13+ Apple Silicon. Rebind does <strong>not</strong> replace KM's GUI macro editor or its depth on Mac, and Mac window control is partial</td>
+</tr>
+<tr>
+<td><strong>PowerToys Keyboard Manager</strong></td>
+<td>Request for remaps that apply only in specific apps (#12730). A limited-mobility user "heavily reliant on key-remapping and macros" who doesn't expect parity with dedicated tools (#3967). Reports of remaps silently stopping until KBM is toggled off and on (#16173, #25590)</td>
+<td>github.com/microsoft/PowerToys/issues (Verified via search 2026-11-07; current status of each issue not checked)</td>
+<td>Per-app targeting and multi-step macros are scriptable in Rebind. Use both. Don't cite PowerToys bugs as Rebind reliability superiority, and treat bug reports as individual reports, not a universal defect</td>
+</tr>
+<tr>
+<td><strong>AutoHotkey</strong></td>
+<td>Recurring "AHK on Mac/Linux?" questions (inference from the KM threads above and AHK's Windows-only scope). The AHK community is protective and strongly anti-cheat</td>
+<td>KM threads; dossier 08 (Inference)</td>
+<td>Rebind sits beside AHK for remaps, text and per-app shortcuts that need to run on both OSes. COM, ControlClick and legacy GUI automation stay with AHK. Never use "AHK killer" framing. No Linux support</td>
+</tr>
+<tr>
+<td><strong>Karabiner / Hammerspoon</strong></td>
+<td>Mac-only by design. Hammerspoon users already script in Lua</td>
+<td>GitHub repos (Verified scope)</td>
+<td>Luau scripts that also run on Windows. No Intel Mac support</td>
+</tr>
+<tr>
+<td><strong>QMK / ZMK / Kanata</strong></td>
+<td>Firmware layers can't see which app has focus (inference). Kanata already provides cross-OS software layers (open source)</td>
+<td>Repos (Verified sizes; gap is Inference)</td>
+<td>Adds an app-aware OS layer on top of firmware. Never claim to replace QMK/VIA</td>
+</tr>
+<tr>
+<td><strong>Vendor suites (G HUB, Synapse, iCUE)</strong></td>
+<td>App sprawl, one suite per brand, lost profiles after updates (individual reports, with counterevidence such as iCUE pre-update backups and fast hotfixes)</td>
+<td>dossier 08 complaint bank (secondary; dated sources there)</td>
+<td>One script layer for button logic. Keep vendor apps for lighting and sensors. Make no lighter, faster or zero-conflict claims</td>
+</tr>
+<tr>
+<td><strong>Stream Deck / OBS</strong></td>
+<td>DIY hotkey and push-to-talk needs on keys people already own</td>
+<td>OBS forum structure (Verified); dossier 03</td>
+<td>Rebind adds logic to keys you already own. Keep the Stream Deck for labels and dials. No certified OBS plugin</td>
+</tr>
+</tbody>
+</table></div>
+<h2>5. Notes for the CEO's beachhead synthesis</h2>
+<ol>
+<li><strong>Answer-led spaces beat post-led spaces for an honest presence.</strong> In Super User, SO, the AHK forum and Discord, and r/obs (where promo is allowed "when directly asked"), the question supplies the context. A disclosed, useful answer is on-norm there. That makes them the lowest-risk channels with the highest fit. (Inference.)</li>
+<li><strong>Attention concentrates in the rooms that gate hardest.</strong> Size and promo tolerance run opposite to each other. Only r/MechanicalKeyboards, r/ProductivityApps, r/macapps, r/ErgoMech and r/blender have explicit disclosed-promo lanes.</li>
+<li><strong>Account trust is a blocker before any of this is possible.</strong> Reddit filters removed the ErgoMech seed. That is a reason to put Stack Exchange and HN ahead of Reddit, not a reason to work around the filter.</li>
+<li><strong>Measurement gap:</strong> download <code>?ref=</code> doesn't reach the installer, so no space on this list can currently be attributed to installs. Any pilot would need per-space UTM landing pages plus a self-reported "how did you hear about us?" field, and the results should be read as directional only.</li>
+<li><strong>TypeTation:</strong> no space on this list is recommended for TypeTation traffic, because it is still on verification hold.</li>
+</ol>
+<h2>6. What was not verified, and next checks</h2>
+<ul>
+<li>Reddit sizes are dated third-party snapshots from 2026-10-31. Reddit blocked first-party reads, so live sidebars must be re-read before anyone acts.</li>
+<li>The AHK forum figures come from a cached page (about Jul 2024). AHK Discord total membership comes from listing sites. Only the online count (3,136) is verified.</li>
+<li>Stack Exchange tag counts and rules could not be fetched today. The SE self-promotion policy is described from recall.</li>
+<li>Hacker News has no public size figure. Show HN norms are described from recall.</li>
+<li>Promo rules for the QMK, ZMK, Hammerspoon, Espanso and Elgato Discords, the OBS forum and geekhack were not read.</li>
+<li>The GitHub topic <code>macros</code> (2,542 repos) is mostly programming-language macros. It was rejected as a signal.</li>
+</ul>
+<h2>Sources (opened 2026-11-07 unless noted)</h2>
+<ul>
+<li>Discord invite API (<code>discord.com/api/v10/invites/&lt;code&gt;?with_counts=true</code>): qmk, sycytVQ (ZMK), DFcCNDg7bB (Espanso), vxchqkRbkR (Hammerspoon), elgato. Widget API for guild 115993023636176902 (AutoHotkey).</li>
+<li>GitHub: microsoft/PowerToys, pqrs-org/Karabiner-Elements, espanso/espanso, qmk/qmk_firmware, zmkfirmware/zmk, jtroo/kanata, Hammerspoon/hammerspoon. Topics: autohotkey, keyboard-remapping (58 repos), text-expander (155 repos), macros.</li>
+<li>forum.keyboardmaestro.com (categories) and /about (stats). Forum search for the Windows-alternative threads.</li>
+<li>obsproject.com/forum, geekhack.org/index.php, ablegamers.org, specialeffect.org.uk.</li>
+<li>Web search: AHK Discord (discord.com/servers/115993023636176902, discordbotlist.com listing), the cached AHK boards index, PowerToys issues #12730, #3967, #16173, #25590.</li>
+<li>Internal: <code>E:\Marketing Repo\Rebind\campaigns\reddit-seed\research\subreddit-shortlist.md</code> and <code>mouse-keyboard-high-dau.md</code> (2026-10-31), and dossier 03 and 08.</li>
+</ul>
+  </main>
+  <footer>
+    <div>Produced by Rebind. This file is a private Mass-Reach Spaces Research draft for internal review.</div>
+    <div>Private test edition · v1 · rendered 2026-11-07 · source insights-space-map-v1.md</div>
+  </footer>
+  <script>
+(function () {
+  var root = document.documentElement;
+  var saved = null;
+  try { saved = localStorage.getItem("m001-spaces-theme"); } catch (e) {}
+  if (saved === "light" || saved === "dark") root.setAttribute("data-theme", saved);
+  var btn = document.getElementById("theme");
+  if (!btn) return;
+  btn.addEventListener("click", function () {
+    var next = root.getAttribute("data-theme") === "dark" ? "light" : (root.getAttribute("data-theme") === "light" ? "dark" : (matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "dark"));
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("m001-spaces-theme", next); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>

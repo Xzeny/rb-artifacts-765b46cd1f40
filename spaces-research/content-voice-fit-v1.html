@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Mass-reach spaces: content formats and voice-fit per room, v1 · Rebind / Spaces Research · v1</title>
+  <style>
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --ink: #111111;
+  --muted: rgba(17, 17, 17, 0.72);
+  --line: rgba(17, 17, 17, 0.25);
+  --accent: #b0342c;
+  --code: rgba(17, 17, 17, 0.06);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #000000;
+    --ink: #ffffff;
+    --muted: rgba(255, 255, 255, 0.72);
+    --line: rgba(255, 255, 255, 0.25);
+    --code: rgba(255, 255, 255, 0.08);
+  }
+}
+[data-theme="dark"] {
+  --bg: #000000;
+  --ink: #ffffff;
+  --muted: rgba(255, 255, 255, 0.72);
+  --line: rgba(255, 255, 255, 0.25);
+  --code: rgba(255, 255, 255, 0.08);
+}
+[data-theme="light"] {
+  --bg: #ffffff;
+  --ink: #111111;
+  --muted: rgba(17, 17, 17, 0.72);
+  --line: rgba(17, 17, 17, 0.25);
+  --code: rgba(17, 17, 17, 0.06);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--ink); }
+body { font: 18px/1.7 system-ui, -apple-system, "Segoe UI", sans-serif; }
+.mast {
+  display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+  border-bottom: 1px solid var(--line); padding: 0.75rem 1.25rem; font-size: 13px; color: var(--muted);
+}
+.mast a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); }
+.mast button {
+  background: transparent; color: var(--ink); border: 1px solid var(--line);
+  font: inherit; font-size: 13px; padding: 0.15rem 0.55rem; cursor: pointer;
+}
+main { max-width: 54rem; margin: 0 auto; padding: 2rem 1.25rem 5rem; }
+h1, h2, h3, h4 { line-height: 1.25; font-weight: 650; }
+h1 { font-size: 2rem; margin: 0 0 1rem; }
+h2 { font-size: 1.35rem; margin: 2.2rem 0 0.8rem; padding-top: 0.4rem; border-top: 1px solid var(--line); }
+h3 { font-size: 1.1rem; margin: 1.6rem 0 0.5rem; }
+p { margin: 0.85rem 0; }
+a { color: var(--accent); }
+ul, ol { padding-left: 1.3rem; }
+li { margin: 0.25rem 0; }
+blockquote {
+  margin: 1rem 0; padding: 0.15rem 0 0.15rem 1rem;
+  border-left: 3px solid var(--accent); color: var(--muted);
+}
+code, pre { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 0.88em; }
+code { background: var(--code); padding: 0.1em 0.28em; }
+pre { background: var(--code); padding: 0.9rem 1rem; overflow-x: auto; }
+pre code { background: transparent; padding: 0; }
+.table-wrap { overflow-x: auto; margin: 1rem 0; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; line-height: 1.45; }
+th, td { border: 1px solid var(--line); padding: 0.45rem 0.6rem; vertical-align: top; text-align: left; }
+th { font-weight: 650; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 1.6rem 0; }
+footer {
+  border-top: 1px solid var(--line); padding: 1rem 1.25rem 2rem;
+  font-size: 13px; color: var(--muted); max-width: 54rem; margin: 0 auto;
+}
+</style>
+</head>
+<body>
+  <div class="mast">
+    <div>Rebind / Mass-Reach Spaces Research · Test edition · v1 · <a href="index.html">All reports</a></div>
+    <button type="button" id="theme">Theme</button>
+  </div>
+  <main>
+<h1>Mass-reach spaces: content formats and voice-fit per room, v1</h1>
+<p><strong>Version:</strong> v1 · <strong>Date:</strong> 2026-11-07 · <strong>Author:</strong> Content &amp; Copy (fromRole: content-copy · fromProvider: claude-code · fromModel: claude-opus-5-5)<br>
+<strong>For:</strong> Agency CEO, for the beachhead plan. Secondary readers: the specialist team.<br>
+<strong>Task:</strong> task_dmhE46NY2nm1 · Initiative: Mass-Reach Spaces Research, Wave 2<br>
+<strong>artifactRefs:</strong> this file · <code>spaces-research/insights-space-map-v1.md</code> · <code>spaces-research/strategy-brand-beachheads-v1.md</code> · <code>spaces-research/comms-creators-surfaces-v1.md</code> · <code>dossier/01</code>, <code>02</code>, <code>03</code>, <code>05</code><br>
+<strong>Status:</strong> Research draft only. Nothing in this file is a post, comment, reply, answer, pitch or ad. No space was joined or contacted. Organic Reddit is still stopped and Mission 001 ads are still on HOLD. The three outlines in §5 are skeletons marked <strong>UNPUBLISHED DRAFT</strong>. They are not ready-to-post copy and should not be turned into posts without Agency CEO review and Dean's approval of a specific action.</p>
+<hr>
+<h2>0. The disclosure line (non-negotiable)</h2>
+<p>If Dean ever approves a human post, answer or comment in any space below, its first line is:</p>
+<blockquote>
+<p><strong>Disclosure: I work on Rebind.</strong></p>
+</blockquote>
+<p>It goes first, in every room type, including short replies. It's posted by a real, named person from their own account. Nothing in this file tells anyone to hide, soften, move or drop that line, and no format below works without it. Source: <code>campaigns/reddit-seed/DISCLOSE-LOCK.md</code> via dossier 01 and 06.</p>
+<p>Owned surfaces (rebind.gg, docs, Rebind's own YouTube or Discord) are already clearly Rebind's, so they don't need the line. Any Rebind-made page that <strong>looks like</strong> independent editorial (the Desk Notes "Editorial" style, the Medium-look CapCom pages) must still be visibly Rebind's. It can never be passed into a community as if a neutral writer made it. See §3.</p>
+<hr>
+<h2>1. Bottom line</h2>
+<ol>
+<li><strong>The format that fits almost everywhere is the disclosed answer to a question someone already asked.</strong> It's a small recipe: what you press, what happens, the limits, then a soft link. Q&amp;A sites, tool forums, other people's Discords and comment-on-ask subreddits all accept it. Almost nothing else is accepted in all of them. (Inference, based on the rules summarised in <code>insights-space-map-v1.md</code> §3 and the entry modes in <code>strategy-brand-beachheads-v1.md</code> §2.2.)</li>
+<li><strong>Voice should get quieter as the room gets bigger and more gated.</strong> The brand's terse, hacker-adjacent lines ("Your peripherals. Your rules.") belong on owned pages and maybe one Show HN title. In community rooms, the voice is a practitioner talking to peers: plain, specific, limits first, no slogans.</li>
+<li><strong>Mission 001 long-form is a destination, not a payload.</strong> The CapCom/OAB v4.5 and Desk Notes v5 pages are where a disclosed answer can link once, where a room's rules allow links. Pasting their headlines, tables or advertorial framing into a community is the fastest way to read as spam.</li>
+<li><strong>What reads as spam is mostly about shape, not wording.</strong> An unasked-for post, the same text across rooms, a link with no working answer around it, slogan titles, "X killer" comparisons and drive-by replies on old threads all read as spam, however well written.</li>
+<li><strong>Three room types should get no Rebind-authored content at all for now:</strong> vendor and competitor spaces (listen only), other creators' comment sections (no brand comments), and accessibility communities (partner route only, answers only if mods agree).</li>
+</ol>
+<hr>
+<h2>2. How to read the matrix</h2>
+<ul>
+<li><strong>Space types</strong> follow the shared taxonomy in <code>strategy-brand-beachheads-v1.md</code> §2.1. I split COM (communities) into rooms with different norms, because "community" is too broad to pick a voice for.</li>
+<li><strong>Entry mode</strong> uses the 1–5 honesty ladder in the same file, §2.2: 1 Invited · 2 Sanctioned vendor lane · 3 Comment-on-ask · 4 Mod-permission only · 5 Observe only.</li>
+<li><strong>Evidence labels:</strong> <em>[Source]</em> = from the dossier or a Wave 1 file, with its date. <em>[Recall]</em> = platform norms described from general knowledge, not re-read today. <em>[Inference]</em> = my judgment as the copy lead. Room rules must be re-read first-party on the day of any approved action. Several rule sets in Wave 1 came from third-party summaries, or couldn't be fetched (Reddit, Stack Exchange and autohotkey.com blocked the fetcher on 2026-11-07).</li>
+<li><strong>No numbers here are performance data.</strong> Nothing below has been tested. Audience sizes live in <code>insights-space-map-v1.md</code> and aren't repeated here.</li>
+</ul>
+<hr>
+<h2>3. Format-and-voice matrix</h2>
+<p>Eleven space types plus the owned surface. Rows 1–9 are where a disclosed Rebind presence could fit later. Rows 10–11 are rooms that get no Rebind-authored content for now. The owned-surface row is there for reference.</p>
+<h3>3.1 Summary table</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Space type (examples)</th>
+<th>Entry mode</th>
+<th>Formats that belong later</th>
+<th>Voice</th>
+<th>Reads as spam</th>
+<th>Link etiquette</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Q&amp;A sites</strong> (Super User, Stack Overflow <code>[autohotkey]</code>)</td>
+<td>1 Invited (the question is the invitation)</td>
+<td>A complete answer that works without Rebind if possible, plus a disclosed Rebind option; small verified snippet; limits stated</td>
+<td>Precise, neutral, answer-first. No adjectives about the product</td>
+<td>Answers that only say "use Rebind"; the same answer on many questions; answering questions Rebind can't solve (Linux, Intel Mac, F13+ in free mode)</td>
+<td>One docs or recipe link, after the answer. The answer must stand without the link <em>[Recall: SE self-promotion policy requires disclosure in each answer]</em></td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Tool-community forums</strong> (AutoHotkey forum, OBS forum, geekhack)</td>
+<td>1 Invited / 3 Comment-on-ask</td>
+<td>Reply to a direct "how do I…" or "is there a Mac version of…" question; later, a resource listing if the forum has a sanctioned section (OBS Resources)</td>
+<td>Peer, respectful of the host tool. "AHK is great at X; for the Mac half, here's one option"</td>
+<td>Any "alternative to [host tool]" thread started by Rebind; replying to old threads; "AHK killer" framing; anything cheat-adjacent in AHK spaces (zero tolerance) <em>[Source: space map #2]</em></td>
+<td>Usually none in the first reply. A link only if asked, or if forum rules allow</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Reddit, vendor-lane subs</strong> (r/MechanicalKeyboards Promotional flair, r/ErgoMechKeyboards <code>[Ad]</code>, r/macapps once a month, r/ProductivityApps, r/blender Non-free flair)</td>
+<td>2 Sanctioned vendor lane</td>
+<td>One recipe post using the sub's own flair or tag: a single job, a short screen capture or GIF, the code, the limits, price stated where required</td>
+<td>Disclosed builder showing one thing they made. Plain title naming the job, not the brand</td>
+<td>Brand-first titles; "MACROS WILL WIN" or any ad-plan phrase <em>[Source: dossier 01]</em>; cross-posting the same post; posting before the account has history in the sub; reposting after a removal</td>
+<td>Rules vary by sub. Soft direct link in the body, never a shortener <em>[Source: r/macapps rule via space map #5]</em></td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Reddit, comment-on-ask subs</strong> (r/obs, r/VideoEditing, r/davinciresolve, r/Fusion360, r/AutoHotkey)</td>
+<td>3 Comment-on-ask / 4 Mod permission</td>
+<td>A disclosed reply only when someone directly asks for a tool that does X</td>
+<td>Short, helpful, "here's one way; here's what it can't do"</td>
+<td>Top-level posts; replying to questions that didn't ask for a tool; any reply that lists a price or Pro feature unasked</td>
+<td>Link only if the asker wants it. Prefer naming the docs page</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Other people's Discord servers</strong> (AHK, QMK, ZMK, Hammerspoon, Espanso)</td>
+<td>3 Comment-on-ask / 4 Mod permission</td>
+<td>Answers in help channels when asked; a <code>#showcase</code>-style post only where the server has one and mods agree</td>
+<td>Chatty but brief. Discord is real-time, so one or two messages, not essays</td>
+<td>Joining to drop a link; DMing members; posting in multiple channels; promoting in a project's own server when that project already solves the job (Espanso for text expansion)</td>
+<td>Rarely. Prefer "it's on rebind.gg/docs if you want it" over pasted URLs. Promo rules for these servers are <strong>unread</strong> <em>[Source: space map §6]</em></td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>YouTube / tutorial comments</strong> (AHK teachers, ergo reviewers, OBS tutorials)</td>
+<td>5 Observe only, on other people's videos. Owned channel is fine</td>
+<td>On <strong>Rebind's own</strong> videos: pinned comment with the script, limits and kill switch. On others' videos: nothing from the brand, unless a creator invites a correction or answer</td>
+<td>On owned: instructional, timestamped. On others': none</td>
+<td>Any brand or employee comment under a creator's video pitching Rebind; "check out our tool" replies; comments under competitor reviews</td>
+<td>Owned only</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Newsletters</strong> (dev/tooling digests, Mac utility roundups, accessibility-tech digests)</td>
+<td>1 Invited (editorial pick) or labelled sponsorship (PAID, currently HOLD)</td>
+<td>Editorial: a short, factual "what it is, who it's for, what it won't do" fact card an editor could choose to use. Paid: out of scope while ads are on HOLD</td>
+<td>Neutral, third-person-friendly facts. No superlatives</td>
+<td>Pitching editors with unsupported numbers; asking for "coverage" in exchange for anything; dressing a sponsored slot as an editorial pick <em>[Source: comms file §0: editorial picks are never pay-to-play]</em></td>
+<td>Editor's choice. Provide one canonical URL</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Comparison blogs, "alternatives to X" lists, software directories</strong> (third-party listicles; AlternativeTo-style directories; MCP directories)</td>
+<td>Directory submission (own listing) / Invited (an author requests facts)</td>
+<td>Rebind's <strong>own</strong> directory listing in the directory's format; a public, accurate fact sheet authors can cite; owned <code>rebind.gg/compare/*</code> pages</td>
+<td>Factual, limits-first, use-both</td>
+<td>Fake reviews or votes; asking friends to upvote a listing; claims that Rebind replaces AHK, KM, PowerToys, QMK, VIA or Stream Deck; listing Linux or Intel Mac support</td>
+<td>One canonical link per listing. No ?ref= claims, because click-to-install attribution is blocked</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>Hacker News (Show HN)</strong></td>
+<td>2 (Show HN is the sanctioned lane for things you made) <em>[Recall]</em></td>
+<td>One Show HN with an architecture-first explanation; the maker stays in the thread answering questions</td>
+<td>Engineer explaining design choices and trade-offs. Self-critical about limits</td>
+<td>Marketing adjectives; asking for upvotes or coordinating votes (banned); headlining "8,000 Hz real USB" <em>[Source: strategy file §3.3 flags this]</em>; sending friends to comment</td>
+<td>Link to the product or docs in the submission; nothing else</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>Vendor / competitor-owned spaces and OSS project trackers</strong> (PowerToys and Karabiner GitHub, Keyboard Maestro forum, Elgato Discord, Kanata Discussions)</td>
+<td>5 Observe only</td>
+<td>None. These rooms are listening posts for gap language</td>
+<td>n/a</td>
+<td>Any Rebind mention at all, including "have you tried…" replies to feature requests</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>Accessibility communities and organisations</strong> (r/AssistiveTechnology, r/accessibility, AbleGamers, SpecialEffect)</td>
+<td>Partner route (<code>rebind.gg/accessibility</code>); answers only with mod approval</td>
+<td>Later, with consent: an answer that names one adjustment (sticky modifiers, dwell-click, debounce, one-handed layer) and its hardware gate; partner-requested materials</td>
+<td>Calm, practical, person-first. No inspiration or suffering framing</td>
+<td>Any medical, RSI-cure or outcome claim; "free for disabled users"; replying to someone's personal story with a product; using a person's situation as a hook</td>
+<td>Partner route only</td>
+</tr>
+<tr>
+<td>—</td>
+<td><strong>Owned surfaces</strong> (rebind.gg, compare pages, docs, Mission 001 long-form, Rebind's YouTube and Discord)</td>
+<td>OWN</td>
+<td>Full brand voice; long-form guides; comparison tables; simulated demos (labelled); recipes; kill-switch callouts</td>
+<td>Terse, confident, candid about limits <em>[Source: dossier 01 core brand + Fun-Depth tone]</em></td>
+<td>n/a on our own surface, but fences still apply: no evasion, medical or parity claims</td>
+<td>Owned pages are where everything else links to</td>
+</tr>
+</tbody>
+</table></div>
+<h3>3.2 Room notes (what a good contribution looks like, and the trap in each)</h3>
+<p><strong>1. Q&amp;A sites.</strong> The best answer solves the asker's problem first. On Windows, that may mean PowerToys or AHK. On Mac, it may be Karabiner. Rebind fits as the honest extra option when the question has a cross-OS, per-app or scripted angle those tools don't cover. <em>Trap:</em> answering because a keyword matched. If the asker is on Linux or an Intel Mac, or needs F13–F24 or media keys as input in free mode, Rebind is the wrong answer and shouldn't appear. <em>[Source: dossier 02 platforms and input table]</em></p>
+<p><strong>2. Tool-community forums.</strong> The host tool is what the room is about. The AHK forum is protective and strongly anti-cheat <em>[Source: space map #2]</em>. The only fitting opening is a question about something AHK doesn't do by design (AHK is Windows-only), and even then the reply should say that <code>.ahk</code> files don't run as-is and a port is a Luau rewrite <em>[Source: dossier 02 comparison posture]</em>. <em>Trap:</em> turning a peer answer into a comparison table.</p>
+<p><strong>3. Reddit vendor-lane subs.</strong> These are the only rooms where a top-level, disclosed product post is sanctioned. The format is one job per post: "CapsLock as Escape on tap, Ctrl on hold, on any USB keyboard brand" rather than "meet Rebind." Use ErgoMech's split-only rule, MechanicalKeyboards' pricing requirement and r/macapps' once-a-month limit as written that day. <em>Traps:</em> account trust (the ErgoMech seed was removed by Reddit filters <em>[Source: space map #6]</em>); the stop rule (one removal stops that sub, two pause the program <em>[Source: dossier 06 via strategy file]</em>). Organic Reddit is <strong>stopped</strong> right now; this row describes a later state only.</p>
+<p><strong>4. Reddit comment-on-ask subs.</strong> r/obs allows self-promotion "only when directly asked" <em>[Source: space map #24]</em>. The fitting format is two or three sentences plus a recipe line. Example shape: Numpad 1 sends Ctrl+Alt+1, OBS switches to Scene 1. This chord is SDK-confirmed <em>[Source: dossier 05 correction history]</em>. Free demos avoid F13 scene keys <em>[Source: dossier 03 §7]</em>. <em>Trap:</em> reading "anyone know a tool that…" as permission for a sales pitch.</p>
+<p><strong>5. Other people's Discords.</strong> Speed and brevity matter more than polish. Help channels reward someone who sticks around and answers non-Rebind questions too. A Rebind employee who only ever shows up with Rebind answers will be read as a marketer, disclosed or not <em>[Inference]</em>. <em>Trap:</em> QMK and ZMK servers are about firmware. An app-aware OS layer is a complement there, and mentioning it only fits when someone asks how to change keys per app <em>[Source: space map §4]</em>.</p>
+<p><strong>6. YouTube and tutorial comments.</strong> Creator comment sections belong to the creator and their audience. The fitting presence is Rebind's own channel: a demo with a pinned comment carrying the script, the "Simulated UI" label if the demo is simulated, and both kill-switch chords. Creator work runs through the separate creator lane, with consent and the platform's paid or branded toggle <em>[Source: comms file §0]</em>. <em>Trap:</em> "helpful" brand replies under a popular AHK or ergo video. However they're worded, they read as hijacking.</p>
+<p><strong>7. Newsletters.</strong> Editors pick tools that are new, useful and easy to explain in one line. The fitting asset is a public fact card on rebind.gg (what it is, platforms, what's free, what needs hardware, what it won't do) that an editor can find or be pointed to <em>later, if Dean approves outreach</em>. This task writes no pitch. <em>Trap:</em> the brief's old "8,000 Hz" lead and any user-count line. There's no verified user count to cite <em>[Source: dossier 02 Do-Not-Claim #1, strategy §3.3]</em>.</p>
+<p><strong>8. Comparison blogs and directories.</strong> Rebind can't write a third party's article, and shouldn't try to influence one covertly. Three things are in our control: (a) our own directory listings, filled in accurately, with Linux and Intel Mac marked unsupported; (b) the four official compare pages, which already use use-both framing <em>[Source: dossier 02, <code>rebind.gg/compare/{autohotkey,karabiner,stream-deck,vendor-software}</code>]</em>; (c) a public fact sheet that makes accurate citation easy. <em>Trap:</em> the Oct 31 source found PowerToys and Keyboard Maestro compare URLs returning 404. Don't link to or describe comparison pages that don't exist <em>[Source: dossier 02]</em>.</p>
+<p><strong>9. Hacker News.</strong> The room rewards architecture and honesty. Fitting topics: capture → script → output, Luau, local scripts with no account, the free versus hardware-mode boundary, the local WebSocket and MCP surface. The maker answers hard questions in the thread, including "why not Kanata or AHK?" with a use-both answer. <em>Trap:</em> timing numbers, evasion-adjacent wording (VID/PID), or calling the brand line "MITM yourself" a feature. Brand lines are not capability claims <em>[Source: dossier 01]</em>.</p>
+<p><strong>10 and 11.</strong> Covered in the table. The point for the CEO: these rooms carry the highest reputational cost and the lowest honest-access ratio, so they get no Rebind-authored content in any wave of this plan unless a partner or moderator asks.</p>
+<h3>3.3 Voice ladder (one brand, four registers)</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Register</th>
+<th>Where</th>
+<th>What it sounds like (described, not drafted)</th>
+<th>What it never does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Brand</strong></td>
+<td>Owned pages, Show HN title at most</td>
+<td>Short declaratives, capability first, one existing brand line at most per page <em>[Source: dossier 01 quoted site lines]</em></td>
+<td>Promises pre-OS capture in free mode, evasion, universal compatibility</td>
+</tr>
+<tr>
+<td><strong>Candid long-form (Fun-Depth)</strong></td>
+<td>Owned long-form, Mission 001 pages</td>
+<td>First-person practitioner; situation → small change → why it works → limits; light jokes about shared situations, never about a named vendor's failure <em>[Source: dossier 01]</em></td>
+<td>Pretends to be an independent journalist</td>
+</tr>
+<tr>
+<td><strong>Peer practitioner</strong></td>
+<td>Forums, Discord, vendor-lane subs</td>
+<td>Disclosed person sharing one thing they set up; respects the host tool; limits before links</td>
+<td>Slogans, brand lines, superlatives, "game-changer"</td>
+</tr>
+<tr>
+<td><strong>Answer</strong></td>
+<td>Q&amp;A, comment-on-ask</td>
+<td>Problem → steps → limits → one optional link; reads like documentation</td>
+<td>Adjectives about Rebind; unprompted pricing; Pro features unless the asker needs them</td>
+</tr>
+</tbody>
+</table></div>
+<h3>3.4 Universal spam signals (apply in every room)</h3>
+<p>These are the shapes that make a contribution read as marketing, whatever the wording. <em>[Inference, consistent with the prohibited column in <code>strategy-brand-beachheads-v1.md</code> §3.2]</em></p>
+<ul>
+<li>Posting where nobody asked, in a room without a vendor lane.</li>
+<li>The same text, or near-identical text, in more than one room.</li>
+<li>A link carrying the post: if you removed the link, there'd be no useful answer left.</li>
+<li>Titles built around the brand name, a slogan or a comparison ("X killer," "better than Y").</li>
+<li>Claims the room can check and refute: Linux support, Intel Mac support, <code>.ahk</code> running as-is, Stream Deck replacement, F13+ input in free mode, mouse-movement transforms in free mode.</li>
+<li>Replies on old threads, or bumping your own post.</li>
+<li>Engagement bait ("thoughts?"), vote asks, or any coordination with colleagues or friends.</li>
+<li>Missing disclosure, or disclosure moved to the bottom or into a profile.</li>
+<li>Long-form advertorial pasted into a community: headlines, comparison tables and CTA buttons in a text post.</li>
+<li>Accessibility or medical framing used as a hook.</li>
+</ul>
+<h3>3.5 Mission 001 long-form: owned-surface reference only</h3>
+<ul>
+<li><strong>What it is:</strong> the CapCom/OAB testv4.5 six-article set and the Desk Notes v5 guides (editorial and direct versions). Both are noindex drafts and not deployed <em>[Source: dossier 05]</em>.</li>
+<li><strong>Where it belongs:</strong> rebind.gg, as destinations for one link from a disclosed answer, a vendor-lane post or a directory listing, where room rules allow links.</li>
+<li><strong>What not to do:</strong> paste their headlines, tables, "slide-to-reveal" structure or CTA blocks into community posts. Don't present a Desk Notes "Editorial" page in a community as neutral journalism. The v5 README's choice to drop "sponsored" wording was a paid-ad design decision, and it is <strong>not</strong> a disclosure exemption <em>[Source: dossier 05; strategy file §3.4 keeps the paid-banner question separate]</em>.</li>
+<li><strong>Mapping:</strong> the six CapCom topics line up with room types: keyboards → MechanicalKeyboards lane; ergo → ErgoMech lane and QMK/ZMK answers; trackballs → r/Trackballs; productivity → r/ProductivityApps and Q&A; obs-stream → r/obs answers and OBS forum; cross-platform → Q&amp;A, AHK "Mac version?" questions, Show HN. <em>[Inference]</em></li>
+<li><strong>Excluded:</strong> <code>kbm-replaced-by-1-lua-file.html</code> is a third-party tone reference. It is never a destination <em>[Source: dossier 05]</em>.</li>
+</ul>
+<hr>
+<h2>4. Claim fences every room inherits</h2>
+<p>Every format above inherits these. <em>[Source: dossier 02 and task brief]</em></p>
+<ul>
+<li>Use both. Rebind does not replace AutoHotkey, Keyboard Maestro, PowerToys, QMK, VIA or Stream Deck.</li>
+<li>Windows 10/11 64-bit and macOS 13+ Apple Silicon only. No Linux, no Intel Mac.</li>
+<li>Free app, with no hardware and no account needed for local scripts. Never write a bare "no account."</li>
+<li>Installing Rebind doesn't install a marketplace script. That's a separate second step.</li>
+<li>F13–F24, media keys as input, pointer-movement transforms and per-device identity need Link or BYOH hardware. Many features are USB-only.</li>
+<li>Mac window control is partial. RebindGPT is a Pro feature. AI porting is neither free nor automatic.</li>
+<li>Rebind is not a medical device. No outcomes, cures or accommodation-funding promises.</li>
+<li>Any demo shows the kill switch: <strong>Left Ctrl + Left Alt + K</strong> (macOS: <strong>Left Control + Left Option + K</strong>). Call it a kill switch, not a panic button.</li>
+<li>No gaming advantage, anti-cheat or evasion framing. No proctor or AI-text evasion. TypeTation stays on verification hold, so no room in this file should send traffic to it.</li>
+<li>No invented user counts, reviews, benchmarks or "#1" claims.</li>
+</ul>
+<hr>
+<h2>5. Three example outlines</h2>
+<blockquote>
+<h3>⚠ UNPUBLISHED DRAFT OUTLINES: NOT FOR POSTING</h3>
+<p>These are structural skeletons that show what an honest, disclosed contribution would contain. They're deliberately left unfinished: bracketed slots, no final wording, and code marked <code>[NEED: …]</code> until Coding verifies it. They are <strong>not</strong> approved, not scheduled and not ready to paste. Any real use needs (1) Agency CEO review, (2) Dean's approval of the specific action and room, (3) that day's first-party read of the room's rules, and (4) a human posting as themselves from their own account.</p>
+</blockquote>
+<h3>Outline A: Q&amp;A answer (Super User style). Room type 1. Entry mode 1, Invited.</h3>
+<p><strong>Status: UNPUBLISHED DRAFT OUTLINE.</strong> Hypothetical question shape: <em>"How do I make a mouse side button do something different only in one app, on both my Windows PC and my Mac?"</em></p>
+<ol>
+<li><strong>First line:</strong> <code>Disclosure: I work on Rebind.</code></li>
+<li><strong>Answer without Rebind first</strong> (1–2 lines): the OS-native or established route for each platform. On Windows, mention the existing per-app remap options (PowerToys / AHK <code>#HotIf</code>). On Mac, Karabiner or the vendor app. Credit these as good options. <code>[NEED: confirm current PowerToys per-app remap status before citing; issue #12730 status unchecked per space map §4]</code></li>
+<li><strong>Where Rebind fits</strong> (1 line): one script file that runs on both Windows 10/11 and macOS 13+ Apple Silicon, targeted to one app.</li>
+<li><strong>Steps</strong> (numbered, 4 or fewer):<br>
+   - Install the free app (no account needed for local scripts).<br>
+   - Create a <code>.luau</code> file in the scripts folder <code>[Windows: %APPDATA%\Rebind\scripts · Mac: ~/Library/Application Support/Rebind/scripts]</code>.<br>
+   - <code>[NEED: Coding-verified snippet using rb.bind.remap with process= targeting, Mouse4 → app action]</code><br>
+   - Note the Mac process-name difference, and that window-title targeting is partial on macOS.</li>
+<li><strong>Limits block</strong> (must appear before any link): buttons and scroll work in free mode, but changing pointer movement needs Link/BYOH hardware. No Linux or Intel Mac. Kill switch: Left Ctrl+Left Alt+K (Mac: Left Control+Left Option+K).</li>
+<li><strong>One link:</strong> the docs page for per-app targeting. <code>[NEED: canonical docs URL]</code></li>
+<li><strong>Do-not-include list:</strong> pricing, Pro, RebindGPT, marketplace, brand lines, comparisons beyond step 2.</li>
+</ol>
+<p><em>Why this shape:</em> it's useful even if the reader never installs Rebind, and it meets the SE expectation that the answer works without the product <em>[Recall]</em>.</p>
+<h3>Outline B: Peer reply in a tool-community forum (AHK forum or AHK Discord). Room type 2/5. Entry mode 1, Invited.</h3>
+<p><strong>Status: UNPUBLISHED DRAFT OUTLINE.</strong> Hypothetical trigger: a member asks <em>"Is there anything like AHK for my Mac? I want my hotstrings on both machines."</em> Fit is high only for this kind of question. Don't use this shape for anything else in AHK spaces.</p>
+<ol>
+<li><strong>First line:</strong> <code>Disclosure: I work on Rebind.</code></li>
+<li><strong>Acknowledge the host tool</strong> (1 line): AHK is Windows-only by design, and on Windows it stays the right tool for the deep stuff (COM, ControlClick, GUI automation).</li>
+<li><strong>Name the Mac-native options first</strong> (1 line): <code>[Espanso (cross-platform text expansion) / Karabiner / Keyboard Maestro, named neutrally]</code>.</li>
+<li><strong>The narrow Rebind option</strong> (2 lines): one Luau file for text expansion and remaps that runs on Windows 10/11 and Apple Silicon Macs. <code>.ahk</code> files don't run as-is, so porting means rewriting. AI-assisted porting (RebindGPT) is a paid Pro feature and isn't automatic.</li>
+<li><strong>Tiny side-by-side</strong> (optional, only if asked for detail): one hotstring in AHK next to its Luau equivalent. <code>[NEED: Coding-verified Luau text-expansion snippet]</code></li>
+<li><strong>Limits</strong> (1 line): no Intel Mac, no Linux, some APIs are Windows-only (<code>rb.pipe</code>, <code>rb.registry</code>).</li>
+<li><strong>Link:</strong> none in the first reply. Offer to share docs if the member wants them.</li>
+<li><strong>Do-not-include:</strong> "switch from AHK," "AHK killer," any gaming or anti-cheat mention, the compare page link unprompted.</li>
+</ol>
+<p><em>Why this shape:</em> the room is protective of its tool <em>[Source: space map #2]</em>. A reply that names competing Mac tools first and gives no link earns trust that a link-led reply never would <em>[Inference]</em>.</p>
+<h3>Outline C: Show HN submission and maker comment. Room type 9. Entry mode 2, Show HN lane.</h3>
+<p><strong>Status: UNPUBLISHED DRAFT OUTLINE.</strong> Prerequisites before this could be proposed to Dean: the attribution fix (or an explicit acceptance that installs can't be attributed), a verified docs set, and a maker available to stay in the thread for several hours.</p>
+<ol>
+<li><strong>Title slot:</strong> <code>Show HN: Rebind – [plain description: scriptable keyboard/mouse input layer, Luau, Windows + macOS]</code>. Rules for the slot: no adjectives, no Hz, no "replaces."</li>
+<li><strong>Maker comment, first line:</strong> <code>Disclosure: I work on Rebind.</code> (Redundant on Show HN, where makers post their own work, but kept for consistency with the house rule.)</li>
+<li><strong>What it is</strong> (2–3 lines): capture → script → output. Scripts can pass, swallow, remap or generate input. They run on your machine, and there's no account for local scripts.</li>
+<li><strong>Design choices worth discussing</strong> (bullets): why Luau; plain-text, diffable script files; the free-mode versus hardware-mode boundary (OS hooks and SendInput/CGEvent versus Link's real USB HID); local WebSocket clients and the MCP server. <code>[NEED: Coding verification of each technical claim before submission]</code></li>
+<li><strong>What it doesn't do</strong> (bullets, shown as prominently as the features): no Linux or Intel Mac; free mode can't transform pointer movement or tell devices apart; Mac window control is partial; not firmware, so it needs the app running; not a replacement for AHK, Kanata, Karabiner or QMK, and here's when to keep each one.</li>
+<li><strong>Safety:</strong> the kill switch chords on both OSes; scripts run only within permissions the user approved. No broader security claims.</li>
+<li><strong>Pricing transparency</strong> (1 line): what's free, and what Link/BYOH and Pro cost. <code>[NEED: current prices from dossier 04 re-confirmed on the day]</code></li>
+<li><strong>Questions to invite</strong> (genuine): API ergonomics, cross-OS gaps, what people would script.</li>
+<li><strong>Do-not-include:</strong> "8,000 Hz," VID/PID, "undetectable," gaming, user counts, "MITM yourself" as a feature claim, upvote requests, colleagues commenting.</li>
+</ol>
+<p><em>Why this shape:</em> HN gives the most reach of any honest lane in the Wave 1 shortlist <em>[Source: space map #9, priority 4]</em>. It also punishes marketing tone hardest, so listing the limits with as much weight as the features is the strategy, not a concession <em>[Inference]</em>.</p>
+<hr>
+<h2>6. Recommendations for the CEO's synthesis</h2>
+<ol>
+<li><strong>Sequence by format risk, not room size:</strong> Q&amp;A answers → owned-page fixes (fact card, compare pages, directory listings) → Show HN → vendor-lane subs (only after organic Reddit is formally unstopped and account trust is fixed). Forums and Discords run on invitation only, all the way through. <em>[Inference]</em></li>
+<li><strong>Build owned destinations before any room presence.</strong> Every room format here ends in at most one link. That link needs a deployed, fenced page, and today the Mission 001 pages are noindex drafts <em>[Source: dossier 05]</em>.</li>
+<li><strong>Make a reusable "recipe card" spec, not posts.</strong> It would have the job, the steps, a <code>[verified snippet]</code> slot, a limits block, the kill switch and one link slot. Rooms differ in length and voice, but every approved contribution would be built from this one fact-checked card, which helps prevent claim drift. <em>[Inference; drafting it is a possible follow-up task for this lane]</em></li>
+<li><strong>A participation ratio for any named employee account.</strong> In Discord and forums, a disclosed employee should answer non-Rebind questions too, or they'll be read as a marketer. This is a staffing question for Dean (who, how many hours). <em>[Inference]</em></li>
+<li><strong>Keep the paid-banner decision separate.</strong> Whatever Dean decides about the Mission 001 ad disclosure banner, it has no effect on community, Q&amp;A or creator disclosure <em>[Source: strategy file §3.4]</em>.</li>
+</ol>
+<h2>7. Not verified, and gaps</h2>
+<ul>
+<li>Platform norms marked <em>[Recall]</em> (Stack Exchange self-promotion, Show HN rules) weren't re-read today. Re-read them first-party before any approved action.</li>
+<li>Promo rules for the QMK, ZMK, Hammerspoon, Espanso and Elgato Discords, the OBS forum and geekhack are unread <em>[Source: space map §6]</em>.</li>
+<li>Every code slot is <code>[NEED]</code>. The only SDK-confirmed snippet in the source is <code>rb.bind.remap("Kp1", "LCtrl+LAlt+1")</code> <em>[Source: dossier 05]</em>. The exact <code>process=</code> syntax for per-app targeting wasn't in the sources I read.</li>
+<li>Newsletter targets aren't named here. See <code>comms-creators-surfaces-v1.md</code> §4 for outlets. This file only covers format and voice.</li>
+<li>No format here has been tested, so nothing is claimed to perform.</li>
+</ul>
+<h2>8. Compliance statement</h2>
+<p>I posted, commented, replied, DMed, emailed and published nothing, spent nothing, and contacted no one. This file contains no ad creative, no outreach copy and no ready-to-post text. The three outlines are marked unpublished and left unfinished on purpose. The disclosure line "Disclosure: I work on Rebind." is included and required. Nothing here tells anyone to hide their affiliation with Rebind. TypeTation gets no traffic recommendation.</p>
+  </main>
+  <footer>
+    <div>Produced by Rebind. This file is a private Mass-Reach Spaces Research draft for internal review.</div>
+    <div>Private test edition · v1 · rendered 2026-11-07 · source content-voice-fit-v1.md</div>
+  </footer>
+  <script>
+(function () {
+  var root = document.documentElement;
+  var saved = null;
+  try { saved = localStorage.getItem("m001-spaces-theme"); } catch (e) {}
+  if (saved === "light" || saved === "dark") root.setAttribute("data-theme", saved);
+  var btn = document.getElementById("theme");
+  if (!btn) return;
+  btn.addEventListener("click", function () {
+    var next = root.getAttribute("data-theme") === "dark" ? "light" : (root.getAttribute("data-theme") === "light" ? "dark" : (matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "dark"));
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("m001-spaces-theme", next); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>
