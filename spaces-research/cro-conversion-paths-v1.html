@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Mass-reach spaces: conversion paths and handoff risks, v1 · Rebind / Spaces Research · v1</title>
+  <style>
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --ink: #111111;
+  --muted: rgba(17, 17, 17, 0.72);
+  --line: rgba(17, 17, 17, 0.25);
+  --accent: #b0342c;
+  --code: rgba(17, 17, 17, 0.06);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #000000;
+    --ink: #ffffff;
+    --muted: rgba(255, 255, 255, 0.72);
+    --line: rgba(255, 255, 255, 0.25);
+    --code: rgba(255, 255, 255, 0.08);
+  }
+}
+[data-theme="dark"] {
+  --bg: #000000;
+  --ink: #ffffff;
+  --muted: rgba(255, 255, 255, 0.72);
+  --line: rgba(255, 255, 255, 0.25);
+  --code: rgba(255, 255, 255, 0.08);
+}
+[data-theme="light"] {
+  --bg: #ffffff;
+  --ink: #111111;
+  --muted: rgba(17, 17, 17, 0.72);
+  --line: rgba(17, 17, 17, 0.25);
+  --code: rgba(17, 17, 17, 0.06);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--ink); }
+body { font: 18px/1.7 system-ui, -apple-system, "Segoe UI", sans-serif; }
+.mast {
+  display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+  border-bottom: 1px solid var(--line); padding: 0.75rem 1.25rem; font-size: 13px; color: var(--muted);
+}
+.mast a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); }
+.mast button {
+  background: transparent; color: var(--ink); border: 1px solid var(--line);
+  font: inherit; font-size: 13px; padding: 0.15rem 0.55rem; cursor: pointer;
+}
+main { max-width: 54rem; margin: 0 auto; padding: 2rem 1.25rem 5rem; }
+h1, h2, h3, h4 { line-height: 1.25; font-weight: 650; }
+h1 { font-size: 2rem; margin: 0 0 1rem; }
+h2 { font-size: 1.35rem; margin: 2.2rem 0 0.8rem; padding-top: 0.4rem; border-top: 1px solid var(--line); }
+h3 { font-size: 1.1rem; margin: 1.6rem 0 0.5rem; }
+p { margin: 0.85rem 0; }
+a { color: var(--accent); }
+ul, ol { padding-left: 1.3rem; }
+li { margin: 0.25rem 0; }
+blockquote {
+  margin: 1rem 0; padding: 0.15rem 0 0.15rem 1rem;
+  border-left: 3px solid var(--accent); color: var(--muted);
+}
+code, pre { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 0.88em; }
+code { background: var(--code); padding: 0.1em 0.28em; }
+pre { background: var(--code); padding: 0.9rem 1rem; overflow-x: auto; }
+pre code { background: transparent; padding: 0; }
+.table-wrap { overflow-x: auto; margin: 1rem 0; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; line-height: 1.45; }
+th, td { border: 1px solid var(--line); padding: 0.45rem 0.6rem; vertical-align: top; text-align: left; }
+th { font-weight: 650; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 1.6rem 0; }
+footer {
+  border-top: 1px solid var(--line); padding: 1rem 1.25rem 2rem;
+  font-size: 13px; color: var(--muted); max-width: 54rem; margin: 0 auto;
+}
+</style>
+</head>
+<body>
+  <div class="mast">
+    <div>Rebind / Mass-Reach Spaces Research · Test edition · v1 · <a href="index.html">All reports</a></div>
+    <button type="button" id="theme">Theme</button>
+  </div>
+  <main>
+<h1>Mass-reach spaces: conversion paths and handoff risks, v1</h1>
+<p><strong>Version:</strong> v1 · <strong>Date:</strong> 2026-11-07 · <strong>Lane:</strong> CRO Lead (<code>cro</code>) · <strong>For:</strong> Agency CEO (agency-ceo) · <strong>Task:</strong> <code>task_VN6cKlNT3gYj</code> · <strong>Initiative:</strong> Mass-Reach Spaces Research, Wave 2<br>
+<strong>From:</strong> cro · written without Claude after the 5-hour limit · <strong>To:</strong> agency-ceo only<br>
+<strong>Status:</strong> Draft. Research and recommendations only. Nothing was posted, sent, published, tested, or launched. No live page changes or CRO tests. Ads remain HOLD. Organic Reddit remains stopped.</p>
+<h2>Evidence labels and reading rules</h2>
+<ul>
+<li><strong>[Verified-source]</strong> means stated in a file actually read under <code>/workspace/spaces-research/sources/</code>; source keys appear below. A copied historical check is not a fresh web or product test.</li>
+<li><strong>[Verified-web]</strong> means a public page actually fetched with URL and access date. <strong>None used in this memo.</strong> Destination URLs below are source-backed references, not freshly checked live links.</li>
+<li><strong>[Inference]</strong> means a conversion-path design, recommendation, likely friction or prioritization. Nothing is claimed to outperform anything else.</li>
+<li><strong>[Unknown]</strong> means no verified value or current capability is available. The corresponding event/check is named instead.</li>
+</ul>
+<p>Product version/platform figures are labeled with their sources. Taxonomy codes, section numbers and priority order are editorial identifiers rather than performance measurements. No conversion rates, CPI, installs, social proof, experiment results, traffic volumes or benchmark uplifts are invented.</p>
+<h2>Bottom line for the CEO</h2>
+<ul>
+<li><strong>Keep one honest install destination:</strong> <code>https://www.rebind.gg/install</code>. A job-shaped context page may precede it later, but no draft URL is treated as live. Keep the exact Marketplace listing available across the handoff. [Verified-source: G, L; Inference: path rule]</li>
+<li><strong>The conversion chain has distinct commitments:</strong> understand the job → install Rebind → separately install the named script → see it work. App download, copied command, app launch, script install and useful activation are not interchangeable. [Verified-source: G, L]</li>
+<li><strong>The largest likely loss is intent mismatch, not button color.</strong> A generic runtime install page cannot by itself promise to deliver the script someone saw. Make the separate script step and expected result obvious before download. This is a hypothesis, not a measured largest drop-off. [Inference, grounded in G]</li>
+<li><strong>Qualification is part of conversion quality.</strong> Supported desktop means Windows 10/11 64-bit or macOS 13+ Apple Silicon only; Linux, Intel Mac and a phone cannot complete this desktop app journey. Turning away unsupported traffic is the honest result. [Verified-source: P; Inference: qualification]</li>
+<li><strong>No source-attributed install economics today.</strong> <code>passRefToInstaller=false</code>; ref stops at download-start. Source-designed events are not proof of backend collection. CPI, cost per activation and variant-to-activation uplift are unknown, not estimates to fill in. [Verified-source: G, L, H]</li>
+<li><strong>Holds override every attractive path.</strong> No TypeTation campaign destinations; no organic Reddit; no paid activation. Researching a path is not permission to use it. [Verified-source: S, C, G]</li>
+</ul>
+<h2>Canonical path and the destination contract</h2>
+<pre><code class="language-text">Space-specific attention, with disclosure where required
+  → one job / truthful evidence / eligibility and limits
+  → https://www.rebind.gg/install
+  → install Rebind on an eligible desktop
+  → open or manually find the exact named Marketplace listing
+  → review conditions and requested permissions
+  → separately install the script
+  → perform its first action and see the intended result
+</code></pre>
+<p>[Verified-source: G] The separate Marketplace install and visible result define the core path. [Inference] The context, recovery and message-match treatments are proposed CRO specifications, not shipped behavior.</p>
+<p>A person discovering a script in Marketplace is already on the listing. The path then goes <strong>listing → <code>/install</code> if the app is absent → back to the same listing → separate script install</strong>. An existing app user may not need the app-install step; do not force a redundant installer download to manufacture a conversion. Current app detection, return links and deep-link support are unknown. [Verified-source: G; Inference: branching; Unknown: routing implementation]</p>
+<h3>Destination rules</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Rule</th>
+<th>Required behavior / recommendation</th>
+<th>Evidence and limit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default install</td>
+<td>Use <code>https://www.rebind.gg/install</code> for the app commitment</td>
+<td>[Verified-source: G]; current page behavior was not fetched</td>
+</tr>
+<tr>
+<td>Preserve script identity</td>
+<td>Show exact listing name and canonical listing URL before download and on recovery instructions</td>
+<td>[Verified-source: G]; [Inference] placement; no claim intent survives the installer</td>
+</tr>
+<tr>
+<td>Explain separate steps</td>
+<td>“Installing Rebind does not install this script” must be unambiguous near the handoff</td>
+<td>[Verified-source: G]; no silent script install</td>
+</tr>
+<tr>
+<td>Named listing examples</td>
+<td>Keystroke Overlay: <code>https://www.rebind.gg/marketplace/script_FhIdJaL7uLVeBUjo6gcuQ</code>; Input Display: <code>https://www.rebind.gg/marketplace/script_s42oD-VMn5m0OBuk-Qs9v</code></td>
+<td>[Verified-source: P, named proof dated 2026-11-01]; these are current candidates for re-verification, not current campaign approval</td>
+</tr>
+<tr>
+<td>Future guide routing</td>
+<td>Use SEO job slugs such as proposed <code>/guides/show-keystrokes-in-tutorials</code>, not newly invented script-name landing paths</td>
+<td>[Verified-source: D proposes <code>/guides/&lt;slug&gt;</code>]; [Inference] example, unbuilt/unpublished; canonical Marketplace IDs are not being renamed</td>
+</tr>
+<tr>
+<td>Private editions</td>
+<td>Do not treat Mission/private test editions or historical <code>/r/</code> proposals as deployed/indexable destinations</td>
+<td>[Verified-source: L, D, H]; separate review and approval needed for any later public guide</td>
+</tr>
+<tr>
+<td>TypeTation</td>
+<td>Excluded from every recommended campaign landing page, listing link, retargeting path and fallback recommendation</td>
+<td>[Verified-source: S, C, G]; verification hold is not lifted by a listing being reachable</td>
+</tr>
+<tr>
+<td>Third-party reference</td>
+<td>Never route to the “replaced Keyboard Maestro” reference clone</td>
+<td>[Verified-source: L]; not a ship page or product-truth source</td>
+</tr>
+<tr>
+<td>Commercial clarity</td>
+<td>Free app and no hardware/account for local scripts; script price/account conditions separately verified</td>
+<td>[Verified-source: P, O]; no “all scripts free” or bare “no account” wording</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Space-by-space conversion-path map</h2>
+<p>Codes follow Strategy's shared taxonomy [Verified-source: S]. All paths and message-match recommendations below are [Inference]. None were activated. Each retains the canonical app install and distinct Marketplace step; the table does not grant access to a space.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Space type / current status</th>
+<th>Attention and message match</th>
+<th>Proposed path including the separate script install</th>
+<th>Conversion friction / what must survive the click</th>
+<th>Appropriate evidence and measurement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>COM — communities</strong>. Research only; organic Reddit STOPPED; competitor/vendor spaces listen only [Verified-source: S, I, V]</td>
+<td>A direct question about a specific eligible job, not an unsolicited pitch. Any later approved human post begins “Disclosure: I work on Rebind.” [Verified-source: R, C]</td>
+<td>Allowed, approved answer → verified job context or direct <code>/install</code> → install Rebind → retained exact Marketplace listing → approve permissions and install script → see result</td>
+<td>Link must match the actual answer, supported OS and input mode. No promotional thread in listening-only rooms. A community rule banning promotion is a hard access limit, not a CTA problem</td>
+<td>No community action. Later web <code>rebind_landing_visit</code>/<code>rebind_download</code> design only; no source-attributed installs. Rules must be checked at the time of an approved action</td>
+</tr>
+<tr>
+<td><strong>SRCH — search/discovery</strong>. Research/draft only [Verified-source: S, D]</td>
+<td>Query names a job: show keystrokes, per-app buttons, same shortcuts across systems. “Alternative” intent gets use-both, not replacement language</td>
+<td>Search/directory → later approved SEO-slug guide or accurate comparison context → <code>/install</code> → install Rebind → exact Marketplace listing → separate script installation → visible job result</td>
+<td>Linux/Intel Mac misinformation; namesake Rebind directory collision; guide has no corresponding verified script; <code>.ahk</code> expected to run unchanged. Text-expansion/mute listing behavior needs verification</td>
+<td>D reports brand-accuracy issues; those are sibling findings, not freshly fetched here. Measure eligible page visits and download intent after collector verification; no keyword volume supplied</td>
+</tr>
+<tr>
+<td><strong>CRT — creators</strong>. Research only, no contact [Verified-source: C]</td>
+<td>The same output demonstrated in a tutorial must be what the viewer can reproduce. Consent/material-connection disclosure governs later creator work</td>
+<td>Approved creator-chosen tutorial/link → matching job context with limitations → <code>/install</code> → install Rebind → named listing from the tutorial → separately install script → reproduce visible output</td>
+<td>Mobile viewers; forgotten listing; demo only works in different capture mode. No implication that a named creator already uses, endorses or agreed to cover Rebind</td>
+<td>Real execution proof, not a mock-up passed off as execution. Proposed creator-context visits/download intent; paid or gifted work remains separately gated</td>
+</tr>
+<tr>
+<td><strong>PAID — paid surfaces</strong>. HOLD [Verified-source: S, R, G]</td>
+<td>If ever released, placement promise, job, platform, script and page must align. Platform ad labeling does not waive organic/creator disclosure</td>
+<td>Hypothetical approved placement → approved matching guide if deployed, otherwise <code>/install</code> only with truthful context → install app → exact listing → separate script install → first useful result</td>
+<td>Broken install attribution; unreviewed v5 pages; unverified destination; free promise hides hardware requirement. Paid expansion magnifies any first-run failure</td>
+<td>No campaign, ad build, spend or live test. Download-start is the maximum attributable stage after analytics validation. No CPI/ROAS or projected uplift</td>
+</tr>
+<tr>
+<td><strong>PLG — product-led loops</strong>. Research/spec only [Verified-source: S, G]</td>
+<td>Overlay seen in a recording, shared recipe/listing, author page or permissioned Channel. The artifact names the exact useful job</td>
+<td>Shared artifact/listing → <code>/install</code> if app absent → install app → same Marketplace listing → separately install script with permission review → see it work → voluntary reuse/share</td>
+<td>App install loses script identity; unverified “open in Rebind”; Channel/account conditions; forced watermark or assumed sharing. Existing users should not be sent through unnecessary reinstall</td>
+<td>Exact artifact and script ID; no fabricated author earnings or referral benefit. Marketplace referrer/deep-link analytics unknown; propose listing-open/script-install/result events only</td>
+</tr>
+<tr>
+<td><strong>IRL — events/IRL</strong>. Research only; event logistics not authorized [Verified-source: S, A]</td>
+<td>Invited demonstration/workshop must name the job and eligible attendee machine. Accessibility remains consent-led/partner-led, not medical</td>
+<td>Hypothetical approved demo/QR → job instructions saved on phone → open on eligible desktop → <code>/install</code> → install Rebind → retained named listing → separate install → reproduce result</td>
+<td>Phone-to-desktop discontinuity; managed/lab admin restrictions; unsupported attendee laptop; no venue bandwidth/support assurance. A scanned QR is not activation</td>
+<td>Proposed <code>irl_context_viewed</code>/download intent; cross-device joining unknown. No scanning/attendance/lead counts supplied. No email collection or event booking created</td>
+</tr>
+<tr>
+<td><strong>OWN — owned media</strong>. Drafts only, publishing approval required [Verified-source: S, L, V]</td>
+<td>Guide, docs, owned video, Marketplace and requested help should describe the same named result and limitations, visibly as Rebind</td>
+<td>Owned job context → <code>/install</code> → install app → exact listing repeated in instructions → separate script install → visible result; Marketplace-start exception above</td>
+<td>Navigation sends to store/Pro rather than free job; longform masks CTA or permission limits; mock-up looks like proof; support route unstaffed</td>
+<td>Label simulations; actual execution proof still required. Verify web collection before funnel reporting. Do not infer a contactable email list from local-script users</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Cross-space message-match specification</h3>
+<p>Use a reusable <strong>job card</strong>, not the same promotional post in every room [Inference, consistent with V]. Keep these fields constant across the context page, installer handoff and listing instructions:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>What must match</th>
+<th>Example / restriction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Job</td>
+<td>A concrete outcome, not broad automation superiority</td>
+<td>“Show the keys used in a tutorial”; no time-savings figure or creator growth claim</td>
+</tr>
+<tr>
+<td>Script identity</td>
+<td>Exact verified name and listing</td>
+<td>Keystroke Overlay is source-backed, freshness-limited [Verified-source: P]. Do not silently substitute another script</td>
+</tr>
+<tr>
+<td>Eligibility</td>
+<td>Desktop OS/chip and script/mode requirements</td>
+<td>Windows 10/11 64-bit; macOS 13+ Apple Silicon [Verified-source: P]. No Linux/Intel Mac workarounds</td>
+</tr>
+<tr>
+<td>Free scope</td>
+<td>Software app versus script/hardware/Pro conditions</td>
+<td>No hardware/account for local scripts; paid Marketplace content and RebindGPT/Pro remain separate [Verified-source: P, O]</td>
+</tr>
+<tr>
+<td>Proof</td>
+<td>Actual expected result, scope and capture method</td>
+<td>Overlay visible in intended recording, not a simulated interaction misrepresented as execution [Verified-source: G, L]</td>
+</tr>
+<tr>
+<td>Handoff</td>
+<td>Install app, then install script, then see result</td>
+<td>Repeat the exact listing beside the app CTA; manual return instructions until routing is verified [Verified-source: G; Inference: treatment]</td>
+</tr>
+<tr>
+<td>Safety and limits</td>
+<td>Permission rationale and exact kill switch</td>
+<td>Left Ctrl+Left Alt+K; Mac Left Control+Left Option+K [Verified-source: P]</td>
+</tr>
+</tbody>
+</table></div>
+<p>For cross-OS/AHK intent, the message must say <code>.ahk</code> files do not run as-is and ports are Luau rewrites. For keyboard communities, keep QMK/VIA; for creator tools, keep Stream Deck's labeled surface. Rebind does not replace AutoHotkey, Keyboard Maestro, PowerToys, QMK, VIA or Stream Deck. [Verified-source: P, C]</p>
+<p>Many features are USB-only. F13–F24/media keys <strong>as input</strong>, pointer-movement transforms and per-device separation need Link/BYOH. Mac window control is partial; RebindGPT is Pro; Rebind is not a medical device. These are fit qualifiers, not footnotes to reveal after installation. [Verified-source: P, O, C; Inference: placement]</p>
+<h2>Prioritized conversion-risk register</h2>
+<p>Priority is judgment [Inference], not a measured loss ranking. No severity score or abandonment percentage is invented. Rate and stage-denominator baselines are [Unknown].</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Priority [Inference]</th>
+<th>Risk / evidence</th>
+<th>Proposed mitigation, not implemented</th>
+<th>Event or check instead of an invented figure</th>
+<th>Gate / possible owner for CEO assignment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Blocker</td>
+<td>Source attribution stops at download; <code>passRefToInstaller=false</code> [Verified-source: G, L]</td>
+<td>Engineering scope for ref acceptance/storage and first-launch association, followed by script/result events; privacy review</td>
+<td>Validate <code>rebind_download</code> ingestion and a controlled join to proposed <code>first_launch</code>; source install rate unknown</td>
+<td>Engineering/analytics evidence before any attribution claim; no code changed</td>
+</tr>
+<tr>
+<td>Blocker</td>
+<td>TypeTation verification hold [Verified-source: S, C, G]</td>
+<td>Exclude from destination inventory, recommendation rules and fallback paths</td>
+<td>Content/destination audit, not a conversion test</td>
+<td>Hold stays; no campaign traffic recommendation</td>
+</tr>
+<tr>
+<td>Highest first-run risk</td>
+<td>App installation mistaken for script installation [Verified-source: G]</td>
+<td>Explicit app-then-script checklist and retained exact listing link</td>
+<td>Proposed <code>marketplace_listing_opened</code>, <code>script_installed</code>; completion share unknown</td>
+<td>Product/CRO review and exact-script validation</td>
+</tr>
+<tr>
+<td>Eligibility</td>
+<td>Unsupported OS, Intel Mac or mobile arrival [Verified-source: P]</td>
+<td>Show supported desktop constraints before the CTA; voluntary copy/save of context, no invented cross-device attribution</td>
+<td>Proposed <code>eligibility_outcome</code>; supported-visitor denominator unknown</td>
+<td>Content/product facts; no live eligibility UI created</td>
+</tr>
+<tr>
+<td>Trust</td>
+<td>Windows admin, SmartScreen/unverified-publisher concern; macOS Accessibility [Verified-source: P for admin/Accessibility; Unknown: current warnings/signing]</td>
+<td>Verify current trust instructions and permission rationale. Let people stop; do not disable security or bypass IT policy</td>
+<td>Proposed <code>install_blocker_reported</code>; current warning occurrence unknown</td>
+<td>Installer/support owner confirms exact behavior on current systems</td>
+</tr>
+<tr>
+<td>Permission</td>
+<td>Marketplace consent and capture permissions [Verified-source: P, G]</td>
+<td>Explain script permission purpose before install; capture help only for relevant scripts; preserve refusal</td>
+<td>Proposed <code>script_permission_outcome</code>; permission-denial rate unknown</td>
+<td>Exact manifest/account flow and OS prompt verification</td>
+</tr>
+<tr>
+<td>Result mismatch</td>
+<td>Overlay absent in window-only capture or Windows exclusive fullscreen [Verified-source: G, S]; Mac targeting partial [Verified-source: P]</td>
+<td>Put limit beside demo/CTA and validate intended output; no broad compatibility promise</td>
+<td>Proposed <code>first_useful_result_confirmed</code> plus evidence type; run event alone insufficient</td>
+<td>Current script/OS/capture QA, no test launched here</td>
+</tr>
+<tr>
+<td>Destination integrity</td>
+<td>Historical drafts, future SEO URLs and private editions mistaken for live pages [Verified-source: L, D, H]</td>
+<td>Maintain a reviewed canonical destination ledger; keep private editions private; SEO slugs only for future approved guides</td>
+<td>Read-only URL/content/redirect and index-state checks before release; availability unknown here</td>
+<td>SEO/content/product review; no publication or indexing change</td>
+</tr>
+<tr>
+<td>Commercial surprise</td>
+<td>Free app conflated with free scripts/AI/hardware [Verified-source: O]</td>
+<td>State verified listing conditions and hardware gates early; no unverified offer or fabricated reviews</td>
+<td>Proposed <code>listing_conditions_viewed</code> and voluntary blocker reason; pricing objection volume unknown</td>
+<td>Current listing/checkout facts required before public copy</td>
+</tr>
+<tr>
+<td>Access/reputation</td>
+<td>Rules forbid presence; Reddit stopped; vendor rooms listen only [Verified-source: R, S, I, V]</td>
+<td>Do not enter. Specific approval and current rules are prerequisites, not conversion optimizations</td>
+<td>Approved-action/rules evidence if later requested, no “traffic opportunity” estimate</td>
+<td>CEO/Dean gates; no outreach, posts or comments</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Measurement contract and future validation order</h2>
+<p><strong>What exists in source design:</strong> <code>rebind_landing_visit</code> with ref/ad_group/path/UTMs, plus <code>rebind_download</code> with platform and method. Empty collector configuration can mean dataLayer only. A copied command or CTA click is not proof of install. [Verified-source: L]</p>
+<p><strong>What is not proven:</strong> collector receipt, stable installer redirects/tokens, Marketplace referrer analytics, login conditions, working deep links, script-install events, first useful result instrumentation and current live script behavior. [Unknown, supported by G/H gaps]</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Funnel question</th>
+<th>Proposed measurement [Inference]</th>
+<th>Current permissible conclusion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Does context lead eligible people toward the app?</td>
+<td>Validated context/eligibility and download-intent events with source tags</td>
+<td>No measured conversion rate; validate collection first</td>
+</tr>
+<tr>
+<td>Does download lead to first app launch?</td>
+<td>Ref-preserving installer plus proposed <code>first_launch</code>, with consent and deduplication</td>
+<td>Blocked source join; no CPI or cost per completed install</td>
+</tr>
+<tr>
+<td>Does launch lead to intended script install?</td>
+<td>Proposed <code>script_installed {script_id}</code> tied to actual completion</td>
+<td>Unknown; welcome tour and app launch are not substitutes</td>
+</tr>
+<tr>
+<td>Does script installation lead to useful result?</td>
+<td>Proposed <code>script_first_run</code> followed by result confirmation/evidence type</td>
+<td>Unknown; run flag is not guaranteed visible success</td>
+</tr>
+<tr>
+<td>Is the path better for a particular space?</td>
+<td>Later baseline with eligible denominator and a defined result window, after instrumentation and explicit test approval</td>
+<td>No experiment launched, no winner or uplift claim</td>
+</tr>
+</tbody>
+</table></div>
+<p>[Inference] Suggested order for later consideration: establish product/listing truth → verify web collection → scope installer/ref and privacy fixes → specify app/script handoff → review an internal observation protocol → only then propose a separately approved evaluation. No internal test was run. No recommendation here authorizes traffic, A/B assignments, pixel deployment or page changes.</p>
+<p>[Inference] Keep raw keystrokes, clipboard contents, screen recordings and window titles out of routine funnel payloads. Local use is not consent to marketing identification. A user-requested save/copy path is more honest than assumed cross-device tracking; a future requested email would need specific approval and consent review.</p>
+<h2>Sources and verification limits</h2>
+<p>All source files were actually read under <code>/workspace/spaces-research/sources/</code>:</p>
+<ul>
+<li><strong>P</strong> — <code>02-product-truth-claims-and-fences.md</code>: platforms, input/mode fences, kill switch, script listing URLs and provenance.</li>
+<li><strong>A</strong> — <code>03-audience-sectors-positioning.md</code>: actual capabilities versus proposed sector packs/pilots and IRL leads.</li>
+<li><strong>O</strong> — <code>04-offers-pricing-and-commercial-model.md</code>: free local path, Marketplace commercial distinction and Pro scope.</li>
+<li><strong>L</strong> — <code>05-landing-pages-advertorials-and-longform.md</code>: private/draft page states, event design, separate install evidence and excluded reference clone.</li>
+<li><strong>R</strong> — <code>06-reddit-paid-ads-and-seeding.md</code>: disclosure, stopped organic program, paused paid artifacts and no proof of delivery.</li>
+<li><strong>H</strong> — <code>09-status-conflicts-gaps-and-handoff.md</code>: version-specific QA and missing live attribution/implementation proof.</li>
+<li><strong>S</strong> — <code>strategy-brand-beachheads-v1.md</code>: COM/SRCH/CRT/PAID/PLG/IRL/OWN taxonomy and beachheads.</li>
+<li><strong>I</strong> — <code>insights-space-map-v1.md</code>: communities and listening-only constraints; no audience figures reused.</li>
+<li><strong>C</strong> — <code>comms-creators-surfaces-v1.md</code>: creator consent/disclosure, no-contact scope, TypeTation exclusion and claim fences.</li>
+<li><strong>D</strong> — <code>seo-discovery-spaces-v1.md</code>: job clusters, source-reported brand inaccuracies, private-edition distinction and proposed SEO guide slugs.</li>
+<li><strong>G</strong> — <code>growth-loops-v1.md</code>: core app/script loop, visible activation definition, <code>passRefToInstaller=false</code>, upper measurement boundary and unknown deep links/account requirements.</li>
+<li><strong>V</strong> — <code>content-voice-fit-v1.md</code>: limits-first job/room match, visibly Rebind-owned editorial, no brand promotion in creator comments or listening-only spaces.</li>
+</ul>
+<p><strong>No fresh public-path assertions:</strong> read-only extraction of <code>https://www.rebind.gg/install</code> and the source-named Keystroke Overlay/Input Display listing URLs was attempted. The required <code>parallel-cli</code> executable was unavailable; no page content returned. A future CLI extraction would require <code>/parallel-setup</code>. No fallback provider was substituted, no software was downloaded, and no public page is labeled [Verified-web]. Thus page layout, CTA wording, redirects, prompt behavior, listing price/login/version/permissions, deep links and actual first-run success are [Unknown], not live observations. Sibling reports' web findings are cited only as [Verified-source].</p>
+<h2>Open questions only Dean can answer</h2>
+<ul>
+<li>Which first job should be the default approved path after product verification: the tutorial overlay beachhead or another script?</li>
+<li>Will engineering capacity be reserved for ref persistence and consent-aware first-result measurement before any paid release is reconsidered?</li>
+<li>Who owns the authoritative installer/security trust explanation and first-run support capacity?</li>
+<li>Do you approve pursuing a separate public SEO-guide specification later, while leaving private test editions unchanged? This memo publishes nothing.</li>
+<li>What baseline period, decision horizon and go/stop criteria should govern a future CRO proposal once instrumentation is validated? No numeric target is supplied.</li>
+<li>Who should own a later destination-release sign-off across product, content, privacy and CEO review? Existing holds remain unchanged unless separately and explicitly changed.</li>
+</ul>
+  </main>
+  <footer>
+    <div>Produced by Rebind. This file is a private Mass-Reach Spaces Research draft for internal review.</div>
+    <div>Private test edition · v1 · rendered 2026-11-07 · source cro-conversion-paths-v1.md</div>
+  </footer>
+  <script>
+(function () {
+  var root = document.documentElement;
+  var saved = null;
+  try { saved = localStorage.getItem("m001-spaces-theme"); } catch (e) {}
+  if (saved === "light" || saved === "dark") root.setAttribute("data-theme", saved);
+  var btn = document.getElementById("theme");
+  if (!btn) return;
+  btn.addEventListener("click", function () {
+    var next = root.getAttribute("data-theme") === "dark" ? "light" : (root.getAttribute("data-theme") === "light" ? "dark" : (matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "dark"));
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("m001-spaces-theme", next); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>

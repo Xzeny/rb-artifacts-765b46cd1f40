@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Mass-Reach Spaces: visual format and demo-proof specifications · Rebind / Spaces Research · v1</title>
+  <style>
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --ink: #111111;
+  --muted: rgba(17, 17, 17, 0.72);
+  --line: rgba(17, 17, 17, 0.25);
+  --accent: #b0342c;
+  --code: rgba(17, 17, 17, 0.06);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #000000;
+    --ink: #ffffff;
+    --muted: rgba(255, 255, 255, 0.72);
+    --line: rgba(255, 255, 255, 0.25);
+    --code: rgba(255, 255, 255, 0.08);
+  }
+}
+[data-theme="dark"] {
+  --bg: #000000;
+  --ink: #ffffff;
+  --muted: rgba(255, 255, 255, 0.72);
+  --line: rgba(255, 255, 255, 0.25);
+  --code: rgba(255, 255, 255, 0.08);
+}
+[data-theme="light"] {
+  --bg: #ffffff;
+  --ink: #111111;
+  --muted: rgba(17, 17, 17, 0.72);
+  --line: rgba(17, 17, 17, 0.25);
+  --code: rgba(17, 17, 17, 0.06);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--ink); }
+body { font: 18px/1.7 system-ui, -apple-system, "Segoe UI", sans-serif; }
+.mast {
+  display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+  border-bottom: 1px solid var(--line); padding: 0.75rem 1.25rem; font-size: 13px; color: var(--muted);
+}
+.mast a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); }
+.mast button {
+  background: transparent; color: var(--ink); border: 1px solid var(--line);
+  font: inherit; font-size: 13px; padding: 0.15rem 0.55rem; cursor: pointer;
+}
+main { max-width: 54rem; margin: 0 auto; padding: 2rem 1.25rem 5rem; }
+h1, h2, h3, h4 { line-height: 1.25; font-weight: 650; }
+h1 { font-size: 2rem; margin: 0 0 1rem; }
+h2 { font-size: 1.35rem; margin: 2.2rem 0 0.8rem; padding-top: 0.4rem; border-top: 1px solid var(--line); }
+h3 { font-size: 1.1rem; margin: 1.6rem 0 0.5rem; }
+p { margin: 0.85rem 0; }
+a { color: var(--accent); }
+ul, ol { padding-left: 1.3rem; }
+li { margin: 0.25rem 0; }
+blockquote {
+  margin: 1rem 0; padding: 0.15rem 0 0.15rem 1rem;
+  border-left: 3px solid var(--accent); color: var(--muted);
+}
+code, pre { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 0.88em; }
+code { background: var(--code); padding: 0.1em 0.28em; }
+pre { background: var(--code); padding: 0.9rem 1rem; overflow-x: auto; }
+pre code { background: transparent; padding: 0; }
+.table-wrap { overflow-x: auto; margin: 1rem 0; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; line-height: 1.45; }
+th, td { border: 1px solid var(--line); padding: 0.45rem 0.6rem; vertical-align: top; text-align: left; }
+th { font-weight: 650; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 1.6rem 0; }
+footer {
+  border-top: 1px solid var(--line); padding: 1rem 1.25rem 2rem;
+  font-size: 13px; color: var(--muted); max-width: 54rem; margin: 0 auto;
+}
+</style>
+</head>
+<body>
+  <div class="mast">
+    <div>Rebind / Mass-Reach Spaces Research · Test edition · v1 · <a href="index.html">All reports</a></div>
+    <button type="button" id="theme">Theme</button>
+  </div>
+  <main>
+<h1>Mass-Reach Spaces: visual format and demo-proof specifications</h1>
+<p><strong>Version:</strong> v1 · <strong>Date:</strong> 2026-11-07 · <strong>Lane:</strong> Creative Studio (<code>creative-studio</code>) · <strong>For:</strong> Agency CEO (agency-ceo) · <strong>Task:</strong> <code>task_vzxWMFfb7up7</code> · <strong>Initiative:</strong> Mass-Reach Spaces Research, Wave 2<br>
+<strong>From:</strong> creative-studio · written without Claude after the 5-hour limit · <strong>To:</strong> agency-ceo only<br>
+<strong>Status:</strong> Draft. Research and recommendations only. Nothing was posted, sent, published, bought or launched. No footage, mock ads, thumbnails, GIFs, images, campaign ads or paid creative were produced. No image generation. <strong>Mission 001 ads remain HOLD. Organic Reddit remains stopped.</strong></p>
+<h2>0. Evidence and limits</h2>
+<ul>
+<li><strong>[Verified-source]</strong>: recorded in a cited file under <code>/workspace/spaces-research/sources/</code>. File evidence, not fresh execution or asset inspection.</li>
+<li><strong>[Verified-web]</strong>: public page actually fetched, with URL and access date <strong>2026-11-07</strong> in the source ledger.</li>
+<li><strong>[Inference]</strong>: recommended production constraint, editorial judgement or acceptance criterion. Not a platform requirement unless separately cited.</li>
+<li><strong>[Unknown]</strong>: no sufficient evidence. A needed recording is not presumed to exist.</li>
+</ul>
+<p>Dates, version/task identifiers and section numbering are metadata. All runtime, dimensions and aspect-ratio recommendations below are <strong>[Inference]</strong>, unless specifically labelled [Verified-web]. They are working constraints, not tested engagement optima. No claims about retention, conversion, reach, follower counts or social proof are made.</p>
+<p><strong>Scope inspected:</strong> the required source memos and public specification/accessibility pages. <strong>Not inspected:</strong> actual Rebind builds, media binaries, Mission 001 HTML bytes, an edited video, colour pairs, audio, screen-reader operation or a live landing path. This is a specification sheet, not an accessibility audit or proof that a script works. No source statement has been silently upgraded into filmed evidence.</p>
+<h2>1. Bottom line for the CEO</h2>
+<ul>
+<li><strong>Buy no production breadth before proving the action.</strong> The smallest useful master shows the real input, named script and visible result in the same take. Existing pages and animated keycaps are not substitutes [Inference; S05,S-Growth].</li>
+<li><strong>Specify all shared space types, but do not build ads.</strong> Communities, search/discovery, creators, paid surfaces, product-led loops, events/IRL and owned media need different wrappers around the same honest proof [Verified-source: taxonomy S-Strategy §2; wrapper recommendation: Inference].</li>
+<li><strong>Start with Keystroke Overlay evidence.</strong> The strategy selects it as the leading visible-output beachhead. Current listing/platform/capture conditions still need verification before any recording [Verified-source: S-Strategy §4,S-Growth §2].</li>
+<li><strong>Separate installation from activation.</strong> A marketplace demo needs the free-app step and a separate script-install/permissions step, then the named script doing the visible thing. A welcome tour is not activation [Verified-source: S-Growth §§1–3].</li>
+<li><strong>Make mute and paste falsifiable.</strong> Show the destination app's actual state or resulting text, not a decorative icon. Mute must never be presented as confirmed by a shortcut alone [Inference; source limitations S-Strategy §1,S-Growth §2,S-SEO §2].</li>
+<li><strong>Accessibility is a release gate, not an aesthetic.</strong> Corrected captions, descriptive narration/text alternatives, measured contrast, non-colour cues and pausable motion must be specified before editing. No conformance claim follows from this memo [Inference; W-A11Y].</li>
+</ul>
+<h2>2. What already exists versus what is still missing</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Artifact</th>
+<th>Source-supported state</th>
+<th>What it does not establish</th>
+<th>Creative implication [Inference]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mission 001 journal/private reading editions</td>
+<td>Private test/noindex status recorded by SEO sibling [Verified-source: S-SEO §1]. Original page bytes not supplied here</td>
+<td>Current deployment, filmed execution, accessibility or conversion performance</td>
+<td>Treat as written destination reference. Do not make a private edition indexable or call it live</td>
+</tr>
+<tr>
+<td>CapCom/OAB testv4.5 long-form</td>
+<td><strong>Six article roles [Verified-source: S05 §CapCom]</strong> with simulations, code toggles, limits and placeholder video slots</td>
+<td>A simulation is not Rebind executing; placeholder is not footage</td>
+<td>Retain “Simulated UI / animated mock-up” labels. Never crop them out to imply real proof</td>
+</tr>
+<tr>
+<td>Desk Notes v5</td>
+<td>Source says draft/not live, nothing imported/spent; editorial/direct variants [Verified-source: S05,S09]</td>
+<td>Separate current QA, supplied demo footage or independent journalism</td>
+<td>Visible Rebind ownership remains necessary, whatever the paid-banner decision</td>
+</tr>
+<tr>
+<td>Marketplace named examples</td>
+<td>Keystroke Overlay/Input Display listing names and URLs recorded in dated source [Verified-source: S02]; Mission 001 candidate behaviour described in siblings</td>
+<td>Today’s availability, minimum version, price, account gate or successful run on either OS</td>
+<td>Reverify listing/build and exact script before producing a recording</td>
+</tr>
+<tr>
+<td>Mission 001 mute/paste/text/AI demonstrations</td>
+<td>Siblings describe intended jobs and unresolved live-use checks [Verified-source: S-Growth §2,S-SEO §2]</td>
+<td>Successful current footage, universal mute or tested layout/platform parity</td>
+<td>Keep requirements in backlog until Coding/Testing verifies each exact case</td>
+</tr>
+<tr>
+<td>Third-party Keyboard Maestro replacement reference</td>
+<td>Excluded tone/reference item, not a ship page or product-truth source [Verified-source: S05]</td>
+<td>Replacement/parity claim, destination eligibility or permission to use its assets</td>
+<td>Do not use it in proof, thumbnails, comparison rails or campaign destinations</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>[Unknown] Global asset existence:</strong> no complete media library was available. The backlog below means “needed and not supplied/established by this corpus,” not a claim that no employee has ever recorded anything. No new footage exists from this task.</p>
+<h2>3. Shared capture and proof grammar</h2>
+<h3>Capture contract [Inference]</h3>
+<p>Record a clean supported desktop profile: Windows <strong>10/11 64-bit</strong> or macOS <strong>13+ Apple Silicon [Verified-source: S02]</strong>. Log actual app/build, script id/version, keyboard layout, source listing, permissions, capture method, starting state and reset instructions. Avoid “latest” unless checked that day. Keep notifications, accounts, private files, personal clipboard history and unrelated tabs out of frame. Use seeded demonstration data; clear rights for any voice, likeness, software artwork or third-party footage.</p>
+<p>Recommended reusable master: <strong>1920×1080, 16:9, 30 fps [Inference]</strong>, with a legible region-of-interest capture rather than an unreadable full desktop. Preserve an uncut proof take and a separate edited derivative. Any acceleration, omitted install wait or reconstruction is labelled; do not fake response latency or benchmark speed. Runtime follows the action, including readable holds, not an alleged platform retention rule [Inference].</p>
+<h3>What must be visible [Inference; factual boundaries from S02,S-Strategy,S-Growth]</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Job</th>
+<th>Minimum visible proof</th>
+<th>Failure/limit evidence</th>
+<th>Reset state</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Keystroke Overlay</td>
+<td>Named script active; supported physical key pressed; matching overlay on captured recording; actual output playback labelled as playback</td>
+<td>Demonstrate app/window-only capture missing overlay versus suitable display/screen capture after Testing confirms. Do not imply all keys are shown; left-hand/mouse coverage is source-described, not freshly tested</td>
+<td>Clear overlay, close unrelated scripts, fixed capture scene</td>
+</tr>
+<tr>
+<td>Input Display</td>
+<td>Its own current UI/script identity and matched input/output, not Keystroke Overlay footage relabelled</td>
+<td>Platform/key/capture coverage must be verified for this listing separately [Unknown]</td>
+<td>Known idle input state</td>
+</tr>
+<tr>
+<td>Meeting mute</td>
+<td>Actual target meeting app, input action, app mute indicator and controlled verification of intended state. Describe toggle behaviour accurately</td>
+<td>Shortcut firing does not independently confirm mic off. Verify each of Zoom/Teams/Meet and OS separately; do not claim system-wide/all-app mute</td>
+<td>Known unmuted test session using non-personal audio; no real participants</td>
+</tr>
+<tr>
+<td>Clean Paste</td>
+<td>Seeded formatted text, trigger and resulting plain text in a named destination. State that the clipboard is replaced [Verified-source: S-Strategy §1]</td>
+<td>Preserve text meaning; show tested layout/app only. Do not imply clipboard history recovery or a universal guarantee</td>
+<td>Seeded disposable clipboard content</td>
+</tr>
+<tr>
+<td>Text expansion</td>
+<td>Exact trigger and delimiter, named script, resulting snippet; readable cursor movement</td>
+<td>Keyboard-layout issues and tested application scope; no TypeTation/proctor/AI-text evasion</td>
+<td>Blank test document, known layout</td>
+</tr>
+<tr>
+<td>Per-app remap</td>
+<td>Same ordinary key/button in named target app and outside it; resulting difference; active script scope</td>
+<td>Partial Mac window targeting. No certified Adobe/Autodesk integration or firmware replacement</td>
+<td>Known focus, same source input and target shortcut</td>
+</tr>
+<tr>
+<td>Hardware-only variant</td>
+<td>Link/BYOH and mode/profile visibly identified before result; physical input and output</td>
+<td>Per-device separation, pointer transforms, F13–F24/media input require hardware; no free-mode montage implying otherwise [Verified-source: S02]</td>
+<td>Verified device/profile, safe neutral output target</td>
+</tr>
+<tr>
+<td>Safety</td>
+<td>Kill switch executed in a safe fixture, script stops and held input releases as verified</td>
+<td>Do not simulate a successful stop or reuse another build’s take as current test</td>
+<td>Disposable test fixture, no destructive bindings</td>
+</tr>
+</tbody>
+</table></div>
+<p>Kill switch wording: <strong>Left Ctrl+Left Alt+K</strong>; Mac: <strong>Left Control+Left Option+K</strong> [Verified-source: S02]. Preserve left-hand modifiers. The short derivative may pair a legible safety callout with a linked full walkthrough later; the full tutorial must show the actual safe-stop procedure [Inference].</p>
+<h2>4. Space-type format specification sheet</h2>
+<p>All recommended quantities in this table are <strong>[Inference]</strong>. They are editorial targets, not upload limits or proven performance recommendations. Current host rules/specs must be checked before any approved distribution. “Later wrapper” is a specification, not a produced asset or ready-to-post copy.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Space / taxonomy and voice</th>
+<th>Aspect ratio / format / working length [Inference]</th>
+<th>Required visible proof</th>
+<th>Accessibility and room constraint</th>
+<th>Current gate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Communities: Q&amp;A/help forums / COM; neutral answer voice</td>
+<td><strong>16:9</strong> still pair or <strong>15–30 s</strong> optional clip; text answer must stand alone</td>
+<td>Input and result in named app; verified recipe and scope, not brand splash</td>
+<td>Alt text explaining change; live-text steps and code; captions on clip; no essential meaning in colour</td>
+<td>Rules re-read, specific human approval and disclosure. Competitor/vendor rooms listen-only [Verified-source: S-Voice]</td>
+</tr>
+<tr>
+<td>Communities: sanctioned vendor lanes / COM; peer practitioner</td>
+<td><strong>16:9</strong> screen clip <strong>20–45 s</strong>; optional <strong>1:1</strong> crop only if all proof remains readable</td>
+<td>Real input → script → result, limits and software/hardware mode</td>
+<td>Corrected captions; static equivalent; no slogan wall or copied advertorial; do not hide affiliation</td>
+<td>Organic Reddit STOPPED. This row grants no posting/commenting permission</td>
+</tr>
+<tr>
+<td>Search/discovery tutorials and directories / SRCH; factual</td>
+<td><strong>16:9</strong> thumbnail still; <strong>45–90 s</strong> proof clip; <strong>3–6 min</strong> complete setup</td>
+<td>Result early, prerequisites, app install, separate script install, permission approval and visible activation</td>
+<td>Transcript, described visual actions and keyboard-readable code outside image; factual thumbnail from real proof frame</td>
+<td>Final canonical job slug and verified listing; no script-name destination paths</td>
+</tr>
+<tr>
+<td>Independent tutorial creators / CRT; instructional, creator-controlled</td>
+<td><strong>16:9</strong>, <strong>60–120 s</strong> proof module; <strong>4–8 min</strong> optional walkthrough</td>
+<td>Creator can reproduce exact script on their own supported setup; genuine result and limits</td>
+<td>Caption correction terms; transcript; source-asset rights; no scripted “organic” reaction</td>
+<td>No contact/gift/deal. Specific later approval and sponsorship/gift disclosure [Verified-source: S-Comms]</td>
+</tr>
+<tr>
+<td>Newsletter/editor fact material / CRT × OWN; neutral</td>
+<td><strong>16:9</strong> optional accessible still; optional linked <strong>20–40 s</strong> clip, no required animation in email</td>
+<td>Observable job and eligibility, not fabricated customer quote; source listing and limits</td>
+<td>Real text, alt text; essential info available with images blocked; no GIF-only explanation</td>
+<td>Editorial choice cannot be bought. Paid newsletter material remains HOLD</td>
+</tr>
+<tr>
+<td>Paid surfaces / PAID; proof-first owned identity</td>
+<td>Reference compatibility only: <strong>16:9</strong> desktop master or <strong>1:1</strong> derivative, possible <strong>15–30 s</strong> proof window</td>
+<td>Same real action and mode/OS fence; no ad script, headline or mock layout specified</td>
+<td>Muted comprehension, corrected captions, legible disclosure and limitations, no colour-only state</td>
+<td>ADS HOLD. <strong>No campaign asset production authorized.</strong> Platform limits below are reference, not a build ticket</td>
+</tr>
+<tr>
+<td>Marketplace/shareable scripts / PLG; practical</td>
+<td><strong>16:9</strong>, <strong>10–20 s</strong> visible-result clip; <strong>3–5 s</strong> optional finite GIF; still fallback</td>
+<td>Named script actually doing the thing; eligibility, permissions and separate app/script steps nearby</td>
+<td>Prefer controllable video over looping GIF; transcript/text sequence, useful alt, reduced-motion still</td>
+<td>No automatic watermark or sharing feature assumed. Growth ideas are not shipped functionality [Verified-source: S-Growth]</td>
+</tr>
+<tr>
+<td>Events/workshops/labs / IRL; instructor</td>
+<td><strong>16:9</strong> projected capture <strong>2–4 min</strong>; static step sheet; live portion separately scoped</td>
+<td>Visible physical input and screen result; mode/device labels; safe reset and kill switch; playback explicitly labelled</td>
+<td>Captioned playback; spoken description of result; readable high-contrast still backup, no QR-only instructions</td>
+<td>Research/spec only. No event, invitation or demo booked; partner capacity not assumed</td>
+</tr>
+<tr>
+<td>Owned guide/docs/journal / OWN; candid long-form</td>
+<td><strong>16:9</strong> <strong>30–60 s</strong> result clip plus <strong>4–8 min</strong> setup; accessible still sequence; native page text</td>
+<td>Full app → script → activation path, failure boundary and safe stop. Simulations distinguished from recordings</td>
+<td>Keyboard player, transcript, described visuals, captions, pause/reduced motion and no images-of-text instructions</td>
+<td>Existing private Mission 001 editions remain private/noindex; publication requires approval</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Public platform requirements versus house preferences</h3>
+<ul>
+<li>Reddit’s fetched official product page lists image ratios <strong>1:1 or 16:9</strong>, video <strong>1:1 / 4:5 / 16:9</strong>, and video up to <strong>15 minutes</strong>, with <strong>60 seconds or less recommended [Verified-web: W-Reddit]</strong>. These are reference specifications, not an invitation to produce ads. Recheck technical acceptance for the exact product later; this memo supplies no paid assets.</li>
+<li>Google’s official formats page describes skippable in-stream, in-feed, non-skippable, bumper, Masthead and Shorts [Verified-web: W-Google]. The short durations in the table above are <strong>[Inference] house proof windows</strong>, not Google-wide runtime limits. A complete tutorial should not be squeezed into an unsuitable bumper.</li>
+<li><strong>9:16 vertical [Inference]</strong> is parked for this desktop-first initiative. It may be useful later for discovery, but only a recomposed close-up can keep keys, script and result readable. Do not crop away OS, mode, disclosure or limits merely to fill a vertical frame.</li>
+</ul>
+<h2>5. Accessibility production constraints</h2>
+<p>The review yardstick is WCAG <strong>2.2 A/AA [Verified-web: W-A11Y]</strong>; this memo does not assert compliance. Criterion identifiers below identify standards, not measured findings. Proposed project policies stricter than a criterion are labelled [Inference].</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Constraint</th>
+<th>Required future acceptance evidence</th>
+<th>Basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Contrast</td>
+<td>Measure rendered captions/callouts against actual moving backgrounds; normal text at least <strong>4.5:1</strong>, large text <strong>3:1</strong>, meaningful UI/graphics <strong>3:1 [Verified-web: W-A11Y]</strong>. Never round a failing ratio upward</td>
+<td>Contrast Minimum and Non-text Contrast</td>
+</tr>
+<tr>
+<td>No colour-only meaning</td>
+<td>Mute/unmute, active/inactive, before/after and free/hardware states have text or shape labels, not red/green alone</td>
+<td>Use of Color [Verified-web: W-A11Y]</td>
+</tr>
+<tr>
+<td>Captions</td>
+<td>Correct dialogue, product/script names, keys and meaningful sounds. Export editable captions and muted-feed version later [Inference]. Automatic captions are not final QA</td>
+<td>Captions Prerecorded [Verified-web: W-A11Y]</td>
+</tr>
+<tr>
+<td>Description/transcript</td>
+<td>Narration states the key, action and result; integrate description or provide described version where necessary. A transcript does not automatically replace AA audio-description requirements</td>
+<td>Prerecorded media and Audio Description [Verified-web: W-A11Y]</td>
+</tr>
+<tr>
+<td>Motion/flash</td>
+<td>No flashing above <strong>3 times per second [Inference: strict house ceiling]</strong>. Standard also allows threshold-based exceptions [Verified-web: W-A11Y]. Avoid rapid cuts/pulsing keys; reduced-motion still [Inference]</td>
+<td>Three Flashes or Below Threshold</td>
+</tr>
+<tr>
+<td>Pause controls</td>
+<td>Automatically moving parallel content lasting over <strong>5 seconds [Verified-web: W-A11Y]</strong> needs pause/stop/hide unless essential. Prefer user-start video and static fallback [Inference]</td>
+<td>Pause, Stop, Hide</td>
+</tr>
+<tr>
+<td>Player and document operation</td>
+<td>Future keyboard-only pass for play/pause/captions/links, visible focus, no trap; descriptive link labels, semantic headings and text instructions</td>
+<td>Keyboard, Focus Visible, Link Purpose [Verified-web: W-A11Y]</td>
+</tr>
+<tr>
+<td>Reading and magnification</td>
+<td>Test text resizing to <strong>200%</strong> and page reflow at <strong>320 CSS px [Verified-web: W-A11Y]</strong> with relevant exceptions. Do not shrink whole desktop to illegible thumbnail</td>
+<td>Resize Text and Reflow</td>
+</tr>
+<tr>
+<td>Alternatives to gesture-only controls</td>
+<td>Page simulations/slide reveals need keyboard and non-drag pointer operation, labelled states and full static table equivalent [Inference; standard: W-A11Y]</td>
+<td>Keyboard and Dragging Movements</td>
+</tr>
+<tr>
+<td>Accessible claims</td>
+<td>No “fully accessible,” compliance badge, medical benefit, or universal assistive-device compatibility claim without appropriate scoped evidence</td>
+<td>Product fences [Verified-source: S02,S03]; claim-control policy [Inference]</td>
+</tr>
+</tbody>
+</table></div>
+<p>Before later distribution, test muted, audio-only and reduced-motion comprehension; inspect captions and text at destination size. Scope any assessment honestly: <strong>Measured</strong> for actual contrast/tool output, <strong>Observed</strong> for exercised operation, <strong>Inferred</strong> for source-only concerns [Inference: evidence policy]. Nothing has been measured or exercised in this task.</p>
+<h2>6. Missing-footage and asset backlog</h2>
+<p><strong>All items: needed, not supplied/verified in this corpus [Unknown].</strong> Priority and shot requirements are [Inference]. No item is a production authorization.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Priority [Inference]</th>
+<th>Missing item</th>
+<th>Exact acceptance proof</th>
+<th>Dependency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>First</td>
+<td>Windows Keystroke Overlay master</td>
+<td>Physical supported key, named running script, captured overlay and labelled playback in same evidence chain</td>
+<td>Current listing/build check and capture fixture</td>
+</tr>
+<tr>
+<td>First</td>
+<td>Apple Silicon overlay counterpart</td>
+<td>Same visible job, real permissions/capture method, no inferred Windows parity</td>
+<td>Mac fixture; verify listed limits</td>
+</tr>
+<tr>
+<td>First</td>
+<td>Capture limitation pair</td>
+<td>Suitable screen/display capture versus app-window capture; clear not-working example, no fake UI</td>
+<td>Testing confirms exact behaviour [source expectation: S-Strategy]</td>
+</tr>
+<tr>
+<td>First</td>
+<td>Separate script-install journey</td>
+<td>App installed; script still absent; listing selection, actual permission screen, script install, first result</td>
+<td>Marketplace account requirement/deep-link path [Unknown]</td>
+</tr>
+<tr>
+<td>First</td>
+<td>Kill-switch proof per OS</td>
+<td>Correct left modifiers stop safe fixture and release held input</td>
+<td>Safe test script and human operator</td>
+</tr>
+<tr>
+<td>Next</td>
+<td>Meeting-mute fixtures</td>
+<td>Each named app and OS, real state transition plus controlled verification; not just keypress</td>
+<td>Coding confirms mechanism and honest limits</td>
+</tr>
+<tr>
+<td>Next</td>
+<td>Clean Paste and text expansion</td>
+<td>Seeded formatted text → plain result; clipboard warning; exact trigger/delimiter</td>
+<td>Script/platform/layout tests</td>
+</tr>
+<tr>
+<td>Next</td>
+<td>App-scoped remap</td>
+<td>Same button, target versus non-target app, mode labelled</td>
+<td>Verified recipe and Mac scope</td>
+</tr>
+<tr>
+<td>Later</td>
+<td>Hardware-only boundary</td>
+<td>Distinct device/pointer/F13 input example labelled Link/BYOH from start</td>
+<td>Real device, profile and USB setup</td>
+</tr>
+<tr>
+<td>Later</td>
+<td>Use-both desktop setup</td>
+<td>Rebind action alongside existing AHK/firmware/Stream Deck function, without replacement assertion</td>
+<td>Rights-cleared environment; actual coexistence test</td>
+</tr>
+<tr>
+<td>Cross-cutting</td>
+<td>Accessible stills, captions, transcript and poster</td>
+<td>Equivalent input/action/result explanation without sound, colour or motion dependency</td>
+<td>Accepted real take, measured contrast and reviewed text</td>
+</tr>
+<tr>
+<td>Separate hold</td>
+<td>TypeTation</td>
+<td><strong>No campaign footage request or traffic recommendation</strong></td>
+<td>Verification hold remains; no proctor/AI-text evasion</td>
+</tr>
+</tbody>
+</table></div>
+<p>Do not ask a creator to fabricate these gaps as an endorsement. Do not label a simulation “demo” without clarifying that it is simulated. A failed proof take is useful diagnostic evidence, not something to hide with an animated replacement [Inference].</p>
+<h2>7. Later handoff and acceptance gates</h2>
+<p>Recommended future manifest fields [Inference]: space type, intended job, supported OS/chip, actual build/script version, mode/device, fixture/reset, source record, take identifier, raw proof location, edits/time compression, rights, captions/transcript/still alternatives, unresolved limitations, reviewer and status. This task creates no extra manifest file.</p>
+<p>The future sequence is <strong>verify → rehearse safely → record raw proof → review claims → derive wrappers → review accessibility → seek specific distribution approval [Inference]</strong>. Paid derivatives do not enter production while HOLD remains. Community wrappers never license posts, especially while organic Reddit is stopped.</p>
+<p>Release gates [Inference]: Coding/Testing confirms the exact script and fixture; Creative retains the actual visible result; Content checks room voice against S-Voice; CRO/SEO verifies canonical destination and separate script step; accessibility review supplies scoped measured/observed evidence; CEO reviews; Dean separately authorizes any external action. Attribution remains broken at <code>passRefToInstaller=false</code> [Verified-source: S05,S-Growth]; a polished video neither fixes that nor justifies CPI.</p>
+<p>No replaced-tool, universal-compatibility, benchmark, customer-count or medical claims. RebindGPT stays Pro. Many features are USB-only, pointer transforms and hardware-key input stay hardware-gated, Mac windows remain partial, and free local scripts require neither hardware nor account [Verified-source: S02]. Final destinations use approved SEO job slugs, not script-name paths; default install URL is <code>https://www.rebind.gg/install</code> [Inference: destination rule; S-Strategy,S-Growth].</p>
+<h2>8. Sources</h2>
+<h3>Source files read — under <code>/workspace/spaces-research/sources/</code></h3>
+<ul>
+<li><strong>S02:</strong> <a href="sources/02-product-truth-claims-and-fences.md">02-product-truth-claims-and-fences.md</a>.</li>
+<li><strong>S03:</strong> <a href="sources/03-audience-sectors-positioning.md">03-audience-sectors-positioning.md</a>.</li>
+<li><strong>S04:</strong> <a href="sources/04-offers-pricing-and-commercial-model.md">04-offers-pricing-and-commercial-model.md</a> — historical prices, no fresh quote used here.</li>
+<li><strong>S05:</strong> <a href="sources/05-landing-pages-advertorials-and-longform.md">05-landing-pages-advertorials-and-longform.md</a>.</li>
+<li><strong>S06:</strong> <a href="sources/06-reddit-paid-ads-and-seeding.md">06-reddit-paid-ads-and-seeding.md</a>.</li>
+<li><strong>S09:</strong> <a href="sources/09-status-conflicts-gaps-and-handoff.md">09-status-conflicts-gaps-and-handoff.md</a>.</li>
+<li><strong>S-Strategy:</strong> <a href="sources/strategy-brand-beachheads-v1.md">strategy-brand-beachheads-v1.md</a>.</li>
+<li><strong>S-Insights:</strong> <a href="sources/insights-space-map-v1.md">insights-space-map-v1.md</a>.</li>
+<li><strong>S-Comms:</strong> <a href="sources/comms-creators-surfaces-v1.md">comms-creators-surfaces-v1.md</a>.</li>
+<li><strong>S-SEO:</strong> <a href="sources/seo-discovery-spaces-v1.md">seo-discovery-spaces-v1.md</a>.</li>
+<li><strong>S-Growth:</strong> <a href="sources/growth-loops-v1.md">growth-loops-v1.md</a>.</li>
+<li><strong>S-Voice:</strong> <a href="sources/content-voice-fit-v1.md">content-voice-fit-v1.md</a>.</li>
+</ul>
+<h3>Public pages actually fetched — accessed 2026-11-07</h3>
+<ul>
+<li><strong>W-A11Y:</strong> W3C WCAG Quick Reference: https://www.w3.org/WAI/WCAG22/quickref/ — criteria, not a Rebind audit.</li>
+<li><strong>W-Reddit:</strong> Reddit official ad types/specifications: https://www.business.reddit.com/advertise/ad-types — reference only; no campaign creative produced.</li>
+<li><strong>W-Google:</strong> Google Ads video formats: https://support.google.com/google-ads/answer/2375464?hl=en — format distinctions, not house runtime recommendations.</li>
+</ul>
+<p>Original Mission 001 files and media were not independently opened; their state is [Verified-source] from supplied siblings, not [Verified-web] or an asset audit. No performance claim is inferred from published platform guidelines.</p>
+<h2>9. Open questions only Dean can answer</h2>
+<ol>
+<li>Who owns the supported Windows and Apple Silicon recording fixtures, and may a later task record internal product proof while ads remain held?</li>
+<li>Is Keystroke Overlay still the first proof priority, with mute/paste held behind explicit Testing results?</li>
+<li>Which exact Mission 001 journal edition is the writing reference, without treating it as deployed or as filmed evidence?</li>
+<li>What production capacity and review ownership can you actually commit to? No recording schedule or budget was created here.</li>
+<li>Who has final say on ownership/sponsorship presentation for editorial-looking pages, without weakening affiliation disclosure?</li>
+<li>Should all creator-visible branding remain optional/user-controlled? No shipped watermark feature is assumed.</li>
+<li>Who owns accessibility review and resolves blockers before any later publication?</li>
+</ol>
+<p><strong>Final state: specifications only. No ads, mockups, footage, image generation, publishing, contact or spend. Ads HOLD; organic Reddit STOPPED.</strong></p>
+  </main>
+  <footer>
+    <div>Produced by Rebind. This file is a private Mass-Reach Spaces Research draft for internal review.</div>
+    <div>Private test edition · v1 · rendered 2026-11-07 · source creative-format-specs-v1.md</div>
+  </footer>
+  <script>
+(function () {
+  var root = document.documentElement;
+  var saved = null;
+  try { saved = localStorage.getItem("m001-spaces-theme"); } catch (e) {}
+  if (saved === "light" || saved === "dark") root.setAttribute("data-theme", saved);
+  var btn = document.getElementById("theme");
+  if (!btn) return;
+  btn.addEventListener("click", function () {
+    var next = root.getAttribute("data-theme") === "dark" ? "light" : (root.getAttribute("data-theme") === "light" ? "dark" : (matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "dark"));
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("m001-spaces-theme", next); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>
