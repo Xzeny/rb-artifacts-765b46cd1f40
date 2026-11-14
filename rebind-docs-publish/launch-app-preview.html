@@ -1,0 +1,142 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Launch an App from a Key (preview)</title>
+<style>body{font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif;max-width:820px;margin:2rem auto;padding:0 1rem;color:#1b1f24}.banner{background:#e7f5e9;border:1px solid #6cb27a;padding:.6rem 1rem;border-radius:6px;font-weight:600}
+pre{background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:12px;overflow:auto}code{font:13px ui-monospace,Menlo,Consolas,monospace}:not(pre)>code{background:#eff1f3;padding:1px 4px;border-radius:4px}.note{border-left:4px solid #0969da;background:#f0f6ff;padding:.5rem 1rem;margin:1rem 0}h2{border-bottom:1px solid #d0d7de}</style></head>
+<body><div class="banner">APPROVED by Dean (Nov 13, 2026, 12:35 PM ET), pending publish. Preview of cookbook/launch-app.mdx.</div><h1>Launch an App from a Key</h1><p><i>Start an app with a key press on Windows and macOS, or focus it when it is already running, with rb.system.exec_detached and rb.app as complete Luau scripts.</i></p><p>Each recipe is a complete script. Paste it into a new script in the Rebind app,
+start it, and adjust its settings in the script's <strong>Options</strong> tab. Starting a
+program needs the <code>exec</code> <a href="/reference/sdk-reference#permissions">permission</a>.</p>
+<p><code>rb.app.activate</code> brings forward an app that is already running and never
+launches one. To start an app, use
+<a href="/reference/sdk-reference#rb-system-exec_detached"><code>rb.system.exec_detached</code></a>:
+it starts the program directly, without a shell, returns its process id at
+once, and leaves the program running after the script stops.</p>
+<h2>Launch an app on Windows</h2>
+<p>Pass the full path to the <code>.exe</code>. Arguments go in <code>args</code>, one string each,
+passed as given. There is no shell, so a path with spaces needs no quotes and
+<code>%VARIABLES%</code> are not expanded; read them with <code>rb.env.get</code>.</p>
+<pre><code class="language-luau">--[[
+  rebind: min_sdk=3.9.0
+  rebind: name=Launch App (Windows)
+  rebind: version=1.0.0
+  rebind: platforms=windows
+  rebind: permissions=exec
+  rebind: permission_reason=&quot;exec: Starts the app you choose&quot;
+]]
+local cfg = rb.ui.schema({
+  key = rb.ui.keybind(&quot;F8&quot;, { label = &quot;Launch key&quot; }),
+  exe = rb.ui.text([[C:\Windows\System32\notepad.exe]], { label = &quot;Program (.exe path)&quot;, max_length = 260 }),
+})
+
+rb.bind(cfg.key, rb.async(function()
+  local ok, err = pcall(function()
+    rb.system.exec_detached(cfg.exe)
+  end)
+  if not ok then
+    rb.log.error(err)
+  end
+end))
+</code></pre>
+<p>To pass arguments or start in a folder, add options. A per-user install under
+<code>%LOCALAPPDATA%</code> reads the folder from the environment:</p>
+<pre><code class="language-luau">local exe = rb.env.get(&quot;LOCALAPPDATA&quot;) .. [[\Programs\Microsoft VS Code\Code.exe]]
+rb.system.exec_detached(exe, { args = { [[C:\work\my project]] }, cwd = [[C:\work]] })
+</code></pre>
+<h2>Launch an app on macOS</h2>
+<p>Start apps with macOS's <code>open</code> command. <code>-a</code> takes the app's name as it
+appears in <code>/Applications</code>; a full <code>.app</code> path also works in its place.</p>
+<pre><code class="language-luau">--[[
+  rebind: min_sdk=3.9.0
+  rebind: name=Launch App (macOS)
+  rebind: version=1.0.0
+  rebind: platforms=macos
+  rebind: permissions=exec
+  rebind: permission_reason=&quot;exec: Starts the app you choose&quot;
+]]
+local cfg = rb.ui.schema({
+  key = rb.ui.keybind(&quot;F8&quot;, { label = &quot;Launch key&quot; }),
+  app = rb.ui.text(&quot;TextEdit&quot;, { label = &quot;App name&quot;, max_length = 100 }),
+})
+
+rb.bind(cfg.key, rb.async(function()
+  local ok, err = pcall(function()
+    rb.system.exec_detached(&quot;/usr/bin/open&quot;, { args = { &quot;-a&quot;, cfg.app } })
+  end)
+  if not ok then
+    rb.log.error(err)
+  end
+end))
+</code></pre>
+<div class="note"><b>Note</b><br><p><code>exec_detached</code> returns the id of the program passed as <code>cmd</code>. Here that is the <code>open</code> command, not the app it opens. To check on the app itself, use <code>rb.app.is_running</code>.</p></div>
+
+<h2>Launch or focus</h2>
+<p>One key focuses the app when it is running and starts it when it is not.
+<code>rb.app.is_running</code> and <code>rb.app.activate</code> name apps by executable on Windows
+(<code>.exe</code> optional) and by display name on macOS, ignoring case. The script
+branches on <code>rb.info.platform</code>, so the same file runs on both.</p>
+<pre><code class="language-luau">--[[
+  rebind: min_sdk=3.9.0
+  rebind: name=Launch or Focus
+  rebind: version=1.0.0
+  rebind: permissions=exec
+  rebind: permission_reason=&quot;exec: Starts the app when it is not running&quot;
+]]
+local APPS = {
+  windows = {
+    name = &quot;notepad&quot;,
+    start = function()
+      rb.system.exec_detached([[C:\Windows\System32\notepad.exe]])
+    end,
+  },
+  macos = {
+    name = &quot;TextEdit&quot;,
+    start = function()
+      rb.system.exec_detached(&quot;/usr/bin/open&quot;, { args = { &quot;-a&quot;, &quot;TextEdit&quot; } })
+    end,
+  },
+}
+
+local app = APPS[rb.info.platform]
+
+rb.bind(&quot;F8&quot;, rb.async(function()
+  if rb.app.is_running(app.name) then
+    -- activate raises when no window matches, for example a tray-only app
+    if pcall(rb.app.activate, app.name) then
+      return
+    end
+  end
+  local ok, err = pcall(app.start)
+  if not ok then
+    rb.log.error(err)
+  end
+end))
+</code></pre>
+<p><code>rb.app.activate</code> raises when nothing matches, so it runs inside <code>pcall</code>, and
+the script falls back to starting the app. On macOS, <code>activate</code> on a hidden app
+first shows it, and a second press brings it forward.</p>
+<h2>Things to know</h2>
+<ul>
+<li><strong><code>activate</code> never launches.</strong> It raises when no running app matches. Start
+  apps with <code>exec_detached</code>.</li>
+<li><strong>No shell.</strong> Pipes, <code>&amp;&amp;</code>, <code>%VAR%</code> and <code>~</code> do nothing; build the path in Luau
+  and pass the full path to the program. For a shell command, use
+  <code>rb.system.exec</code>, which runs through <code>cmd.exe /C</code> on Windows and <code>sh -c</code> on
+  macOS and waits for the command, so call it inside <code>rb.run</code>.</li>
+<li><strong>Errors.</strong> A program that cannot start raises
+  <code>exec detached spawn failed: &lt;reason&gt;</code>. The scripts catch it with <code>pcall</code> and
+  write it to the script's <strong>Logs</strong>.</li>
+<li><strong>No output.</strong> <code>exec_detached</code> discards the program's output. To read a
+  command's output, use <code>rb.system.exec</code>.</li>
+<li><strong>Permission.</strong> Without <code>exec</code>, the call raises
+  <code>System.Exec() requires 'exec' permission</code> and Rebind stops the script, even
+  inside <code>pcall</code>. A marketplace package must give a reason for <code>exec</code>.</li>
+<li><strong>Tray apps on Windows.</strong> <code>activate</code> focuses a visible window, so an app
+  running only in the tray makes it raise, and the launch-or-focus script
+  starts the app instead.</li>
+</ul>
+<h2>Requirements</h2>
+<ul>
+<li>Windows 10 or 11, 64-bit, or macOS 13 or later on Apple Silicon. See
+  <a href="/concepts/platforms">Platforms</a>.</li>
+<li>The <code>exec</code> permission.</li>
+<li>On macOS, <code>rb.app.activate</code> needs <strong>Accessibility</strong> for Rebind Relay, the
+  same permission software mode needs.</li>
+</ul></body></html>
